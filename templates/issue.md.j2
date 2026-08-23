@@ -1,0 +1,34 @@
+# {{ newsletter.name }} — {{ issue.date_label }}
+
+> {{ newsletter.tagline }}
+
+**{{ issue.total }} {{ 'itens' if issue.total != 1 else 'item' }}** de {{ issue.source_count }} fontes · janela de {{ issue.window_days }} dias · gerado em {{ issue.generated_at }}
+{% for category, items in groups.items() %}
+
+## {{ category }}
+{% for a in items %}
+
+### {{ loop.index }}. [{{ a.title }}]({{ a.url }})
+
+{{ a.meta_line }}
+{% if a.summary %}
+
+{{ a.summary }}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+---
+{% if failures %}
+
+<details>
+<summary>Fontes que falharam nesta coleta ({{ failures|length }})</summary>
+{% for f in failures %}
+
+- **{{ f.source_name }}** — {{ f.error }}
+{% endfor %}
+
+</details>
+{% endif %}
+
+<sub>Gerado automaticamente por [{{ newsletter.name }}]({{ newsletter.site_url }}).</sub>

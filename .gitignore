@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# Ambiente
+.env
+.env.local
+
+# Saídas locais de teste
+issues/_preview*
+data/state.local.json
+
+# SO / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

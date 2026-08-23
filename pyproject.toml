@@ -1,0 +1,14 @@
+[project]
+name = "designtheory-newsletter"
+version = "0.1.0"
+description = "Newsletter semanal de design gerada a partir de feeds RSS"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"

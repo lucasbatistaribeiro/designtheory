@@ -1,0 +1,38 @@
+<div style="margin:0;padding:0;background:#f5f4f2;">
+  <div style="max-width:640px;margin:0 auto;padding:32px 20px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#1c1b19;">
+
+    <div style="border-bottom:2px solid #1c1b19;padding-bottom:16px;margin-bottom:28px;">
+      <div style="font-size:24px;font-weight:700;letter-spacing:-0.02em;">{{ newsletter.name }}</div>
+      <div style="font-size:14px;color:#6b6862;margin-top:4px;">{{ newsletter.tagline }}</div>
+      <div style="font-size:12px;color:#8a8781;margin-top:12px;">
+        {{ issue.date_label }} · {{ issue.total }} {{ 'itens' if issue.total != 1 else 'item' }} · {{ issue.source_count }} fontes
+      </div>
+    </div>
+
+    {% for category, items in groups.items() %}
+    <div style="margin-bottom:32px;">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#8a8781;margin-bottom:16px;">
+        {{ category }}
+      </div>
+
+      {% for a in items %}
+      <div style="margin-bottom:22px;padding-bottom:22px;border-bottom:1px solid #e3e1dd;">
+        <a href="{{ a.url }}" style="font-size:17px;font-weight:600;line-height:1.35;color:#1c1b19;text-decoration:none;">{{ a.title }}</a>
+        <div style="font-size:12px;color:#8a8781;margin-top:6px;">
+          {{ a.source_name }}{% if a.published %} · {{ a.published_label }}{% endif %}{% if a.author %} · {{ a.author }}{% endif %}
+        </div>
+        {% if a.summary %}
+        <div style="font-size:14px;line-height:1.55;color:#494741;margin-top:10px;">{{ a.summary }}</div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+
+    <div style="font-size:11px;color:#8a8781;line-height:1.6;padding-top:8px;">
+      Gerado automaticamente em {{ issue.generated_at }} ·
+      <a href="{{ newsletter.site_url }}" style="color:#8a8781;">repositório</a>
+    </div>
+
+  </div>
+</div>

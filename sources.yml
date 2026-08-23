@@ -1,0 +1,120 @@
+# Fontes da newsletter.
+# type: rss  -> feed RSS/Atom (o único tipo implementado hoje)
+# weight    -> multiplicador de pontuação da fonte (1.0 = neutro)
+# enabled   -> false desliga a fonte sem apagar a linha
+#
+# Rode `python -m newsletter validate` depois de editar para checar se
+# todos os feeds respondem.
+
+sources:
+  - name: Smashing Magazine
+    category: Web & Front-end
+    type: rss
+    url: https://www.smashingmagazine.com/feed/
+    weight: 1.2
+    enabled: true
+
+  - name: A List Apart
+    category: Web & Front-end
+    type: rss
+    url: https://alistapart.com/main/feed/
+    weight: 1.2
+    enabled: true
+
+  - name: CSS-Tricks
+    category: Web & Front-end
+    type: rss
+    url: https://css-tricks.com/feed/
+    weight: 1.0
+    enabled: true
+
+  - name: Codrops
+    category: Web & Front-end
+    type: rss
+    url: https://tympanus.net/codrops/feed/
+    weight: 1.0
+    enabled: true
+
+  - name: Nielsen Norman Group
+    category: UX & Pesquisa
+    type: rss
+    url: https://www.nngroup.com/feed/rss/
+    weight: 1.4
+    enabled: true
+
+  - name: UX Collective
+    category: UX & Pesquisa
+    type: rss
+    url: https://uxdesign.cc/feed
+    weight: 1.0
+    enabled: true
+
+  - name: Interaction Design Foundation
+    category: UX & Pesquisa
+    type: rss
+    url: https://www.interaction-design.org/rss/site_news.xml
+    weight: 0.9
+    enabled: true
+
+  - name: Core77
+    category: Design de Produto
+    type: rss
+    url: https://www.core77.com/feed
+    weight: 1.0
+    enabled: true
+
+  - name: Dezeen
+    category: Arquitetura & Ambiente
+    type: rss
+    url: https://www.dezeen.com/feed/
+    weight: 1.0
+    enabled: true
+
+  - name: Brand New
+    category: Visual & Branding
+    type: rss
+    url: https://www.underconsideration.com/brandnew/atom.xml
+    weight: 1.2
+    enabled: true
+
+  - name: PRINT Magazine
+    category: Visual & Branding
+    type: rss
+    url: https://www.printmag.com/feed/
+    weight: 1.0
+    enabled: true
+
+  - name: Creative Bloq
+    category: Visual & Branding
+    type: rss
+    url: https://www.creativebloq.com/feeds/all
+    weight: 0.5
+    enabled: true
+
+  - name: Design Observer
+    category: Teoria & Crítica
+    type: rss
+    url: https://designobserver.com/feed/
+    weight: 1.3
+    enabled: true
+
+  - name: iA — Topics
+    category: Teoria & Crítica
+    type: rss
+    url: https://ia.net/feed
+    weight: 1.2
+    enabled: true
+
+  - name: Figma Blog
+    category: Ferramentas
+    type: rss
+    url: https://www.figma.com/blog/feed/atom.xml
+    weight: 1.0
+    enabled: true
+
+  - name: Sidebar
+    category: Curadoria
+    type: rss
+    url: https://sidebar.io/feed.xml
+    weight: 0.8
+    enabled: true

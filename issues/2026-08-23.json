@@ -1,0 +1,309 @@
+{
+  "date": "2026-08-23",
+  "subject": "Design Theory — edição de 23 de agosto de 2026",
+  "total": 24,
+  "groups": {
+    "UX & Pesquisa": [
+      {
+        "title": "Artificial Intelligence: Glossary",
+        "url": "https://www.nngroup.com/articles/artificial-intelligence-glossary/",
+        "meta_line": "`Nielsen Norman Group` · 21/08 · Caleb Sponheim",
+        "source_name": "Nielsen Norman Group",
+        "source_category": "UX & Pesquisa",
+        "summary": "Plain-language definitions of the AI terms that come up in product and design work, from tokens and context windows to agents, evals, and prompt injection.",
+        "author": "Caleb Sponheim",
+        "score": 2.165,
+        "published": "2026-08-21T17:00:00+00:00",
+        "published_label": "21/08"
+      },
+      {
+        "title": "AI-Generated Images Can Perform as Well as Stock Photography",
+        "url": "https://www.nngroup.com/articles/ai-generated-images/",
+        "meta_line": "`Nielsen Norman Group` · 21/08 · Rachel Banawa",
+        "source_name": "Nielsen Norman Group",
+        "source_category": "UX & Pesquisa",
+        "summary": "When users didn’t know whether an image was AI-generated, the images we tested did not create any perception penalty compared to stock photos.",
+        "author": "Rachel Banawa",
+        "score": 2.165,
+        "published": "2026-08-21T17:00:00+00:00",
+        "published_label": "21/08"
+      },
+      {
+        "title": "Nobody wants a blank page. Nobody touches a perfect one.",
+        "url": "https://uxdesign.cc/nobody-wants-a-blank-page-nobody-touches-a-perfect-one-48d452a26dae",
+        "meta_line": "`UX Collective` · 23/08 · Takuma Kakehi",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "Why people can’t begin from nothing, and won’t touch anything finished. Continue reading on UX Collective »",
+        "author": "Takuma Kakehi",
+        "score": 1.988,
+        "published": "2026-08-23T11:22:08+00:00",
+        "published_label": "23/08"
+      },
+      {
+        "title": "Sterling Cooper built your UX process. We need to redefine it in the age of AI and systems.",
+        "url": "https://uxdesign.cc/sterling-cooper-built-your-ux-process-we-need-to-redefine-it-in-the-age-of-ai-and-systems-520a2d3b2a60",
+        "meta_line": "`UX Collective` · 23/08 · Patrick Neeman",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "Modern creative work was assembled in the mid-century ad agency, and UX inherited the whole show. Now is time for a reset in the age of AI. AI assisted. The rituals of the 1960s ad shop — the whiskey, the pitch room, the account man, the campaign— still shape how UX teams fail in many environments. We have to change…",
+        "author": "Patrick Neeman",
+        "score": 1.97,
+        "published": "2026-08-23T09:35:34+00:00",
+        "published_label": "23/08"
+      },
+      {
+        "title": "What The Matrix got wrong about AI (so far)",
+        "url": "https://uxdesign.cc/what-the-matrix-got-wrong-about-ai-so-far-c35f8e7f091c",
+        "meta_line": "`UX Collective` · 20/08 · Patrick Neeman",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "The change arrived without a battle — quiet, ordinary, already at your desk. AI assisted. The film feared a superintelligence that would rise up and rule us, but the generative AI we built asks for our trust instead — and mostly gets it. The Matrix feared a machine that would wake up, decide we were the problem, and…",
+        "author": "Patrick Neeman",
+        "score": 1.343,
+        "published": "2026-08-20T21:26:03+00:00",
+        "published_label": "20/08"
+      }
+    ],
+    "Visual & Branding": [
+      {
+        "title": "The Daily Heller: Branding the 1939 New York World’s Fair for Kids",
+        "url": "https://www.printmag.com/daily-heller/the-daily-heller-branding-the-new-york-worlds-fair/",
+        "meta_line": "`PRINT Magazine` · 19/08 · Steven Heller",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "Mixing culture and consumption with childhood desire. The post The Daily Heller: Branding the 1939 New York World’s Fair for Kids appeared first on PRINT Magazine .",
+        "author": "Steven Heller",
+        "score": 1.984,
+        "published": "2026-08-19T11:00:00+00:00",
+        "published_label": "19/08"
+      },
+      {
+        "title": "The Daily Heller: Jules Feiffer Remembered",
+        "url": "https://www.printmag.com/daily-heller/the-daily-heller-jules-feiffer-remembered/",
+        "meta_line": "`PRINT Magazine` · 21/08 · Steven Heller",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "Steven Heller on his final interview with the legend. The post The Daily Heller: Jules Feiffer Remembered appeared first on PRINT Magazine .",
+        "author": "Steven Heller",
+        "score": 1.486,
+        "published": "2026-08-21T11:10:00+00:00",
+        "published_label": "21/08"
+      },
+      {
+        "title": "The Daily Heller: Crown Jewels of the Auto Industry",
+        "url": "https://www.printmag.com/daily-heller/the-daily-heller-crown-jewels-of-the-auto-industry/",
+        "meta_line": "`PRINT Magazine` · 17/08 · Steven Heller",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "These marques branded innovation and ownership. The post The Daily Heller: Crown Jewels of the Auto Industry appeared first on PRINT Magazine .",
+        "author": "Steven Heller",
+        "score": 1.484,
+        "published": "2026-08-17T11:00:00+00:00",
+        "published_label": "17/08"
+      },
+      {
+        "title": "Yes, there are reasons why Disney uses one-word movie titles",
+        "url": "https://www.creativebloq.com/entertainment/movies-tv-shows/are-disneys-one-word-movie-titles-really-that-bad",
+        "meta_line": "`Creative Bloq` · 23/08 · Joe Foley",
+        "source_name": "Creative Bloq",
+        "source_category": "Visual & Branding",
+        "summary": "Some fans might complain, but Disney's short-and-sweet titles are great branding.",
+        "author": "Joe Foley",
+        "score": 1.482,
+        "published": "2026-08-23T09:00:00+00:00",
+        "published_label": "23/08"
+      },
+      {
+        "title": "The Archery World Cup's dramatic rebrand has me quivering in anticipation",
+        "url": "https://www.creativebloq.com/design/logos-icons/the-archery-world-cup-final-is-coming-and-its-dramatic-rebrand-has-me-quivering-in-anticipation",
+        "meta_line": "`Creative Bloq` · 23/08 · Joe Foley",
+        "source_name": "Creative Bloq",
+        "source_category": "Visual & Branding",
+        "summary": "Finally, a sporting logo redesign that hits the target.",
+        "author": "Joe Foley",
+        "score": 1.477,
+        "published": "2026-08-23T08:00:00+00:00",
+        "published_label": "23/08"
+      }
+    ],
+    "Web & Front-end": [
+      {
+        "title": "Sixty Frames for the Record: A Three.js Game, Seven Fly-Throughs, and a Wall of CRTs",
+        "url": "https://tympanus.net/codrops/2026/08/22/sixty-frames-for-the-record-a-three-js-game-seven-fly-throughs-and-a-wall-of-crts/",
+        "meta_line": "`Codrops` · 22/08 · Filip Zrnzevic",
+        "source_name": "Codrops",
+        "source_category": "Web & Front-end",
+        "summary": "What building a Three.js lab around my own music taught me about the renderer.",
+        "author": "Filip Zrnzevic",
+        "score": 1.766,
+        "published": "2026-08-22T14:00:14+00:00",
+        "published_label": "22/08"
+      },
+      {
+        "title": "Resolved: CSS Class Prefix Selector",
+        "url": "https://css-tricks.com/resolved-css-class-prefix-selector/",
+        "meta_line": "`CSS-Tricks` · 21/08 · Geoff Graham",
+        "source_name": "CSS-Tricks",
+        "source_category": "Web & Front-end",
+        "summary": "A newly resolved proposal would allow us to select classes that are a prefix for variations with a wildcard, like .prefix-* . Resolved: CSS Class Prefix Selector originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well.",
+        "author": "Geoff Graham",
+        "score": 1.528,
+        "published": "2026-08-21T15:13:03+00:00",
+        "published_label": "21/08"
+      },
+      {
+        "title": "Creativity at Enterprise-Scale, Without Compromise: The OFF+BRAND. Story",
+        "url": "https://tympanus.net/codrops/2026/08/17/creativity-at-enterprise-scale-without-compromise-the-offbrand-story/",
+        "meta_line": "`Codrops` · 17/08 · OFF+BRAND",
+        "source_name": "Codrops",
+        "source_category": "Web & Front-end",
+        "summary": "Telling stories on some of the biggest canvases on the web, from Awwwards Site of the Year to the front door of Microsoft.",
+        "author": "OFF+BRAND",
+        "score": 1.507,
+        "published": "2026-08-17T13:09:24+00:00",
+        "published_label": "17/08"
+      },
+      {
+        "title": "Timing Charts: A Blueprint For SMIL Animations",
+        "url": "https://smashingmagazine.com/2026/08/timing-charts-blueprint-smil-animations/",
+        "meta_line": "`Smashing Magazine` · 20/08 · hello@smashingmagazine.com (Johan Grobler)",
+        "source_name": "Smashing Magazine",
+        "source_category": "Web & Front-end",
+        "summary": "Discover SMIL, the often-overlooked way to animate SVGs that works inside ` ` tags and can fully animate everything in an SVG without JavaScript.",
+        "author": "hello@smashingmagazine.com (Johan Grobler)",
+        "score": 1.506,
+        "published": "2026-08-20T13:00:00+00:00",
+        "published_label": "20/08"
+      },
+      {
+        "title": "Run Rob Run: Building a Music-Reactive Goo with Three.js and WebGPU",
+        "url": "https://tympanus.net/codrops/2026/08/20/run-rob-run-building-a-music-reactive-goo-with-three-js-and-webgpu/",
+        "meta_line": "`Codrops` · 20/08 · Robert Aperios",
+        "source_name": "Codrops",
+        "source_category": "Web & Front-end",
+        "summary": "Exploring the techniques behind an audio-reactive 3D scene, from custom geometry deformation and music analysis to scroll-driven morphing, damping, and performance optimization.",
+        "author": "Robert Aperios",
+        "score": 1.261,
+        "published": "2026-08-20T13:35:23+00:00",
+        "published_label": "20/08"
+      }
+    ],
+    "Arquitetura & Ambiente": [
+      {
+        "title": "Zara flagship store in Shanghai reflects \"the future of physical retail\"",
+        "url": "https://www.dezeen.com/2026/08/20/aim-architecture-zara-flagship-shanghai/",
+        "meta_line": "`Dezeen` · 20/08 · Christina Yao",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "AIM Architecture has designed Zara Huaihai Road, a flagship store for the Spanish fashion brand in Shanghai, with an amphitheatre-like brick podium that connects the building with the street. Located on Huaihai Road, a well-known commercial district in central Shanghai, the new flagship store took over an existing…",
+        "author": "Christina Yao",
+        "score": 2.203,
+        "published": "2026-08-20T08:00:36+00:00",
+        "published_label": "20/08"
+      },
+      {
+        "title": "Rough drystone walls frame sunken home on Greek island by Alexandre Pavlidis",
+        "url": "https://www.dezeen.com/2026/08/23/within-the-earth-alexandre-pavlidis/",
+        "meta_line": "`Dezeen` · 23/08 · Jon Astbury",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "Architect Alexandre Pavlidis has completed Within the Earth, a house on the Greek island of Sifnos contained within a series of sunken stone walls that step down a coastal hillside. Referencing the region's use of stepped terraces to grow olives and grapes, Paris-based Alexandre Pavlidis aimed for the home to be…",
+        "author": "Jon Astbury",
+        "score": 1.974,
+        "published": "2026-08-23T10:00:25+00:00",
+        "published_label": "23/08"
+      },
+      {
+        "title": "Five innovative smartphones and dumbphones that put design first",
+        "url": "https://www.dezeen.com/2026/08/23/innovative-smartphones-dumbphones-design-first/",
+        "meta_line": "`Dezeen` · 23/08 · Cajsa Carlson",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "For this roundup, we've collected five smartphones and dumbphones with exciting designs, ranging from a phone with a robot arm to a keyboard phone built for messaging. For many people, their phone is their most important piece of technology and has been tailored to suit their individual needs. But while the content of…",
+        "author": "Cajsa Carlson",
+        "score": 1.963,
+        "published": "2026-08-23T09:00:13+00:00",
+        "published_label": "23/08"
+      }
+    ],
+    "Design de Produto": [
+      {
+        "title": "CMPT's Take on the Apple Box",
+        "url": "https://www.core77.com/posts/145097/CMPTs-Take-on-the-Apple-Box",
+        "meta_line": "`Core77` · 18/08 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "Yet another set of designers have been smitten by the apple box, that mainstay of studio production. This time it's by CMPT , a new brand created in collaboration between NYC-based Lichen design studio and Japanese furniture brand Karimoku. Their take on the apple box is made out of Japanese Chestnut, with dovetailed…",
+        "author": "Rain Noe",
+        "score": 1.755,
+        "published": "2026-08-18T13:00:00+00:00",
+        "published_label": "18/08"
+      },
+      {
+        "title": "Core77 Weekly Roundup (8-17-26 to 8-21-26)",
+        "url": "https://www.core77.com/posts/145081/Core77-Weekly-Roundup-8-17-26-to-8-21-26",
+        "meta_line": "`Core77` · 21/08 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "Here's what we looked at this week: In Holland, a self-powered river crossing for bikes. The Leitz Portable Desk Organizer for hot-desking. Sigma's minimalist unibody BF camera , by Iwasaki Design Studio. An \"aerial school bus\" system for kids who commute from gorge to canyon rim for school. CMPT's take on the apple…",
+        "author": "Rain Noe",
+        "score": 1.526,
+        "published": "2026-08-21T15:00:00+00:00",
+        "published_label": "21/08"
+      },
+      {
+        "title": "Transportation Design Student Work: A Repairable Vehicle for Rural Scandinavia",
+        "url": "https://www.core77.com/posts/145140/Transportation-Design-Student-Work-A-Repairable-Vehicle-for-Rural-Scandinavia",
+        "meta_line": "`Core77` · 21/08 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "In rural America, the appeal of an old truck is immense—and reflected in used truck prices. Older trucks are in-demand because they can be user-repaired, and I've got plenty of neighbors that demonstrate this. So I was interested to see this project by Love Björklund, a Transportation Design student at Sweden's Umea…",
+        "author": "Rain Noe",
+        "score": 1.516,
+        "published": "2026-08-21T14:00:00+00:00",
+        "published_label": "21/08"
+      }
+    ],
+    "Curadoria": [
+      {
+        "title": "How to make your design system agent-ready",
+        "url": "https://medium.com/design-bootcamp/how-to-make-your-design-system-agent-ready-ea4cfc062270",
+        "meta_line": "`Sidebar` · 18/08",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "If you don’t want your AI agent to choke on your design.md, stop putting your entire design system into one file.",
+        "author": "",
+        "score": 2.957,
+        "published": "2026-08-18T07:20:03+00:00",
+        "published_label": "18/08"
+      },
+      {
+        "title": "Try these 10 skills—and show off your own",
+        "url": "https://www.figma.com/blog/try-these-10-skills-and-show-off-your-own/",
+        "meta_line": "`Sidebar` · 19/08",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "Now you can author skills for our agent, directly in Figma, to put your point of view to work. Here are 10 of our favorites to get you started.",
+        "author": "",
+        "score": 2.335,
+        "published": "2026-08-19T04:45:17+00:00",
+        "published_label": "19/08"
+      }
+    ],
+    "Ferramentas": [
+      {
+        "title": "Sightlines issue no.2: What leaders need to know about building agents",
+        "url": "https://www.figma.com/blog/sightlines-issue-no2/",
+        "meta_line": "`Figma Blog` · 20/08",
+        "source_name": "Figma Blog",
+        "source_category": "Ferramentas",
+        "summary": "Agentic products pose a unique set of design challenges. How do you build a tool that’s powerful and knowledgeable enough to be a true partner, while keeping trust and security at the core? Here’s what we’ve heard from leaders.",
+        "author": "",
+        "score": 1.324,
+        "published": "2026-08-20T19:36:00+00:00",
+        "published_label": "20/08"
+      }
+    ]
+  }
+}

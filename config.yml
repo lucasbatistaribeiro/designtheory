@@ -1,0 +1,74 @@
+# Configuração geral da newsletter
+newsletter:
+  name: "Design Theory"
+  tagline: "O que aconteceu em design, semanalmente."
+  site_url: "https://github.com/lucasbatistaribeiro/designtheory"
+  language: "pt-BR"
+  timezone: "America/Sao_Paulo"
+
+# Janela de coleta e limites por edição
+collect:
+  # Considera apenas itens publicados nos últimos N dias
+  window_days: 7
+  # Máximo de itens na edição inteira
+  max_items: 24
+  # Máximo de itens por fonte (evita uma fonte dominar a edição)
+  max_per_source: 3
+  # Tempo limite (s) por requisição de feed
+  timeout: 15
+  # User-Agent usado nas requisições
+  user_agent: "DesignTheoryNewsletterBot/1.0 (+https://github.com/lucasbatistaribeiro/designtheory)"
+  # Tamanho do resumo em caracteres
+  summary_chars: 320
+
+# Pontuação: itens com palavras-chave sobem na edição
+ranking:
+  keywords:
+    "design system": 3
+    "design systems": 3
+    "tipografia": 2
+    "typography": 2
+    "acessibilidade": 3
+    "accessibility": 3
+    "a11y": 3
+    "ux research": 2
+    "pesquisa": 1
+    "figma": 2
+    "brand": 1
+    "identidade visual": 2
+    "case study": 2
+    "arquitetura de informação": 2
+  # Itens cujo título contenha qualquer termo abaixo são descartados
+  blocklist:
+    - "sponsored"
+    - "patrocinado"
+    - "webinar"
+    - "black friday"
+    - "cyber monday"
+    - "best deals"
+    - "discount code"
+    - "cost only"
+    - "% off"
+
+# Deduplicação entre edições
+state:
+  path: "data/state.json"
+  # Esquece links vistos depois de N dias (mantém o arquivo pequeno)
+  retention_days: 180
+
+# Saída
+output:
+  dir: "issues"
+  formats: ["markdown", "html"]
+  # Atualiza issues/README.md com o índice das edições
+  write_index: true
+
+# Envio por e-mail (opcional — só roda se as variáveis existirem)
+delivery:
+  enabled: true
+  # "resend" | "smtp" | "none"
+  provider: "resend"
+  from: "Design Theory <newsletter@example.com>"
+  # Lista de destinatários; pode vir da env NEWSLETTER_RECIPIENTS (separada por vírgula)
+  recipients: []
+  subject_template: "{name} — edição de {date}"

@@ -1,0 +1,5 @@
+# Edições
+
+{% for issue in issues %}
+- [{{ issue.date_label }}]({{ issue.filename }}) — {{ issue.total }} {{ 'itens' if issue.total != 1 else 'item' }}
+{% endfor %}
