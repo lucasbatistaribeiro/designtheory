@@ -69,11 +69,6 @@ site:
   base_url: "https://lucasbatistaribeiro.github.io/designtheory"
   output_dir: "site"
   repo_url: "https://github.com/lucasbatistaribeiro/designtheory"
-  # URL do formulário de assinatura (Buttondown, Listmonk, Tally...).
-  # Vazio troca o botão "Assinar" pelo de RSS.
-  subscribe_url: ""
-  # Nome do campo de e-mail que o provedor do formulário espera
-  subscribe_field: "email"
 
 # Envio por e-mail (opcional — só roda se as variáveis existirem)
 delivery:

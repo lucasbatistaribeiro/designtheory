@@ -38,11 +38,7 @@
     <a class="topbar__name" href="{{ depth }}index.html">{{ newsletter.name }}</a>
     <div class="topbar__actions">
       {{ theme_button() }}
-      {% if site.subscribe_url %}
-      <a class="btn btn--primary btn--sm" href="{{ site.subscribe_url }}">Assinar</a>
-      {% else %}
       <a class="btn btn--ghost btn--sm" href="{{ depth }}feed.xml">RSS</a>
-      {% endif %}
     </div>
   </div>
 </div>

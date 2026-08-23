@@ -92,9 +92,6 @@ def _site_settings(cfg: Config) -> dict:
     site = dict(cfg.raw.get("site") or {})
     site.setdefault("base_url", "")
     site.setdefault("output_dir", "site")
-    site.setdefault("subscribe_url", "")
-    # Nome do campo de e-mail esperado pelo provedor do formulário
-    site.setdefault("subscribe_field", "email")
     site.setdefault("repo_url", cfg.newsletter.get("site_url", ""))
     site["base_url"] = site["base_url"].rstrip("/")
     return site
@@ -132,7 +129,7 @@ def build_site(cfg: Config, now: datetime | None = None) -> Path:
         "year": now.year,
     }
 
-    # home: assinatura + última edição inteira + as 3 anteriores
+    # home: última edição inteira + as 3 anteriores
     recent = issues[1:4]
     (out / "index.html").write_text(
         env.get_template("site/index.html.j2").render(

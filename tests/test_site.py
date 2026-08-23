@@ -144,35 +144,29 @@ def test_build_site_limpa_saida_antiga(cfg):
     assert not (out / "edicoes" / "2026-08-16.html").exists()
 
 
-def test_sem_url_de_assinatura_o_bloco_nao_existe(cfg):
-    """Nada de CTA anunciando um cadastro que ainda não funciona."""
+def test_nenhuma_pagina_tem_bloco_de_assinatura(cfg):
+    """O projeto não envia e-mail: nenhuma página pede cadastro."""
     write_issue(cfg, "2026-08-16")
     write_issue(cfg, "2026-08-23")
-    cfg.raw["site"]["subscribe_url"] = ""
     out = build_site(cfg, now=NOW)
 
-    for nome in ("index.html", "arquivo.html", "fontes.html", "edicoes/2026-08-23.html"):
+    for nome in ("index.html", "arquivo.html", "fontes.html", "404.html", "edicoes/2026-08-23.html"):
         html = (out / nome).read_text(encoding="utf-8")
-        assert "class=\"subscribe" not in html, nome
+        assert "subscribe" not in html.lower(), nome
         assert "<form" not in html, nome
-        assert "Uma edição por semana" not in html, nome
+        assert "Assinar" not in html, nome
 
 
-def test_com_url_de_assinatura_mostra_formulario(cfg):
+def test_rss_segue_acessivel_como_navegacao(cfg):
+    """Sem e-mail, o feed é o único jeito de acompanhar — não pode desaparecer."""
     write_issue(cfg, "2026-08-23")
-    cfg.raw["site"]["subscribe_url"] = "https://assinar.exemplo.com"
-    index = (build_site(cfg, now=NOW) / "index.html").read_text(encoding="utf-8")
-    assert 'action="https://assinar.exemplo.com"' in index
-    assert 'type="email"' in index and 'name="email"' in index
-    assert 'class="subscribe' in index
+    out = build_site(cfg, now=NOW)
+    assert (out / "feed.xml").exists()
 
-
-def test_campo_do_formulario_e_configuravel(cfg):
-    write_issue(cfg, "2026-08-23")
-    cfg.raw["site"]["subscribe_url"] = "https://assinar.exemplo.com"
-    cfg.raw["site"]["subscribe_field"] = "EMAIL"
-    index = (build_site(cfg, now=NOW) / "index.html").read_text(encoding="utf-8")
-    assert 'name="EMAIL"' in index
+    index = (out / "index.html").read_text(encoding="utf-8")
+    assert 'href="feed.xml"' in index
+    edicao = (out / "edicoes" / "2026-08-23.html").read_text(encoding="utf-8")
+    assert 'href="../feed.xml"' in edicao
 
 
 def test_paginas_de_arquivo_e_fontes(cfg):

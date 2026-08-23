@@ -25,24 +25,6 @@
 {% endmacro %}
 
 
-{# Só existe quando há um provedor de assinatura configurado. Sem
-   site.subscribe_url o bloco não é renderizado: nada de anunciar um
-   cadastro que ainda não funciona. #}
-{% macro subscribe(site, depth='', hero=false) %}
-{% if site.subscribe_url %}
-<div class="subscribe{% if hero %} subscribe--hero{% endif %}">
-  <p class="subscribe__title">Uma edição por semana, na segunda</p>
-  <p class="subscribe__text">O que saiu de design em 16 publicações, filtrado e agrupado.</p>
-  <form class="subscribe__form" action="{{ site.subscribe_url }}" method="post" target="_blank">
-    <input class="subscribe__input" type="email" name="{{ site.subscribe_field }}" placeholder="seu@email.com" required aria-label="Seu e-mail">
-    <button class="btn btn--primary" type="submit">Assinar</button>
-  </form>
-  <p class="subscribe__note">Sem custo. Cancele quando quiser.</p>
-</div>
-{% endif %}
-{% endmacro %}
-
-
 {% macro entry(issue, prefix='') %}
 <a class="entry" href="{{ prefix }}{{ issue.path }}">
   <span class="entry__date">{{ issue.date_label }}</span>

@@ -161,16 +161,11 @@ só segue o sistema.
 
 Os contrastes de texto atendem WCAG AA (mínimo 4.5:1) nos dois temas.
 
-### Assinatura
+### Sem cadastro de e-mail
 
-Com `site.subscribe_url` vazio — o estado atual — **o bloco de assinatura não é
-renderizado em página nenhuma**, para não anunciar um cadastro que ainda não
-funciona. Preenchendo a URL do seu provedor (Buttondown, Listmonk, Tally...), ele
-aparece automaticamente como formulário de e-mail de verdade, com `POST` para essa
-URL, na home, no arquivo, nas fontes e no fim de cada edição. Se o provedor espera
-um campo com outro nome, ajuste `site.subscribe_field`.
-
-Enquanto isso, quem quiser acompanhar tem o RSS na barra do topo e na nav.
+Este projeto **não envia e-mail** — a edição vive no site e no `feed.xml`. Não há
+bloco de assinatura, formulário nem cadastro em nenhuma página; quem quiser
+acompanhar usa o RSS, que fica na barra do topo e na nav.
 
 ### Deploy
 
@@ -210,5 +205,4 @@ precisa de `contents: write` — já declarado no arquivo.
   de coleta também aparecem no fim de cada edição.
 - O site não tem busca nem paginação. Com dezenas de edições no arquivo vale
   paginar o `arquivo.html` ou adicionar um índice por fonte.
-- O formulário de assinatura depende de um provedor externo — não há backend
-  próprio para guardar e-mails.
+- Não há distribuição por e-mail: o site e o RSS são os canais.
