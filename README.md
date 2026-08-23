@@ -129,7 +129,7 @@ newsletter site` lê os `issues/*.json` e gera:
 
 ```
 site/
-├── index.html              assinatura + última edição inteira + 3 anteriores
+├── index.html              última edição inteira + 3 anteriores
 ├── arquivo.html            todas as edições
 ├── fontes.html             as 16 publicações acompanhadas e como a curadoria funciona
 ├── edicoes/2026-08-23.html uma página por edição, com navegação anterior/seguinte
@@ -163,10 +163,14 @@ Os contrastes de texto atendem WCAG AA (mínimo 4.5:1) nos dois temas.
 
 ### Assinatura
 
-Com `site.subscribe_url` vazio, o site mostra "Assinar por RSS". Preenchendo a URL
-do seu provedor (Buttondown, Listmonk, Tally...), o bloco vira um formulário de
-e-mail de verdade, com `POST` para essa URL. Se o provedor espera um campo com
-outro nome, ajuste `site.subscribe_field`.
+Com `site.subscribe_url` vazio — o estado atual — **o bloco de assinatura não é
+renderizado em página nenhuma**, para não anunciar um cadastro que ainda não
+funciona. Preenchendo a URL do seu provedor (Buttondown, Listmonk, Tally...), ele
+aparece automaticamente como formulário de e-mail de verdade, com `POST` para essa
+URL, na home, no arquivo, nas fontes e no fim de cada edição. Se o provedor espera
+um campo com outro nome, ajuste `site.subscribe_field`.
+
+Enquanto isso, quem quiser acompanhar tem o RSS na barra do topo e na nav.
 
 ### Deploy
 

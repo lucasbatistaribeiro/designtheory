@@ -144,12 +144,18 @@ def test_build_site_limpa_saida_antiga(cfg):
     assert not (out / "edicoes" / "2026-08-16.html").exists()
 
 
-def test_sem_url_de_assinatura_cai_no_rss(cfg):
+def test_sem_url_de_assinatura_o_bloco_nao_existe(cfg):
+    """Nada de CTA anunciando um cadastro que ainda não funciona."""
+    write_issue(cfg, "2026-08-16")
     write_issue(cfg, "2026-08-23")
     cfg.raw["site"]["subscribe_url"] = ""
-    index = (build_site(cfg, now=NOW) / "index.html").read_text(encoding="utf-8")
-    assert "Assinar por RSS" in index
-    assert "<form" not in index
+    out = build_site(cfg, now=NOW)
+
+    for nome in ("index.html", "arquivo.html", "fontes.html", "edicoes/2026-08-23.html"):
+        html = (out / nome).read_text(encoding="utf-8")
+        assert "class=\"subscribe" not in html, nome
+        assert "<form" not in html, nome
+        assert "Uma edição por semana" not in html, nome
 
 
 def test_com_url_de_assinatura_mostra_formulario(cfg):
@@ -158,8 +164,7 @@ def test_com_url_de_assinatura_mostra_formulario(cfg):
     index = (build_site(cfg, now=NOW) / "index.html").read_text(encoding="utf-8")
     assert 'action="https://assinar.exemplo.com"' in index
     assert 'type="email"' in index and 'name="email"' in index
-    # e o botão do topo passa a apontar para a assinatura
-    assert "Assinar por RSS" not in index
+    assert 'class="subscribe' in index
 
 
 def test_campo_do_formulario_e_configuravel(cfg):
