@@ -5,6 +5,7 @@
     python -m newsletter validate       # checa se todos os feeds respondem
     python -m newsletter sources        # lista as fontes cadastradas
     python -m newsletter index          # regera issues/README.md
+    python -m newsletter site           # gera o site estático em site/
 """
 
 from __future__ import annotations
@@ -20,6 +21,7 @@ from newsletter.curate import curate, group_by_category
 from newsletter.deliver import send
 from newsletter.fetch import fetch_all, fetch_source
 from newsletter.render import render_issue, write_index
+from newsletter.site import build_site
 from newsletter.state import State
 
 log = logging.getLogger("newsletter")
@@ -81,6 +83,9 @@ def cmd_build(args: argparse.Namespace) -> int:
     if removed:
         log.debug("%d fingerprints antigos removidos do estado", removed)
 
+    if not args.no_site:
+        build_site(cfg)
+
     if args.no_send:
         log.info("envio ignorado (--no-send)")
     else:
@@ -90,6 +95,13 @@ def cmd_build(args: argparse.Namespace) -> int:
     _github_output("published", "true")
     _github_output("items", str(result.total))
     _github_output("slug", result.slug)
+    return 0
+
+
+def cmd_site(_: argparse.Namespace) -> int:
+    cfg = load_config()
+    out = build_site(cfg)
+    print(f"site gerado em {out}")
     return 0
 
 
@@ -140,6 +152,7 @@ def build_parser() -> argparse.ArgumentParser:
     build = sub.add_parser("build", help="gera (e opcionalmente envia) uma edição")
     build.add_argument("--dry-run", action="store_true", help="imprime a edição sem gravar nem enviar")
     build.add_argument("--no-send", action="store_true", help="grava a edição mas não envia e-mail")
+    build.add_argument("--no-site", action="store_true", help="não regera o site estático")
     build.add_argument("--ignore-state", action="store_true", help="não filtra itens de edições anteriores")
     build.add_argument("--allow-empty", action="store_true", help="gera edição mesmo sem itens novos")
     build.add_argument("--window-days", type=int, help="sobrescreve collect.window_days")
@@ -155,6 +168,9 @@ def build_parser() -> argparse.ArgumentParser:
 
     index = sub.add_parser("index", help="regera issues/README.md")
     index.set_defaults(func=cmd_index)
+
+    site = sub.add_parser("site", help="gera o site estático em site/")
+    site.set_defaults(func=cmd_site)
 
     return parser
 

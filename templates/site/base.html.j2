@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="{{ newsletter.language | default('pt-BR') }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ newsletter.name }}{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ newsletter.tagline }}{% endblock %}">
+<link rel="stylesheet" href="{{ depth }}style.css">
+<link rel="alternate" type="application/rss+xml" title="{{ newsletter.name }}" href="{{ depth }}feed.xml">
+<meta property="og:site_name" content="{{ newsletter.name }}">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.description() }}">
+<meta property="og:type" content="website">
+{% if site.base_url %}
+<meta property="og:url" content="{{ site.base_url }}/{% block canonical %}{% endblock %}">
+{% endif %}
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="masthead__name" href="{{ depth }}index.html">{{ newsletter.name }}</a>
+    <p class="masthead__tagline">{{ newsletter.tagline }}</p>
+    <div class="masthead__meta">
+      <span>{{ issues | length }} {{ 'edições' if issues | length != 1 else 'edição' }}</span>
+      <a href="{{ depth }}feed.xml">RSS</a>
+      {% if site.repo_url %}<a href="{{ site.repo_url }}">Código</a>{% endif %}
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+{% block content %}{% endblock %}
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>{{ newsletter.name }} · edição gerada automaticamente a partir de feeds RSS.</p>
+    <p>Atualizado em {{ generated_at }}{% if site.repo_url %} · <a href="{{ site.repo_url }}">ver o pipeline</a>{% endif %}</p>
+  </div>
+</footer>
+
+</body>
+</html>

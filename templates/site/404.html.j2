@@ -1,0 +1,11 @@
+{% extends "site/base.html.j2" %}
+
+{% block title %}Página não encontrada — {{ newsletter.name }}{% endblock %}
+
+{% block content %}
+<div class="empty">
+  <p class="empty__title">Essa página não existe</p>
+  <p>Talvez a edição que você procura ainda não saiu.</p>
+  <p style="margin-top:1.5rem"><a class="button" href="{{ depth }}index.html">Ir para a última edição</a></p>
+</div>
+{% endblock %}

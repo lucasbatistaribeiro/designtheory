@@ -10,6 +10,9 @@ venv/
 .env
 .env.local
 
+# Site estático (gerado no CI)
+/site/
+
 # Saídas locais de teste
 issues/_preview*
 data/state.local.json
@@ -19,3 +22,6 @@ data/state.local.json
 Thumbs.db
 .vscode/
 .idea/
+
+# Config local do editor
+/.claude/

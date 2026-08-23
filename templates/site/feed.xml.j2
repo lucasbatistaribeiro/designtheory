@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ newsletter.name }}</title>
+    <link>{{ site.base_url }}/</link>
+    <description>{{ newsletter.tagline }}</description>
+    <language>{{ newsletter.language | default('pt-BR') }}</language>
+    <lastBuildDate>{{ build_date }}</lastBuildDate>
+    <atom:link href="{{ site.base_url }}/feed.xml" rel="self" type="application/rss+xml"/>
+{% for issue in issues %}
+    <item>
+      <title>{{ newsletter.name }} — {{ issue.date_label }}</title>
+      <link>{{ site.base_url }}/{{ issue.path }}</link>
+      <guid isPermaLink="false">{{ newsletter.name | replace(' ', '-') | lower }}-{{ issue.slug }}</guid>
+      <pubDate>{{ pub_dates[issue.slug] }}</pubDate>
+      <description>{{ issue.total }} itens em {{ issue.categories | join(', ') }}.</description>
+    </item>
+{% endfor %}
+  </channel>
+</rss>

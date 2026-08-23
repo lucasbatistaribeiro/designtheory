@@ -8,10 +8,10 @@ e-mail para a lista.
 ## Como funciona
 
 ```
-sources.yml  ──▶  fetch  ──▶  curadoria  ──▶  render  ──▶  issues/*.md + *.html
- (16 feeds)      (RSS)     janela de 7 dias    Jinja2      ──▶  e-mail (opcional)
-                           blocklist
-                           dedup vs data/state.json
+sources.yml  ──▶  fetch  ──▶  curadoria  ──▶  render  ──▶  issues/*.md + *.html + *.json
+ (16 feeds)      (RSS)     janela de 7 dias    Jinja2      │
+                           blocklist                       ├─▶  e-mail (opcional)
+                           dedup vs data/state.json        └─▶  site/ ──▶ GitHub Pages
                            score por palavra-chave
                            limite por fonte / por edição
 ```
@@ -21,10 +21,12 @@ sources.yml  ──▶  fetch  ──▶  curadoria  ──▶  render  ──�
 | [`sources.yml`](sources.yml) | lista de feeds, categoria e peso de cada um |
 | [`config.yml`](config.yml) | janela de coleta, limites, palavras-chave, blocklist, envio |
 | [`newsletter/`](newsletter/) | o pipeline em Python |
-| [`templates/`](templates/) | templates Jinja2 do Markdown e do HTML do e-mail |
+| [`templates/`](templates/) | templates Jinja2 da edição (Markdown, e-mail) e do site |
+| [`web/style.css`](web/style.css) | folha de estilo do site, sem dependências externas |
 | [`issues/`](issues/) | edições publicadas (`.md` para ler no GitHub, `.html` para o e-mail, `.json` de metadados) |
 | [`data/state.json`](data/) | o que já foi enviado, para não repetir item entre edições |
 | [`.github/workflows/newsletter.yml`](.github/workflows/newsletter.yml) | o cron semanal |
+| [`.github/workflows/pages.yml`](.github/workflows/pages.yml) | build e deploy do site no GitHub Pages |
 
 ## Rodando localmente
 
@@ -47,11 +49,13 @@ python -m newsletter validate
 | `python -m newsletter build` | gera a edição, grava em `issues/` e envia (se configurado) |
 | `python -m newsletter build --dry-run` | imprime a edição no terminal, sem gravar nem enviar |
 | `python -m newsletter build --no-send` | grava a edição mas não envia e-mail |
+| `python -m newsletter build --no-site` | não regera o site |
 | `python -m newsletter build --ignore-state` | ignora o histórico e reconsidera itens já enviados |
 | `python -m newsletter build --window-days 14` | amplia a janela de coleta |
 | `python -m newsletter validate` | testa se todos os feeds respondem |
 | `python -m newsletter sources` | lista as fontes cadastradas |
 | `python -m newsletter index` | regera `issues/README.md` |
+| `python -m newsletter site` | gera o site estático em `site/` |
 
 Testes: `pytest`
 
@@ -115,6 +119,42 @@ começo — a partir de algumas dezenas de assinantes vale trocar o passo de env
 por uma audiência gerenciada no provedor (Resend Audiences, Buttondown, Listmonk),
 já com opt-in e descadastro.
 
+## Site (GitHub Pages)
+
+Cada edição também vira página web. `python -m newsletter site` lê os `issues/*.json`
+e gera em `site/`:
+
+```
+site/
+├── index.html              última edição inteira + arquivo das anteriores
+├── edicoes/2026-08-23.html uma página por edição, com navegação anterior/seguinte
+├── feed.xml                RSS das edições (para quem prefere leitor a e-mail)
+├── 404.html
+└── style.css
+```
+
+O `build` já regera o site junto (use `--no-site` para pular). Para ver localmente:
+
+```bash
+python -m newsletter site && python -m http.server 8765 --directory site
+```
+
+O deploy é o [`pages.yml`](.github/workflows/pages.yml): roda a cada push que toque
+o gerador, os templates, o CSS ou as edições, e também logo depois da newsletter
+semanal terminar — via `workflow_run`, porque push feito pelo `GITHUB_TOKEN` não
+dispara outro workflow por conta própria.
+
+Para ligar: **Settings → Pages → Source: GitHub Actions**. Depois ajuste
+`site.base_url` no `config.yml` (usado no `feed.xml` e nas meta tags Open Graph) e,
+se quiser o bloco "Assine" na home, preencha `site.subscribe_url`.
+
+> **Pages em repositório privado exige GitHub Pro/Team.** Na conta Free, o site só
+> publica com o repositório público — `gh repo edit --visibility public`.
+
+O visual está todo em [`web/style.css`](web/style.css): tipografia serifada nos
+títulos, modo claro e escuro por `prefers-color-scheme`, zero dependência externa
+(nenhuma fonte ou script de CDN).
+
 ## Agendamento
 
 `.github/workflows/newsletter.yml` roda `0 12 * * 1` — segunda-feira, 12:00 UTC
@@ -133,3 +173,5 @@ precisa de `contents: write` — já declarado no arquivo.
   editorial, é um passo a mais entre a curadoria e o render.
 - Feeds mudam de endereço sem avisar. Rode `validate` de vez em quando; as falhas
   de coleta também aparecem no fim de cada edição.
+- O site não tem busca nem paginação. Com dezenas de edições no arquivo vale
+  paginar o `index.html` ou adicionar um índice por fonte.

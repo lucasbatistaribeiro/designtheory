@@ -1,0 +1,27 @@
+{% macro item(a, n) %}
+<article class="item">
+  <div class="item__num">{{ "%02d" | format(n) }}</div>
+  <div>
+    <h3 class="item__title"><a href="{{ a.url }}" rel="noopener">{{ a.title }}</a></h3>
+    <div class="item__meta">
+      <span class="item__source">{{ a.source_name }}</span>
+      {% if a.published_label %}<span>{{ a.published_label }}</span>{% endif %}
+      {% if a.author %}<span>· {{ a.author }}</span>{% endif %}
+    </div>
+    {% if a.summary %}<p class="item__summary">{{ a.summary }}</p>{% endif %}
+  </div>
+</article>
+{% endmacro %}
+
+
+{% macro groups(issue) %}
+{% for category, items in issue.groups.items() %}
+<section class="section">
+  <div class="section__head">
+    <span class="label">{{ category }}</span>
+    <span class="section__count">{{ items | length }}</span>
+  </div>
+  {% for a in items %}{{ item(a, loop.index) }}{% endfor %}
+</section>
+{% endfor %}
+{% endmacro %}

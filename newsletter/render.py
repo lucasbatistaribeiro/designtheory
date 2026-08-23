@@ -67,7 +67,12 @@ def _article_view(article: Article, tz: ZoneInfo) -> dict:
 def build_env(root: Path) -> Environment:
     return Environment(
         loader=FileSystemLoader(str(root / "templates")),
-        autoescape=select_autoescape(["html", "xml"], default_for_string=False),
+        # Os templates terminam em .html.j2 / .xml.j2; sem as variantes com .j2
+        # o select_autoescape não reconhece a extensão e nada é escapado.
+        autoescape=select_autoescape(
+            enabled_extensions=("html", "xml", "html.j2", "xml.j2"),
+            default_for_string=False,
+        ),
         undefined=StrictUndefined,
         trim_blocks=True,
         lstrip_blocks=True,

@@ -1,0 +1,36 @@
+{% extends "site/base.html.j2" %}
+{% import "site/_macros.html.j2" as m %}
+
+{% block title %}{{ issue.date_label }} — {{ newsletter.name }}{% endblock %}
+{% block description %}Edição de {{ issue.date_label }}: {{ issue.total }} itens em {{ issue.categories | join(', ') }}.{% endblock %}
+{% block canonical %}{{ issue.path }}{% endblock %}
+
+{% block content %}
+
+<div class="issue-head">
+  <span class="label">Edição</span>
+  <h1 class="issue-head__date">{{ issue.date_label }}</h1>
+  <p class="issue-head__stats">
+    {{ issue.total }} {{ 'itens' if issue.total != 1 else 'item' }} em
+    {{ issue.categories | length }} {{ 'categorias' if issue.categories | length != 1 else 'categoria' }}
+  </p>
+</div>
+
+{{ m.groups(issue) }}
+
+<nav class="issue-nav">
+  {% if older %}
+  <a href="{{ older.slug }}.html">
+    <span class="issue-nav__dir">Edição anterior</span>
+    {{ older.date_label }}
+  </a>
+  {% endif %}
+  {% if newer %}
+  <a class="issue-nav__right" href="{{ newer.slug }}.html">
+    <span class="issue-nav__dir">Edição seguinte</span>
+    {{ newer.date_label }}
+  </a>
+  {% endif %}
+</nav>
+
+{% endblock %}

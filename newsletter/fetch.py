@@ -18,10 +18,27 @@ log = logging.getLogger(__name__)
 _TAG_RE = re.compile(r"<[^>]+>")
 _WS_RE = re.compile(r"\s+")
 
+# Rodapés que os feeds grudam no fim do resumo e não dizem nada ao leitor.
+_BOILERPLATE = [
+    re.compile(r"\s*The post .{0,200}? appeared first on .{0,80}?\s*\.?\s*$", re.IGNORECASE),
+    re.compile(r"\s*Continue reading on .{0,80}?\s*»?\s*$", re.IGNORECASE),
+    re.compile(r"\s*(Read|Leia) (more|mais)( on| em| at)?[: ].{0,80}?\s*$", re.IGNORECASE),
+    re.compile(r"\s*(Keep reading|Continue lendo).{0,80}?$", re.IGNORECASE),
+    re.compile(r"\s*\[…\]\s*$"),
+]
 
-def clean_text(value: str, limit: int | None = None) -> str:
+
+def strip_boilerplate(text: str) -> str:
+    for pattern in _BOILERPLATE:
+        text = pattern.sub("", text)
+    return text.strip(" .·—-").strip()
+
+
+def clean_text(value: str, limit: int | None = None, drop_boilerplate: bool = False) -> str:
     text = html.unescape(_TAG_RE.sub(" ", value or ""))
     text = _WS_RE.sub(" ", text).strip()
+    if drop_boilerplate:
+        text = strip_boilerplate(text)
     if limit and len(text) > limit:
         cut = text[:limit].rsplit(" ", 1)[0]
         text = f"{cut}…"
@@ -42,10 +59,10 @@ def _entry_datetime(entry) -> datetime | None:
 def _entry_summary(entry, limit: int) -> str:
     for key in ("summary", "description"):
         if entry.get(key):
-            return clean_text(entry[key], limit)
+            return clean_text(entry[key], limit, drop_boilerplate=True)
     content = entry.get("content") or []
     if content and isinstance(content, list):
-        return clean_text(content[0].get("value", ""), limit)
+        return clean_text(content[0].get("value", ""), limit, drop_boilerplate=True)
     return ""
 
 

@@ -63,6 +63,16 @@ output:
   # Atualiza issues/README.md com o índice das edições
   write_index: true
 
+# Site estático publicado no GitHub Pages
+site:
+  # Preenchido pelo workflow do Pages; ajuste se usar domínio próprio
+  base_url: "https://lucasbatistaribeiro.github.io/designtheory"
+  output_dir: "site"
+  repo_url: "https://github.com/lucasbatistaribeiro/designtheory"
+  # URL do formulário de assinatura (Resend, Buttondown, Tally...).
+  # Vazio esconde o bloco "Assine" do site.
+  subscribe_url: ""
+
 # Envio por e-mail (opcional — só roda se as variáveis existirem)
 delivery:
   enabled: true

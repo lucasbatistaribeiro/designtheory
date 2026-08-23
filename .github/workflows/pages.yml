@@ -1,0 +1,66 @@
+name: GitHub Pages
+
+on:
+  # Mudou o gerador, os templates, o CSS ou as edições -> republica
+  push:
+    branches: [main]
+    paths:
+      - "issues/**"
+      - "newsletter/**"
+      - "templates/**"
+      - "web/**"
+      - "config.yml"
+      - ".github/workflows/pages.yml"
+  # Depois que a newsletter semanal commita a edição nova
+  workflow_run:
+    workflows: ["Newsletter semanal"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    # No caso do workflow_run, só publica se a newsletter terminou bem
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      # ref explícito: no workflow_run o SHA do evento é anterior ao commit
+      # da edição, e sem isso o site sairia sem a edição nova
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Gerar site
+        run: python -m newsletter --verbose site
+
+      - uses: actions/configure-pages@v6
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v5
