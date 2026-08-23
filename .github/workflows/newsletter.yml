@@ -52,11 +52,11 @@ jobs:
           NEWSLETTER_FROM: ${{ secrets.NEWSLETTER_FROM }}
           NEWSLETTER_RECIPIENTS: ${{ secrets.NEWSLETTER_RECIPIENTS }}
         run: |
-          ARGS="build --verbose"
+          ARGS="build"
           if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
           if [ "${{ inputs.no_send }}" = "true" ]; then ARGS="$ARGS --no-send"; fi
           if [ -n "${{ inputs.window_days }}" ]; then ARGS="$ARGS --window-days ${{ inputs.window_days }}"; fi
-          python -m newsletter $ARGS
+          python -m newsletter --verbose $ARGS
 
       - name: Publicar edição no repositório
         if: steps.build.outputs.published == 'true'
