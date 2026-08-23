@@ -5,49 +5,45 @@
 
 {% block content %}
 
+{{ m.subscribe(site, depth, hero=true) }}
+
 {% if latest %}
 <div class="issue-head">
-  <span class="label">Última edição</span>
-  <h1 class="issue-head__date">{{ latest.date_label }}</h1>
+  <span class="issue-head__kicker">Última edição</span>
+  <h1 class="issue-head__title">{{ latest.date_label }}</h1>
   <p class="issue-head__stats">
     {{ latest.total }} {{ 'itens' if latest.total != 1 else 'item' }} em
     {{ latest.categories | length }} {{ 'categorias' if latest.categories | length != 1 else 'categoria' }}
   </p>
 </div>
 
+<hr class="divider">
+
 {{ m.groups(latest) }}
+
+{% if recent %}
+<hr class="divider">
+
+<section class="section">
+  <div class="section__head">
+    <h2 class="section__title">Edições anteriores</h2>
+    <span class="section__rule"></span>
+  </div>
+  {% for issue in recent %}{{ m.entry(issue) }}{% endfor %}
+  {% if has_more %}
+  <p style="margin:1.5rem 0 0;text-align:center">
+    <a class="btn btn--ghost" href="arquivo.html">Ver todas as edições</a>
+  </p>
+  {% endif %}
+</section>
+{% endif %}
+
 {% else %}
 <div class="empty">
   <p class="empty__title">Nenhuma edição ainda</p>
-  <p>A primeira sai na próxima segunda-feira.</p>
+  <p class="empty__text">A primeira sai na próxima segunda-feira.</p>
+  <a class="btn btn--ghost" href="fontes.html">Ver as fontes acompanhadas</a>
 </div>
-{% endif %}
-
-{% if site.subscribe_url %}
-<div class="subscribe">
-  <span class="label">Assine</span>
-  <h2 class="subscribe__title">Receba por e-mail, toda segunda</h2>
-  <p class="subscribe__text">Uma edição por semana. Sem promoção, sem newsletter sobre newsletter.</p>
-  <a class="button" href="{{ site.subscribe_url }}">Quero assinar</a>
-</div>
-{% endif %}
-
-{% if archive %}
-<section class="section">
-  <div class="section__head">
-    <span class="label">Arquivo</span>
-    <span class="section__count">{{ archive | length }}</span>
-  </div>
-  {% for issue in archive %}
-  <a class="archive-item" href="{{ issue.path }}">
-    <span class="archive-item__row">
-      <span class="archive-item__date">{{ issue.date_label }}</span>
-      <span class="archive-item__count">{{ issue.total }} {{ 'itens' if issue.total != 1 else 'item' }}</span>
-    </span>
-    <span class="archive-item__cats">{{ issue.categories | join(' · ') }}</span>
-  </a>
-  {% endfor %}
-</section>
 {% endif %}
 
 {% endblock %}

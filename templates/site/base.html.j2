@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% block title %}{{ newsletter.name }}{% endblock %}</title>
 <meta name="description" content="{% block description %}{{ newsletter.tagline }}{% endblock %}">
+<meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="{{ depth }}style.css">
 <link rel="alternate" type="application/rss+xml" title="{{ newsletter.name }}" href="{{ depth }}feed.xml">
 <meta property="og:site_name" content="{{ newsletter.name }}">
@@ -14,20 +15,54 @@
 {% if site.base_url %}
 <meta property="og:url" content="{{ site.base_url }}/{% block canonical %}{% endblock %}">
 {% endif %}
+<meta name="twitter:card" content="summary">
+{# sem defer: precisa aplicar o tema antes da primeira pintura #}
+<script src="{{ depth }}theme.js"></script>
 </head>
 <body>
 
-<header class="masthead">
-  <div class="wrap">
-    <a class="masthead__name" href="{{ depth }}index.html">{{ newsletter.name }}</a>
-    <p class="masthead__tagline">{{ newsletter.tagline }}</p>
-    <div class="masthead__meta">
-      <span>{{ issues | length }} {{ 'edições' if issues | length != 1 else 'edição' }}</span>
-      <a href="{{ depth }}feed.xml">RSS</a>
-      {% if site.repo_url %}<a href="{{ site.repo_url }}">Código</a>{% endif %}
+{% macro theme_button() %}
+<button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Alternar entre tema claro e escuro">
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+  </svg>
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <circle cx="12" cy="12" r="4"/>
+    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+  </svg>
+</button>
+{% endmacro %}
+
+<div class="topbar">
+  <div class="topbar__inner">
+    <a class="topbar__name" href="{{ depth }}index.html">{{ newsletter.name }}</a>
+    <div class="topbar__actions">
+      {{ theme_button() }}
+      {% if site.subscribe_url %}
+      <a class="btn btn--primary btn--sm" href="{{ site.subscribe_url }}">Assinar</a>
+      {% else %}
+      <a class="btn btn--ghost btn--sm" href="{{ depth }}feed.xml">RSS</a>
+      {% endif %}
     </div>
   </div>
+</div>
+
+{% block header %}
+<header class="masthead">
+  <div class="wrap wrap--wide">
+    <a class="masthead__name" href="{{ depth }}index.html">{{ newsletter.name }}</a>
+    <p class="masthead__tagline">{{ newsletter.tagline }}</p>
+  </div>
+  <nav class="wrap wrap--wide">
+    <div class="nav">
+      <a href="{{ depth }}index.html"{% if page == 'index' %} aria-current="page"{% endif %}>Início</a>
+      <a href="{{ depth }}arquivo.html"{% if page == 'arquivo' %} aria-current="page"{% endif %}>Arquivo</a>
+      <a href="{{ depth }}fontes.html"{% if page == 'fontes' %} aria-current="page"{% endif %}>Fontes</a>
+      <a href="{{ depth }}feed.xml">RSS</a>
+    </div>
+  </nav>
 </header>
+{% endblock %}
 
 <main class="wrap">
 {% block content %}{% endblock %}
@@ -35,8 +70,15 @@
 
 <footer class="footer">
   <div class="wrap">
-    <p>{{ newsletter.name }} · edição gerada automaticamente a partir de feeds RSS.</p>
-    <p>Atualizado em {{ generated_at }}{% if site.repo_url %} · <a href="{{ site.repo_url }}">ver o pipeline</a>{% endif %}</p>
+    <div class="footer__links">
+      <a href="{{ depth }}index.html">Início</a>
+      <a href="{{ depth }}arquivo.html">Arquivo</a>
+      <a href="{{ depth }}fontes.html">Fontes</a>
+      <a href="{{ depth }}feed.xml">RSS</a>
+      {% if site.repo_url %}<a href="{{ site.repo_url }}">Código</a>{% endif %}
+    </div>
+    <p>{{ newsletter.name }} — {{ issues | length }} {{ 'edições' if issues | length != 1 else 'edição' }} publicadas.</p>
+    <p>Edição montada automaticamente a partir de feeds RSS. Atualizado em {{ generated_at }}.</p>
   </div>
 </footer>
 

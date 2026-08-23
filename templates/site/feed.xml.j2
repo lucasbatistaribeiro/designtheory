@@ -13,7 +13,7 @@
       <link>{{ site.base_url }}/{{ issue.path }}</link>
       <guid isPermaLink="false">{{ newsletter.name | replace(' ', '-') | lower }}-{{ issue.slug }}</guid>
       <pubDate>{{ pub_dates[issue.slug] }}</pubDate>
-      <description>{{ issue.total }} itens em {{ issue.categories | join(', ') }}.</description>
+      <description>{{ issue.headline }}</description>
     </item>
 {% endfor %}
   </channel>

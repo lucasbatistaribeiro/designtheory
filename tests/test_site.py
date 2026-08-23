@@ -83,16 +83,19 @@ def test_build_site_gera_todas_as_paginas(cfg):
 
 
 def test_index_mostra_ultima_edicao_e_arquivo(cfg):
-    write_issue(cfg, "2026-08-16")
-    write_issue(cfg, "2026-08-23")
+    write_issue(cfg, "2026-08-16", total=3)
+    write_issue(cfg, "2026-08-23", total=3)
     out = build_site(cfg, now=NOW)
     index = (out / "index.html").read_text(encoding="utf-8")
 
     assert "23 de agosto de 2026" in index
-    assert "Artigo 0 de 2026-08-23" in index
-    # a edição antiga aparece só como link no arquivo, não com os itens
+    # a última edição vem inteira
+    for i in range(3):
+        assert f"Artigo {i} de 2026-08-23" in index
+    # a anterior aparece resumida: só o destaque, com link para a página dela
     assert "edicoes/2026-08-16.html" in index
-    assert "Artigo 0 de 2026-08-16" not in index
+    assert "Artigo 0 de 2026-08-16" in index
+    assert "Artigo 1 de 2026-08-16" not in index
 
 
 def test_paginas_de_edicao_navegam_entre_si(cfg):
@@ -103,10 +106,10 @@ def test_paginas_de_edicao_navegam_entre_si(cfg):
     recente = (out / "edicoes" / "2026-08-23.html").read_text(encoding="utf-8")
     antiga = (out / "edicoes" / "2026-08-16.html").read_text(encoding="utf-8")
 
-    assert "2026-08-16.html" in recente and "Edição anterior" in recente
-    assert "2026-08-23.html" in antiga and "Edição seguinte" in antiga
+    assert "2026-08-16.html" in recente and "Anterior" in recente
+    assert "2026-08-23.html" in antiga and "Seguinte" in antiga
     # a mais antiga não tem link para anterior
-    assert "Edição anterior" not in antiga
+    assert "Anterior" not in antiga
 
 
 def test_paginas_internas_referenciam_css_com_caminho_relativo(cfg):
@@ -141,14 +144,85 @@ def test_build_site_limpa_saida_antiga(cfg):
     assert not (out / "edicoes" / "2026-08-16.html").exists()
 
 
-def test_bloco_assine_aparece_so_com_url(cfg):
+def test_sem_url_de_assinatura_cai_no_rss(cfg):
     write_issue(cfg, "2026-08-23")
     cfg.raw["site"]["subscribe_url"] = ""
-    assert "Quero assinar" not in (build_site(cfg, now=NOW) / "index.html").read_text(encoding="utf-8")
+    index = (build_site(cfg, now=NOW) / "index.html").read_text(encoding="utf-8")
+    assert "Assinar por RSS" in index
+    assert "<form" not in index
 
+
+def test_com_url_de_assinatura_mostra_formulario(cfg):
+    write_issue(cfg, "2026-08-23")
     cfg.raw["site"]["subscribe_url"] = "https://assinar.exemplo.com"
     index = (build_site(cfg, now=NOW) / "index.html").read_text(encoding="utf-8")
-    assert "Quero assinar" in index and "https://assinar.exemplo.com" in index
+    assert 'action="https://assinar.exemplo.com"' in index
+    assert 'type="email"' in index and 'name="email"' in index
+    # e o botão do topo passa a apontar para a assinatura
+    assert "Assinar por RSS" not in index
+
+
+def test_campo_do_formulario_e_configuravel(cfg):
+    write_issue(cfg, "2026-08-23")
+    cfg.raw["site"]["subscribe_url"] = "https://assinar.exemplo.com"
+    cfg.raw["site"]["subscribe_field"] = "EMAIL"
+    index = (build_site(cfg, now=NOW) / "index.html").read_text(encoding="utf-8")
+    assert 'name="EMAIL"' in index
+
+
+def test_paginas_de_arquivo_e_fontes(cfg):
+    write_issue(cfg, "2026-08-16")
+    write_issue(cfg, "2026-08-23")
+    out = build_site(cfg, now=NOW)
+
+    arquivo = (out / "arquivo.html").read_text(encoding="utf-8")
+    assert "Todas as edições" in arquivo
+    assert "edicoes/2026-08-23.html" in arquivo and "edicoes/2026-08-16.html" in arquivo
+
+    fontes = (out / "fontes.html").read_text(encoding="utf-8")
+    # toda fonte cadastrada aparece, com a URL do feed
+    for source in cfg.sources:
+        assert source.name in fontes
+        assert source.url in fontes
+
+
+def test_theme_js_e_copiado_e_carregado_sem_defer(cfg):
+    write_issue(cfg, "2026-08-23")
+    out = build_site(cfg, now=NOW)
+
+    assert (out / "theme.js").exists()
+    index = (out / "index.html").read_text(encoding="utf-8")
+    # sem defer/async: o tema precisa ser aplicado antes da primeira pintura
+    assert '<script src="theme.js"></script>' in index
+    assert (out / "edicoes" / "2026-08-23.html").read_text(encoding="utf-8").count('"../theme.js"') == 1
+
+
+def test_botao_de_tema_em_todas_as_paginas(cfg):
+    write_issue(cfg, "2026-08-23")
+    out = build_site(cfg, now=NOW)
+    paginas = ["index.html", "arquivo.html", "fontes.html", "404.html", "edicoes/2026-08-23.html"]
+    for nome in paginas:
+        html = (out / nome).read_text(encoding="utf-8")
+        assert "data-theme-toggle" in html, nome
+        assert "icon-sun" in html and "icon-moon" in html, nome
+
+
+def test_css_cobre_os_tres_estados_de_tema(cfg):
+    """Sistema, escolha explícita clara e escolha explícita escura."""
+    write_issue(cfg, "2026-08-23")
+    css = (build_site(cfg, now=NOW) / "style.css").read_text(encoding="utf-8")
+    assert "@media (prefers-color-scheme: dark)" in css
+    assert ':root:not([data-theme="light"])' in css
+    assert ':root[data-theme="dark"]' in css
+
+
+def test_nav_marca_a_pagina_atual(cfg):
+    write_issue(cfg, "2026-08-23")
+    out = build_site(cfg, now=NOW)
+    index = (out / "index.html").read_text(encoding="utf-8")
+    arquivo = (out / "arquivo.html").read_text(encoding="utf-8")
+    assert 'href="index.html" aria-current="page"' in index
+    assert 'href="arquivo.html" aria-current="page"' in arquivo
 
 
 def test_titulo_com_html_e_escapado(cfg):
@@ -160,6 +234,18 @@ def test_titulo_com_html_e_escapado(cfg):
     index = (build_site(cfg, now=NOW) / "index.html").read_text(encoding="utf-8")
     assert "<script>alert(1)</script>" not in index
     assert "&lt;script&gt;" in index
+
+
+def test_headline_usa_o_destaque_e_conta_o_resto(cfg):
+    write_issue(cfg, "2026-08-23", total=3)
+    issue = load_issues(cfg)[0]
+    assert issue.headline == "Artigo 0 de 2026-08-23 e mais 2 links"
+    assert issue.excerpt == "Um resumo curto."
+
+
+def test_headline_com_um_item_nao_diz_e_mais(cfg):
+    write_issue(cfg, "2026-08-23", total=1)
+    assert load_issues(cfg)[0].headline == "Artigo 0 de 2026-08-23"
 
 
 @pytest.mark.parametrize(

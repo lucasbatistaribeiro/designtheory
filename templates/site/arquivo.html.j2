@@ -1,0 +1,34 @@
+{% extends "site/base.html.j2" %}
+{% import "site/_macros.html.j2" as m %}
+
+{% block title %}Arquivo — {{ newsletter.name }}{% endblock %}
+{% block description %}Todas as {{ issues | length }} edições da {{ newsletter.name }}.{% endblock %}
+{% block canonical %}arquivo.html{% endblock %}
+
+{% block content %}
+
+<div class="issue-head">
+  <span class="issue-head__kicker">Arquivo</span>
+  <h1 class="issue-head__title">Todas as edições</h1>
+  <p class="issue-head__stats">
+    {{ issues | length }} {{ 'edições' if issues | length != 1 else 'edição' }} ·
+    {{ issues | sum(attribute='total') }} links no total
+  </p>
+</div>
+
+<hr class="divider">
+
+{% if issues %}
+<section class="section">
+  {% for issue in issues %}{{ m.entry(issue) }}{% endfor %}
+</section>
+{% else %}
+<div class="empty">
+  <p class="empty__title">Arquivo vazio</p>
+  <p class="empty__text">A primeira edição sai na próxima segunda-feira.</p>
+</div>
+{% endif %}
+
+{{ m.subscribe(site, depth) }}
+
+{% endblock %}

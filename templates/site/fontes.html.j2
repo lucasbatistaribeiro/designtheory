@@ -1,0 +1,53 @@
+{% extends "site/base.html.j2" %}
+{% import "site/_macros.html.j2" as m %}
+
+{% block title %}Fontes — {{ newsletter.name }}{% endblock %}
+{% block description %}As {{ sources_active }} publicações acompanhadas pela {{ newsletter.name }} e como a curadoria funciona.{% endblock %}
+{% block canonical %}fontes.html{% endblock %}
+
+{% block content %}
+
+<div class="issue-head">
+  <span class="issue-head__kicker">Fontes</span>
+  <h1 class="issue-head__title">O que a gente lê</h1>
+  <p class="issue-head__stats">
+    {{ sources_active }} {{ 'publicações ativas' if sources_active != 1 else 'publicação ativa' }}
+    de {{ sources_total }} cadastradas
+  </p>
+</div>
+
+<hr class="divider">
+
+<p class="prose">
+  Toda segunda-feira o robô lê o feed de cada publicação abaixo, junta o que saiu
+  nos últimos {{ window_days }} dias e monta a edição. Itens repetidos entre fontes
+  entram uma vez só; conteúdo patrocinado e promoção são descartados; cada fonte
+  entra com no máximo {{ max_per_source }} {{ 'itens' if max_per_source != 1 else 'item' }}
+  para nenhuma dominar a edição.
+</p>
+
+{% for category, items in sources_by_category.items() %}
+<section class="source-group">
+  <div class="section__head">
+    <h2 class="section__title">{{ category }}</h2>
+    <span class="section__rule"></span>
+    <span class="section__count">{{ items | length }}</span>
+  </div>
+  {% for source in items %}
+  <div class="source-row{% if not source.enabled %} source-row--off{% endif %}">
+    <a class="source-row__name" href="{{ source.url }}" rel="noopener">{{ source.name }}</a>
+    <span class="source-row__weight">{% if source.enabled %}peso {{ source.weight }}{% else %}pausada{% endif %}</span>
+  </div>
+  {% endfor %}
+</section>
+{% endfor %}
+
+<p class="prose" style="font-size:0.9375rem">
+  Falta alguma publicação? A lista fica em
+  <a href="{{ site.repo_url }}/blob/main/sources.yml">sources.yml</a> — é um arquivo
+  de texto, aceita pull request.
+</p>
+
+{{ m.subscribe(site, depth) }}
+
+{% endblock %}

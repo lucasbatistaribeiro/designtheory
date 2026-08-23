@@ -10,10 +10,12 @@ from datetime import datetime, timezone
 from email.utils import format_datetime
 from pathlib import Path
 
-from newsletter.config import Config
+from newsletter.config import Config, Source
 from newsletter.render import _date_label, build_env
 
 log = logging.getLogger(__name__)
+
+EXCERPT_CHARS = 180
 
 
 @dataclass
@@ -34,9 +36,31 @@ class IssuePage:
         return list(self.groups.keys())
 
     @property
-    def highlights(self) -> list[dict]:
-        """Primeiro item de cada categoria, para a prévia no arquivo."""
-        return [items[0] for items in self.groups.values() if items]
+    def lead(self) -> dict | None:
+        """O primeiro item da primeira categoria — o mais bem pontuado da edição."""
+        for items in self.groups.values():
+            if items:
+                return items[0]
+        return None
+
+    @property
+    def headline(self) -> str:
+        """Título da edição no arquivo: o destaque + quantos links vêm com ele."""
+        lead = self.lead
+        if not lead:
+            return f"Edição de {self.date_label}"
+        rest = self.total - 1
+        if rest <= 0:
+            return lead["title"]
+        return f"{lead['title']} e mais {rest} {'links' if rest != 1 else 'link'}"
+
+    @property
+    def excerpt(self) -> str:
+        lead = self.lead
+        summary = (lead or {}).get("summary") or ""
+        if len(summary) > EXCERPT_CHARS:
+            summary = summary[:EXCERPT_CHARS].rsplit(" ", 1)[0] + "…"
+        return summary
 
 
 def load_issues(cfg: Config) -> list[IssuePage]:
@@ -69,13 +93,25 @@ def _site_settings(cfg: Config) -> dict:
     site.setdefault("base_url", "")
     site.setdefault("output_dir", "site")
     site.setdefault("subscribe_url", "")
+    # Nome do campo de e-mail esperado pelo provedor do formulário
+    site.setdefault("subscribe_field", "email")
     site.setdefault("repo_url", cfg.newsletter.get("site_url", ""))
     site["base_url"] = site["base_url"].rstrip("/")
     return site
 
 
+def _sources_by_category(sources: list[Source]) -> dict[str, list[Source]]:
+    grouped: dict[str, list[Source]] = {}
+    for source in sources:
+        grouped.setdefault(source.category, []).append(source)
+    for items in grouped.values():
+        items.sort(key=lambda s: (not s.enabled, s.name.lower()))
+    # ativas primeiro, depois por tamanho do grupo
+    return dict(sorted(grouped.items(), key=lambda kv: (-len(kv[1]), kv[0])))
+
+
 def build_site(cfg: Config, now: datetime | None = None) -> Path:
-    """Renderiza index, páginas de edição e feed.xml em site/."""
+    """Renderiza index, arquivo, fontes, páginas de edição e feed.xml em site/."""
     now = now or datetime.now(timezone.utc)
     site = _site_settings(cfg)
     out = cfg.root / site["output_dir"]
@@ -96,24 +132,50 @@ def build_site(cfg: Config, now: datetime | None = None) -> Path:
         "year": now.year,
     }
 
-    # index: última edição inteira + arquivo
+    # home: assinatura + última edição inteira + as 3 anteriores
+    recent = issues[1:4]
     (out / "index.html").write_text(
         env.get_template("site/index.html.j2").render(
             latest=issues[0] if issues else None,
-            archive=issues[1:],
+            recent=recent,
+            has_more=len(issues) > 4,
             depth="",
+            page="index",
             **common,
         ),
         encoding="utf-8",
     )
 
-    # uma página por edição, com navegação anterior/próxima
+    # arquivo completo
+    (out / "arquivo.html").write_text(
+        env.get_template("site/arquivo.html.j2").render(depth="", page="arquivo", **common),
+        encoding="utf-8",
+    )
+
+    # fontes acompanhadas + como a curadoria funciona
+    (out / "fontes.html").write_text(
+        env.get_template("site/fontes.html.j2").render(
+            sources_by_category=_sources_by_category(cfg.sources),
+            sources_active=len(cfg.enabled_sources),
+            sources_total=len(cfg.sources),
+            window_days=int(cfg.collect.get("window_days", 7)),
+            max_per_source=int(cfg.collect.get("max_per_source", 3)),
+            depth="",
+            page="fontes",
+            **common,
+        ),
+        encoding="utf-8",
+    )
+
+    # uma página por edição, com navegação anterior/seguinte
     template = env.get_template("site/issue.html.j2")
     for index, issue in enumerate(issues):
         newer = issues[index - 1] if index > 0 else None
         older = issues[index + 1] if index + 1 < len(issues) else None
         (out / "edicoes" / f"{issue.slug}.html").write_text(
-            template.render(issue=issue, newer=newer, older=older, depth="../", **common),
+            template.render(
+                issue=issue, newer=newer, older=older, depth="../", page="edicao", **common
+            ),
             encoding="utf-8",
         )
 
@@ -125,17 +187,20 @@ def build_site(cfg: Config, now: datetime | None = None) -> Path:
                 i.slug: format_datetime(datetime.fromisoformat(i.slug).replace(tzinfo=timezone.utc)) for i in issues
             },
             depth="",
+            page="feed",
             **common,
         ),
         encoding="utf-8",
     )
 
     (out / "404.html").write_text(
-        env.get_template("site/404.html.j2").render(depth="", **common), encoding="utf-8"
+        env.get_template("site/404.html.j2").render(depth="", page="404", **common),
+        encoding="utf-8",
     )
 
-    # CSS estático + desliga o Jekyll do Pages
-    shutil.copyfile(cfg.root / "web" / "style.css", out / "style.css")
+    # estáticos + desliga o Jekyll do Pages
+    for asset in ("style.css", "theme.js"):
+        shutil.copyfile(cfg.root / "web" / asset, out / asset)
     (out / ".nojekyll").write_text("", encoding="utf-8")
 
     log.info("site gerado em %s (%d edições)", out, len(issues))

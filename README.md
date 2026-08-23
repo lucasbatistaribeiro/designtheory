@@ -22,7 +22,7 @@ sources.yml  ──▶  fetch  ──▶  curadoria  ──▶  render  ──�
 | [`config.yml`](config.yml) | janela de coleta, limites, palavras-chave, blocklist, envio |
 | [`newsletter/`](newsletter/) | o pipeline em Python |
 | [`templates/`](templates/) | templates Jinja2 da edição (Markdown, e-mail) e do site |
-| [`web/style.css`](web/style.css) | folha de estilo do site, sem dependências externas |
+| [`web/`](web/) | CSS e JS do site (tema claro/escuro), sem dependências externas |
 | [`issues/`](issues/) | edições publicadas (`.md` para ler no GitHub, `.html` para o e-mail, `.json` de metadados) |
 | [`data/state.json`](data/) | o que já foi enviado, para não repetir item entre edições |
 | [`.github/workflows/newsletter.yml`](.github/workflows/newsletter.yml) | o cron semanal |
@@ -121,16 +121,22 @@ já com opt-in e descadastro.
 
 ## Site (GitHub Pages)
 
-Cada edição também vira página web. `python -m newsletter site` lê os `issues/*.json`
-e gera em `site/`:
+**No ar: https://lucasbatistaribeiro.github.io/designtheory/**
+
+Visual inspirado no Substack — wordmark serifada centralizada, laranja `#ff6719`,
+nav com borda fina, botão de assinatura em pílula, corpo em serifada. `python -m
+newsletter site` lê os `issues/*.json` e gera:
 
 ```
 site/
-├── index.html              última edição inteira + arquivo das anteriores
+├── index.html              assinatura + última edição inteira + 3 anteriores
+├── arquivo.html            todas as edições
+├── fontes.html             as 16 publicações acompanhadas e como a curadoria funciona
 ├── edicoes/2026-08-23.html uma página por edição, com navegação anterior/seguinte
-├── feed.xml                RSS das edições (para quem prefere leitor a e-mail)
+├── feed.xml                RSS das edições
 ├── 404.html
-└── style.css
+├── style.css
+└── theme.js
 ```
 
 O `build` já regera o site junto (use `--no-site` para pular). Para ver localmente:
@@ -139,21 +145,46 @@ O `build` já regera o site junto (use `--no-site` para pular). Para ver localme
 python -m newsletter site && python -m http.server 8765 --directory site
 ```
 
-O deploy é o [`pages.yml`](.github/workflows/pages.yml): roda a cada push que toque
-o gerador, os templates, o CSS ou as edições, e também logo depois da newsletter
-semanal terminar — via `workflow_run`, porque push feito pelo `GITHUB_TOKEN` não
-dispara outro workflow por conta própria.
+### Tema claro e escuro
 
-Para ligar: **Settings → Pages → Source: GitHub Actions**. Depois ajuste
-`site.base_url` no `config.yml` (usado no `feed.xml` e nas meta tags Open Graph) e,
-se quiser o bloco "Assine" na home, preencha `site.subscribe_url`.
+O botão no canto superior direito alterna entre os dois. São **três estados**: sem
+escolha o site segue o sistema operacional; escolhendo claro ou escuro, a
+preferência grava no `localStorage` e passa a vencer o sistema.
 
-> **Pages em repositório privado exige GitHub Pro/Team.** Na conta Free, o site só
-> publica com o repositório público — `gh repo edit --visibility public`.
+Isso exige que o CSS defina o escuro **duas vezes** — dentro de
+`@media (prefers-color-scheme: dark)` com a guarda `:root:not([data-theme="light"])`,
+e de novo em `:root[data-theme="dark"]`. Sem a guarda, quem está no sistema escuro
+não conseguiria escolher o tema claro. O [`theme.js`](web/theme.js) é carregado no
+`<head>` **sem `defer`** de propósito: aplica o atributo antes da primeira pintura,
+senão a página pisca no tema errado. Sem JavaScript, o site continua funcionando —
+só segue o sistema.
 
-O visual está todo em [`web/style.css`](web/style.css): tipografia serifada nos
-títulos, modo claro e escuro por `prefers-color-scheme`, zero dependência externa
-(nenhuma fonte ou script de CDN).
+Os contrastes de texto atendem WCAG AA (mínimo 4.5:1) nos dois temas.
+
+### Assinatura
+
+Com `site.subscribe_url` vazio, o site mostra "Assinar por RSS". Preenchendo a URL
+do seu provedor (Buttondown, Listmonk, Tally...), o bloco vira um formulário de
+e-mail de verdade, com `POST` para essa URL. Se o provedor espera um campo com
+outro nome, ajuste `site.subscribe_field`.
+
+### Deploy
+
+[`pages.yml`](.github/workflows/pages.yml) roda a cada push que toque o gerador, os
+templates, o CSS ou as edições, e também logo depois da newsletter semanal terminar
+— via `workflow_run`, porque push feito pelo `GITHUB_TOKEN` não dispara outro
+workflow por conta própria. Fonte configurada em **Settings → Pages → GitHub
+Actions**.
+
+Ajuste `site.base_url` no `config.yml` se trocar de domínio — é o que alimenta o
+`feed.xml` e as meta tags Open Graph.
+
+> Pages em repositório privado exige GitHub Pro/Team. Este repositório é público,
+> então funciona no plano Free.
+
+Zero dependência externa no front: nenhuma fonte de CDN, nenhum script de terceiro.
+A tipografia usa a pilha de serifadas do sistema (Charter, Georgia). Para trocar por
+uma webfont, é uma linha em `--serif` no [`web/style.css`](web/style.css).
 
 ## Agendamento
 
@@ -174,4 +205,6 @@ precisa de `contents: write` — já declarado no arquivo.
 - Feeds mudam de endereço sem avisar. Rode `validate` de vez em quando; as falhas
   de coleta também aparecem no fim de cada edição.
 - O site não tem busca nem paginação. Com dezenas de edições no arquivo vale
-  paginar o `index.html` ou adicionar um índice por fonte.
+  paginar o `arquivo.html` ou adicionar um índice por fonte.
+- O formulário de assinatura depende de um provedor externo — não há backend
+  próprio para guardar e-mails.

@@ -1,14 +1,11 @@
-{% macro item(a, n) %}
+{% macro item(a) %}
 <article class="item">
-  <div class="item__num">{{ "%02d" | format(n) }}</div>
-  <div>
-    <h3 class="item__title"><a href="{{ a.url }}" rel="noopener">{{ a.title }}</a></h3>
-    <div class="item__meta">
-      <span class="item__source">{{ a.source_name }}</span>
-      {% if a.published_label %}<span>{{ a.published_label }}</span>{% endif %}
-      {% if a.author %}<span>· {{ a.author }}</span>{% endif %}
-    </div>
-    {% if a.summary %}<p class="item__summary">{{ a.summary }}</p>{% endif %}
+  <h3 class="item__title"><a href="{{ a.url }}" rel="noopener">{{ a.title }}</a></h3>
+  {% if a.summary %}<p class="item__summary">{{ a.summary }}</p>{% endif %}
+  <div class="item__meta">
+    <span class="item__source">{{ a.source_name }}</span>
+    {% if a.published_label %}<span class="item__dot"></span><span>{{ a.published_label }}</span>{% endif %}
+    {% if a.author %}<span class="item__dot"></span><span>{{ a.author }}</span>{% endif %}
   </div>
 </article>
 {% endmacro %}
@@ -18,10 +15,41 @@
 {% for category, items in issue.groups.items() %}
 <section class="section">
   <div class="section__head">
-    <span class="label">{{ category }}</span>
+    <h2 class="section__title">{{ category }}</h2>
+    <span class="section__rule"></span>
     <span class="section__count">{{ items | length }}</span>
   </div>
-  {% for a in items %}{{ item(a, loop.index) }}{% endfor %}
+  {% for a in items %}{{ item(a) }}{% endfor %}
 </section>
 {% endfor %}
+{% endmacro %}
+
+
+{% macro subscribe(site, depth='', hero=false) %}
+<div class="subscribe{% if hero %} subscribe--hero{% endif %}">
+  <p class="subscribe__title">Uma edição por semana, na segunda</p>
+  <p class="subscribe__text">O que saiu de design em 16 publicações, filtrado e agrupado.</p>
+  {% if site.subscribe_url %}
+  <form class="subscribe__form" action="{{ site.subscribe_url }}" method="post" target="_blank">
+    <input class="subscribe__input" type="email" name="{{ site.subscribe_field }}" placeholder="seu@email.com" required aria-label="Seu e-mail">
+    <button class="btn btn--primary" type="submit">Assinar</button>
+  </form>
+  <p class="subscribe__note">Sem custo. Cancele quando quiser.</p>
+  {% else %}
+  <div class="subscribe__form">
+    <a class="btn btn--primary" href="{{ depth }}feed.xml" style="flex:1">Assinar por RSS</a>
+  </div>
+  <p class="subscribe__note">O envio por e-mail ainda não está configurado.</p>
+  {% endif %}
+</div>
+{% endmacro %}
+
+
+{% macro entry(issue, prefix='') %}
+<a class="entry" href="{{ prefix }}{{ issue.path }}">
+  <span class="entry__date">{{ issue.date_label }}</span>
+  <h3 class="entry__title">{{ issue.headline }}</h3>
+  {% if issue.excerpt %}<p class="entry__excerpt">{{ issue.excerpt }}</p>{% endif %}
+  <p class="entry__meta">{{ issue.total }} {{ 'itens' if issue.total != 1 else 'item' }} · {{ issue.categories | join(' · ') }}</p>
+</a>
 {% endmacro %}
