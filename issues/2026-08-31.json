@@ -1,0 +1,311 @@
+{
+  "date": "2026-08-31",
+  "subject": "Design Theory — edição de 31 de agosto de 2026",
+  "total": 24,
+  "groups": {
+    "Visual & Branding": [
+      {
+        "title": "The Daily Heller: Five Decades of George Hardie’s Design in London",
+        "url": "https://www.printmag.com/daily-heller/the-daily-heller-george-hardie/",
+        "meta_line": "`PRINT Magazine` · 31/08 · Steven Heller",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "A retrospective of iconic work by the English illustrator/designer will be mounted during the London Design Festival",
+        "author": "Steven Heller",
+        "score": 1.92,
+        "published": "2026-08-31T11:00:00+00:00",
+        "published_label": "31/08"
+      },
+      {
+        "title": "ONBOX Crowdsourced 100 Letters Hand-Painted at a Pop-Up for Bar Supernova’s Crafted Identity",
+        "url": "https://www.printmag.com/branding-identity-design/bar-supernova-onbox-brand-identity/",
+        "meta_line": "`PRINT Magazine` · 25/08 · Charlotte Beach",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "The new cocktail bar in Vancouver has made a splash with a uniquely developed brand identity that revolves around a modular wordmark hand-painted by customers",
+        "author": "Charlotte Beach",
+        "score": 1.575,
+        "published": "2026-08-26T01:53:03+00:00",
+        "published_label": "25/08"
+      },
+      {
+        "title": "The $3.4m Disney auction is a reminder of what AI concept art takes from us",
+        "url": "https://www.creativebloq.com/art/animation/the-usd3-4m-disney-auction-is-a-reminder-of-what-ai-concept-art-takes-from-us",
+        "meta_line": "`Creative Bloq` · 29/08 · Joe Foley",
+        "source_name": "Creative Bloq",
+        "source_category": "Visual & Branding",
+        "summary": "Spider-Man: Brand New Day's AI art will never have the same value",
+        "author": "Joe Foley",
+        "score": 1.216,
+        "published": "2026-08-29T12:08:13+00:00",
+        "published_label": "29/08"
+      },
+      {
+        "title": "The new CD Projekt Red logo just sparked the weirdest backlash graphic design has ever seen",
+        "url": "https://www.creativebloq.com/design/logos-icons/the-new-cd-projekt-red-logo-has-sparked-the-weirdest-backlash-graphic-design-has-seen",
+        "meta_line": "`Creative Bloq` · 29/08 · Joe Foley",
+        "source_name": "Creative Bloq",
+        "source_category": "Visual & Branding",
+        "summary": "This bird just got angrier – and the brand's critics fans too",
+        "author": "Joe Foley",
+        "score": 1.2,
+        "published": "2026-08-29T09:00:00+00:00",
+        "published_label": "29/08"
+      },
+      {
+        "title": "The Daily Heller: My Brush With Kusama, Revisited",
+        "url": "https://www.printmag.com/daily-heller/the-daily-heller-my-brush-with-kusama-revisited/",
+        "meta_line": "`PRINT Magazine` · 28/08 · Steven Heller",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "Yayoi and Steve",
+        "author": "Steven Heller",
+        "score": 1.16,
+        "published": "2026-08-28T10:00:00+00:00",
+        "published_label": "28/08"
+      }
+    ],
+    "Web & Front-end": [
+      {
+        "title": "The Many Faces Of September (2026 Wallpapers Edition)",
+        "url": "https://smashingmagazine.com/2026/08/desktop-wallpaper-calendars-september-2026/",
+        "meta_line": "`Smashing Magazine` · 31/08 · hello@smashingmagazine.com (Cosima Mielke)",
+        "source_name": "Smashing Magazine",
+        "source_category": "Web & Front-end",
+        "summary": "Could there be a better way to welcome the new month than with a new collection of desktop wallpapers? Whether you’re holding tightly onto summer or eagerly awaiting autumn, we’ve got some eye-catching designs to make your September just a bit more colorful. Enjoy!",
+        "author": "hello@smashingmagazine.com (Cosima Mielke)",
+        "score": 2.304,
+        "published": "2026-08-31T11:00:00+00:00",
+        "published_label": "31/08"
+      },
+      {
+        "title": "Volatile Nexus: Tinkering with Glass, Caustics, Cubes and Sound in Three.js",
+        "url": "https://tympanus.net/codrops/2026/08/31/volatile-nexus-tinkering-with-glass-caustics-cubes-and-sound-in-three-js/",
+        "meta_line": "`Codrops` · 31/08 · Frank Reitberger",
+        "source_name": "Codrops",
+        "source_category": "Web & Front-end",
+        "summary": "A mesmerizing Three.js experiment where glass, wandering cubes, caustics, refractions, and sound come together in a fluid, interactive scene",
+        "author": "Frank Reitberger",
+        "score": 1.972,
+        "published": "2026-08-31T15:59:38+00:00",
+        "published_label": "31/08"
+      },
+      {
+        "title": "Let’s Use the Emergent CSS random() Function in all the Browsers",
+        "url": "https://css-tricks.com/css-random-function-polyfill/",
+        "meta_line": "`CSS-Tricks` · 31/08 · Lee Meyer",
+        "source_name": "CSS-Tricks",
+        "source_category": "Web & Front-end",
+        "summary": "The journey to create a polyfill for the upcoming CSS random() function that works in all browsers. Let’s Use the Emergent CSS random() Function in all the Browsers originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well",
+        "author": "Lee Meyer",
+        "score": 1.964,
+        "published": "2026-08-31T15:12:19+00:00",
+        "published_label": "31/08"
+      },
+      {
+        "title": "What’s !important #18: , Syntax ::highlight()ing, named-feature(), and More",
+        "url": "https://css-tricks.com/whats-important-18/",
+        "meta_line": "`CSS-Tricks` · 31/08 · Daniel Schwarz",
+        "source_name": "CSS-Tricks",
+        "source_category": "Web & Front-end",
+        "summary": "Well, that’s a wrap. No, not a flex-wrap, but rather today marks a new day, week, month, season, aaaand new edition of What’s important (#18), bringing you the best content that developers have produced over the last couple of weeks or so. What’s !important #18: <geolocation>, Syntax ::highlight()ing, named-feature(),…",
+        "author": "Daniel Schwarz",
+        "score": 1.953,
+        "published": "2026-08-31T14:08:55+00:00",
+        "published_label": "31/08"
+      }
+    ],
+    "Arquitetura & Ambiente": [
+      {
+        "title": "Foster + Partners designs retail podium to highlight \"precision and modernity\" of Norton Motorcycles",
+        "url": "https://www.dezeen.com/2026/08/30/foster-partners-norton-motorcycles-showroom/",
+        "meta_line": "`Dezeen` · 30/08 · Alyn Griffiths",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "Foster + Partners Industrial Design has developed a showroom concept for British motorcycle brand Norton Motorcycles, including sleek metal display stands that present the vehicles like sculptures on a plinth. The retail experience was developed as part of Norton Motorcycles' ongoing rebranding project, which aims to…",
+        "author": "Alyn Griffiths",
+        "score": 2.608,
+        "published": "2026-08-30T05:00:26+00:00",
+        "published_label": "30/08"
+      },
+      {
+        "title": "Eight stylish furnishings by Australian brands",
+        "url": "https://www.dezeen.com/2026/08/28/lighting-furniture-accessories-seating-australian-brands-dezeen-showroom/",
+        "meta_line": "`Dezeen` · 28/08 · Dezeen staff",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "Dezeen Showroom: from accessories and lights to seating and tables, the following items are all made down under by Australian design brands. The products stem from various established and emerging design brands based in major cities such as Brisbane, Queensland, Melbourne and Sydney. Read on to see our selection of…",
+        "author": "Dezeen staff",
+        "score": 2.243,
+        "published": "2026-08-28T18:00:11+00:00",
+        "published_label": "28/08"
+      },
+      {
+        "title": "Craighill rethinks the pocket lighter based on historical designs",
+        "url": "https://www.dezeen.com/2026/08/28/craighill-swingtop-lighter/",
+        "meta_line": "`Dezeen` · 28/08 · Ben Dreith",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "Brooklyn design studio Craighill has designed the Swingtop Lighter with a swinging mechanism and snuffer as part of the brand's brief to pay attention to overlooked everyday objects. The Swingtop Lighter is made from die-cast stainless steel in Craighill's Brooklyn workshop. It features a lever that is pressed down to…",
+        "author": "Ben Dreith",
+        "score": 2.201,
+        "published": "2026-08-28T14:00:21+00:00",
+        "published_label": "28/08"
+      }
+    ],
+    "Curadoria": [
+      {
+        "title": "Gridset: Turn drafts into on-brand documents",
+        "url": "https://bit.ly/side-grid1",
+        "meta_line": "`Sidebar` · 31/08",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "Feed in a draft, Claude output or a PDF and get back a designed, on-brand document in under a minute. Set brand rules once",
+        "author": "",
+        "score": 2.314,
+        "published": "2026-08-31T08:23:00+00:00",
+        "published_label": "31/08"
+      },
+      {
+        "title": "We used to log off",
+        "url": "https://www.doc.cc/articles/we-used-to-log-off",
+        "meta_line": "`Sidebar` · 31/08",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "Online used to be a place you could leave",
+        "author": "",
+        "score": 1.514,
+        "published": "2026-08-31T08:20:47+00:00",
+        "published_label": "31/08"
+      },
+      {
+        "title": "Ordinary abundance",
+        "url": "https://ordinaryabundance.com/",
+        "meta_line": "`Sidebar` · 31/08",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "A walk through a modern apartment, through the eyes of the people for whom everything in it was new",
+        "author": "",
+        "score": 1.514,
+        "published": "2026-08-31T08:20:11+00:00",
+        "published_label": "31/08"
+      }
+    ],
+    "Design de Produto": [
+      {
+        "title": "In Denmark, 3D-Printed Student Housing",
+        "url": "https://www.core77.com/posts/145218/In-Denmark-3D-Printed-Student-Housing",
+        "meta_line": "`Core77` · 31/08 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "Copenhagen-based SAGA Space Architects and Danish architecture studio MS+ recently completed Europe's largest 3D-printed housing project. Called Skovsporet , it's an entire village of 36 ground-floor apartments broken up into six clusters. It was built as student housing to serve nearby VIA University College. Each…",
+        "author": "Rain Noe",
+        "score": 1.962,
+        "published": "2026-08-31T15:00:00+00:00",
+        "published_label": "31/08"
+      },
+      {
+        "title": "Genesis' New Luxury Electric SUV has No B-Pillar, No Start Button, Radiant Floor Heating",
+        "url": "https://www.core77.com/posts/145215/Genesis-New-Luxury-Electric-SUV-has-No-B-Pillar-No-Start-Button-Radiant-Floor-Heating",
+        "meta_line": "`Core77` · 31/08 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "Genesis, Hyundai's luxury spin-off, has just unveiled their new GV90 Neolun flagship. And it's a doozy. The luxury three-row electric SUV, which has a 311-mile (500km) range, has a feature no competitor has: What used to be called suicide doors, but which are now known as coach doors. Genesis' engineers have figured…",
+        "author": "Rain Noe",
+        "score": 1.951,
+        "published": "2026-08-31T14:00:00+00:00",
+        "published_label": "31/08"
+      },
+      {
+        "title": "A New Immersive Gaming Speaker Set-Up: OXS's Thunder Pro Max System",
+        "url": "https://www.core77.com/posts/145212/A-New-Immersive-Gaming-Speaker-Set-Up-OXSs-Thunder-Pro-Max-System",
+        "meta_line": "`Core77` · 31/08 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "Speakers have gone through multiple form factors and arrangements in the past hundred years. In the 1920s, we had radio cabinets with a single speaker. In the 1950s, Hi-Fi cabinets, with left and right speakers. In the 1980s Dolby Surround Sound became a thing, requiring four speakers—two in front, two behind—and a…",
+        "author": "Rain Noe",
+        "score": 1.941,
+        "published": "2026-08-31T13:00:00+00:00",
+        "published_label": "31/08"
+      }
+    ],
+    "UX & Pesquisa": [
+      {
+        "title": "Design has outgrown the traditional designer",
+        "url": "https://uxdesign.cc/design-has-outgrown-the-traditional-designer-adbb657aa30a",
+        "meta_line": "`UX Collective` · 31/08 · Michael Buckley",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "Why design education must reconsider the kind of student it imagines. Photo by shraga kopstein on Unsplash For decades, design offered artistically inclined students an appealing compromise. They could pursue a practical career without giving up creativity. Someone with visual talent learned typography, composition,…",
+        "author": "Michael Buckley",
+        "score": 3.971,
+        "published": "2026-08-31T15:56:24+00:00",
+        "published_label": "31/08"
+      },
+      {
+        "title": "You can’t grow roses in a cornfield",
+        "url": "https://uxdesign.cc/you-cant-grow-roses-in-a-cornfield-490d47dd8f74",
+        "meta_line": "`UX Collective` · 31/08 · Vlad Derdeicea",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "A conversation with Whitney Hess, on careers, whispers, and where to plant yourself Photo by Bob Bowie on Unsplash Some questions sound administrative but are not, and “why do you want to switch jobs?” turns out to be one of them. I asked it on a mentoring call in the way you would ask about notice periods or…",
+        "author": "Vlad Derdeicea",
+        "score": 1.971,
+        "published": "2026-08-31T15:56:04+00:00",
+        "published_label": "31/08"
+      },
+      {
+        "title": "Blank pages, Researcher-in-the-loop, Design’s craft crisis",
+        "url": "https://uxdesign.cc/blank-pages-researcher-in-the-loop-designs-craft-crisis-7934ab0bc9cf",
+        "meta_line": "`UX Collective` · 31/08 · Fabricio Teixeira",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "Weekly curated resources for designers — thinkers and makers. “Interface design has known this for decades. It’s baked into one of the oldest usability heuristics in the field — Jakob Nielsen’s sixth, recognition rather than recall, which asks designers to minimize memory load by making elements, actions and options…",
+        "author": "Fabricio Teixeira",
+        "score": 1.93,
+        "published": "2026-08-31T11:59:52+00:00",
+        "published_label": "31/08"
+      }
+    ],
+    "Ferramentas": [
+      {
+        "title": "How do you actually measure the impact of AI on design?",
+        "url": "https://www.figma.com/blog/measuring-the-impact-of-ai/",
+        "meta_line": "`Figma Blog` · 28/08",
+        "source_name": "Figma Blog",
+        "source_category": "Ferramentas",
+        "summary": "In 2024, we kicked off a study to understand how AI would reshape design and product development. Now, AI is helping us run it",
+        "author": "",
+        "score": 1.259,
+        "published": "2026-08-28T19:30:00+00:00",
+        "published_label": "28/08"
+      },
+      {
+        "title": "Source material: i-D Magazine’s editor in chief is not afraid of visual chaos",
+        "url": "https://www.figma.com/blog/source-material-i-d-magazine-editor-in-chief-thom-bettridge/",
+        "meta_line": "`Figma Blog` · 28/08",
+        "source_name": "Figma Blog",
+        "source_category": "Ferramentas",
+        "summary": "Thom Bettridge on which magazines have shaped his taste—and what design rule he breaks the most",
+        "author": "",
+        "score": 1.253,
+        "published": "2026-08-28T19:00:00+00:00",
+        "published_label": "28/08"
+      }
+    ],
+    "Teoria & Crítica": [
+      {
+        "title": "Becoming a better observer has defined John Ball’s 40-year design career",
+        "url": "https://designobserver.com/becoming-a-better-observer-has-defined-john-balls-40-year-design-career/",
+        "meta_line": "`Design Observer` · 31/08 · Rachel Paese",
+        "source_name": "Design Observer",
+        "source_category": "Teoria & Crítica",
+        "summary": "It's made him better at helping people understand things, which is how he believes designers must meet the moment",
+        "author": "Rachel Paese",
+        "score": 2.577,
+        "published": "2026-08-31T17:00:03+00:00",
+        "published_label": "31/08"
+      }
+    ]
+  }
+}
