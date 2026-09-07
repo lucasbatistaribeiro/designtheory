@@ -1,0 +1,309 @@
+{
+  "date": "2026-09-07",
+  "subject": "Design Theory — edição de 7 de setembro de 2026",
+  "total": 24,
+  "groups": {
+    "UX & Pesquisa": [
+      {
+        "title": "Users don’t see your design system",
+        "url": "https://uxdesign.cc/users-dont-see-your-design-system-d6abd51c18fc",
+        "meta_line": "`UX Collective` · 01/09 · Chris R Becker",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "How Gestalt principles power any great design system",
+        "author": "Chris R Becker",
+        "score": 3.441,
+        "published": "2026-09-01T11:28:51+00:00",
+        "published_label": "01/09"
+      },
+      {
+        "title": "Legal Aspects of Accessibility",
+        "url": "https://ixdf.org/literature/article/legal-aspects-of-accessibility",
+        "meta_line": "`Interaction Design Foundation` · 01/09",
+        "source_name": "Interaction Design Foundation",
+        "source_category": "UX & Pesquisa",
+        "summary": "Understanding the legal requirements for accessibility is essential for anyone building digital products and services. Accessibility legislation exists worldwide, and failure to comply can result in costly lawsuits and reputational damage. This lesson explores the legal landscape, compliance standards, and practical…",
+        "author": "",
+        "score": 3.214,
+        "published": "2026-09-02T00:00:00+00:00",
+        "published_label": "01/09"
+      },
+      {
+        "title": "AI canvas, Synthetic self, The prompt is the product",
+        "url": "https://uxdesign.cc/ai-canvas-synthetic-self-the-prompt-is-the-product-801f0da7bea6",
+        "meta_line": "`UX Collective` · 06/09 · Fabricio Teixeira",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "Weekly curated resources for designers — thinkers and makers. “AI coding agents are bringing some of that interaction model back. You can describe an outcome and let the agent decide which commands to run, which files to change and which tests to execute. You no longer have to operate the software step by step, but a…",
+        "author": "Fabricio Teixeira",
+        "score": 1.82,
+        "published": "2026-09-06T23:49:45+00:00",
+        "published_label": "06/09"
+      },
+      {
+        "title": "AI in Product teams: In 2026, the growing impact on collaboration",
+        "url": "https://uxdesign.cc/ai-in-product-teams-in-2026-the-growing-impact-on-collaboration-8ea9f6024dca",
+        "meta_line": "`UX Collective` · 06/09 · Anna Lefour",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "Is the time of blind AI-tool-pushing over? There seems to be a shift in how companies approach AI. Less piecemeal initiatives, more strategic thinking and adoption, which is increasingly affecting how design, engineering and product work together. To stay competitive in 2026, companies are slowly but steadily building…",
+        "author": "Anna Lefour",
+        "score": 1.819,
+        "published": "2026-09-06T23:47:16+00:00",
+        "published_label": "06/09"
+      },
+      {
+        "title": "Using AI for UX Work: Study Guide",
+        "url": "https://www.nngroup.com/articles/ai-work-study-guide/",
+        "meta_line": "`Nielsen Norman Group` · 04/09 · Tanner Kohler",
+        "source_name": "Nielsen Norman Group",
+        "source_category": "UX & Pesquisa",
+        "summary": "Unsure where to start? Use this collection of links to our articles and videos to learn about the best ways to use artificial intelligence for UX work",
+        "author": "Tanner Kohler",
+        "score": 1.748,
+        "published": "2026-09-04T17:00:00+00:00",
+        "published_label": "04/09"
+      },
+      {
+        "title": "UX Conference November Announced (Nov 16 - Nov 19)",
+        "url": "https://www.nngroup.com/training/nov-asia-au/",
+        "meta_line": "`Nielsen Norman Group` · 03/09",
+        "source_name": "Nielsen Norman Group",
+        "source_category": "UX & Pesquisa",
+        "summary": "Take up to 2 in-depth training courses, teaching user experience best practices for successful design. Live online training focused on long-lasting skills for UX professionals. Nov 16 - Nov 19, 2026 (Americas) | Nov 17 - Nov 20 (Asia/AU)",
+        "author": "",
+        "score": 1.221,
+        "published": "2026-09-03T04:50:49+00:00",
+        "published_label": "03/09"
+      }
+    ],
+    "Visual & Branding": [
+      {
+        "title": "The Daily Heller: A Day for Laboring Over the Drawing Board",
+        "url": "https://www.printmag.com/daily-heller/the-daily-heller-a-day-for-laboring-over-the-drawing-board/",
+        "meta_line": "`PRINT Magazine` · 07/09 · Steven Heller",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "Denys Wortman’s 'Metropolitan Movies' cartoons depicted the lives of an assortment of haves and have-nots",
+        "author": "Steven Heller",
+        "score": 1.938,
+        "published": "2026-09-07T11:11:00+00:00",
+        "published_label": "07/09"
+      },
+      {
+        "title": "The Art of NYC Streets",
+        "url": "https://www.printmag.com/creative-voices/the-art-of-nyc-streets/",
+        "meta_line": "`PRINT Magazine` · 07/09 · Kristian Shepherd",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "If you’ve ever been to NYC, you know the feeling of being slapped in the face with Graffti, stickers and…",
+        "author": "Kristian Shepherd",
+        "score": 1.926,
+        "published": "2026-09-07T10:00:00+00:00",
+        "published_label": "07/09"
+      },
+      {
+        "title": "What Matters to Annika Welander",
+        "url": "https://www.printmag.com/what-matters/what-matters-to-annika-whelander/",
+        "meta_line": "`PRINT Magazine` · 02/09 · Debbie Millman",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "Annika Welander reflects on how her competitive drive, creativity, humor, and journey through sobriety have shaped both her leadership and her life, from building imaginative worlds as a child to building meaningful brands and learning to appreciate her accomplishments along the way",
+        "author": "Debbie Millman",
+        "score": 1.813,
+        "published": "2026-09-02T23:11:13+00:00",
+        "published_label": "02/09"
+      },
+      {
+        "title": "The best Labor Day speaker deals starting from $60",
+        "url": "https://www.creativebloq.com/tech/the-best-labor-day-speaker-deals-starting-from-usd60",
+        "meta_line": "`Creative Bloq` · 07/09 · Natalie Fear",
+        "source_name": "Creative Bloq",
+        "source_category": "Visual & Branding",
+        "summary": "Save up to 39% on big brands like Sony and JBL",
+        "author": "Natalie Fear",
+        "score": 1.499,
+        "published": "2026-09-07T17:00:00+00:00",
+        "published_label": "07/09"
+      },
+      {
+        "title": "Hand-picked Labor Day savings to upgrade your desktop for a fresh start",
+        "url": "https://www.creativebloq.com/tech/peripherals/hand-picked-labor-day-savings-to-upgrade-your-desktop-for-a-fresh-start",
+        "meta_line": "`Creative Bloq` · 07/09 · Ian Dean",
+        "source_name": "Creative Bloq",
+        "source_category": "Visual & Branding",
+        "summary": "Deals on organisers, monitor stands, mechanical keyboards, desk lamps and charging docks",
+        "author": "Ian Dean",
+        "score": 0.994,
+        "published": "2026-09-07T16:00:00+00:00",
+        "published_label": "07/09"
+      }
+    ],
+    "Arquitetura & Ambiente": [
+      {
+        "title": "Grace tiles by Ceramiche Keope",
+        "url": "https://www.dezeen.com/2026/09/07/grace-tile-collection-ceramiche-keope-dezeen-showroom/",
+        "meta_line": "`Dezeen` · 07/09 · Dezeen staff",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "Dezeen Showroom: Italian brand Ceramiche Keope has recreated the subtle allure of limestone in its Grace collection of porcelain stoneware tiles. The Grace collection was created with reference to limestone from the region of Saint Antoine d'Auberoche in France, a popular source of stone for European buildings…",
+        "author": "Dezeen staff",
+        "score": 2.921,
+        "published": "2026-09-07T09:30:26+00:00",
+        "published_label": "07/09"
+      },
+      {
+        "title": "This week Dyson unveiled its first electric toothbrush",
+        "url": "https://www.dezeen.com/2026/09/05/dyson-first-electric-toothbrush-this-week/",
+        "meta_line": "`Dezeen` · 05/09 · Tom Ravenscroft",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "This week on Dezeen, technology brand Dyson launched its first toothbrush, which includes a mouthwash spray designed to replace flossing. Named Dyson CameraJet, the electric toothbrush combines brushing, flossing and mouth-washing into one device. It includes a mouthwash jet that is directed by a camera to remove…",
+        "author": "Tom Ravenscroft",
+        "score": 2.374,
+        "published": "2026-09-05T05:00:27+00:00",
+        "published_label": "05/09"
+      },
+      {
+        "title": "Five opportunities in the USA featured on Dezeen Jobs",
+        "url": "https://www.dezeen.com/2026/09/04/five-opportunities-usa-dezeen-jobs/",
+        "meta_line": "`Dezeen` · 04/09 · Dezeen staff",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "We've rounded up five USA-based vacancies on Dezeen Jobs, including roles at CetraRuddy, Allied Works and OMA. Senior designer (project architect) at Rapt Studio Rapt is seeking senior designers (project architects) to join its team in Los Angeles, California. The studio designed lifestyle and wellness brand Goop's…",
+        "author": "Dezeen staff",
+        "score": 2.259,
+        "published": "2026-09-04T18:00:42+00:00",
+        "published_label": "04/09"
+      }
+    ],
+    "Design de Produto": [
+      {
+        "title": "The James Brand's Handsome, Designey Alternative to the Swiss Army Knife",
+        "url": "https://www.core77.com/posts/145262/The-James-Brands-Handsome-Designey-Alternative-to-the-Swiss-Army-Knife",
+        "meta_line": "`Core77` · 04/09 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "The Swiss Army Knife was designed over 100 years ago. On the one hand, you've got the \"If it ain't broke…\" explanation for the ancient form. On the other hand, the James Brand reckoned there would be demand for a folding-knife-based pocket tool with modern design attention lavished on it. They were right. The first…",
+        "author": "Rain Noe",
+        "score": 2.207,
+        "published": "2026-09-04T13:00:00+00:00",
+        "published_label": "04/09"
+      },
+      {
+        "title": "Real Object or AI?",
+        "url": "https://www.core77.com/posts/145254/Real-Object-or-AI",
+        "meta_line": "`Core77` · 03/09 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "Spotted on European Amazon, this thing : My first thought was What the heck is it? Apparently it's whatever you want it to be: A remote control caddy, a pencil cup, a jewelry organizer, a key tray. The manufacturer is listed as \"Genérico,\" presumably a fake brand. The lifestyle shots are filled with AI people and…",
+        "author": "Rain Noe",
+        "score": 1.967,
+        "published": "2026-09-03T14:00:00+00:00",
+        "published_label": "03/09"
+      },
+      {
+        "title": "Core77 Weekly Roundup (8-31-26 to 9-4-26)",
+        "url": "https://www.core77.com/posts/145213/Core77-Weekly-Roundup-8-31-26-to-9-4-26",
+        "meta_line": "`Core77` · 04/09 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "Here's what we looked at this week: A new immersive gaming speaker set-up: OXS's Thunder Pro Max system features a \"Satellite Neck Speaker.\" Genesis' new luxury electric SUV has no B-pillar, no start button, radiant floor heating. In Denmark, 3D-printed student housing. PÉPET : Masae Nagao's kinetic paper pets. Chois:…",
+        "author": "Rain Noe",
+        "score": 1.228,
+        "published": "2026-09-04T15:00:00+00:00",
+        "published_label": "04/09"
+      }
+    ],
+    "Web & Front-end": [
+      {
+        "title": "Drawing With Light: An Exploration of Lit GPU Tubes with TSL and WebGPU",
+        "url": "https://tympanus.net/codrops/2026/09/07/drawing-with-light-an-exploration-of-lit-gpu-tubes-with-tsl-and-webgpu/",
+        "meta_line": "`Codrops` · 07/09 · Mathis Biabiany",
+        "source_name": "Codrops",
+        "source_category": "Web & Front-end",
+        "summary": "How a meshline habit turned into a tube renderer, and the three ways I got the maths wrong along the way",
+        "author": "Mathis Biabiany",
+        "score": 1.968,
+        "published": "2026-09-07T14:01:56+00:00",
+        "published_label": "07/09"
+      },
+      {
+        "title": "Building a Real-Time 3D Face Mask with MediaPipe, Threlte and Three.js",
+        "url": "https://tympanus.net/codrops/2026/09/06/building-a-real-time-3d-face-mask-with-mediapipe-threlte-and-three-js/",
+        "meta_line": "`Codrops` · 06/09 · Marek Jóźwiak",
+        "source_name": "Codrops",
+        "source_category": "Web & Front-end",
+        "summary": "Learn how MediaPipe’s face landmarks, Google’s canonical face model, and Three.js come together to create a real-time textured 3D face mask",
+        "author": "Marek Jóźwiak",
+        "score": 1.709,
+        "published": "2026-09-06T13:09:52+00:00",
+        "published_label": "06/09"
+      },
+      {
+        "title": "Building an Infinite Loom: Unravelling Images into Threads with Three.js",
+        "url": "https://tympanus.net/codrops/2026/09/05/building-an-infinite-loom-unravelling-images-into-threads-with-three-js/",
+        "meta_line": "`Codrops` · 05/09 · Clément Grellier",
+        "source_name": "Codrops",
+        "source_category": "Web & Front-end",
+        "summary": "An experimental Three.js demo that transforms images into flowing ribbons, weaving them together and unraveling them as they move across the screen",
+        "author": "Clément Grellier",
+        "score": 1.455,
+        "published": "2026-09-05T12:50:25+00:00",
+        "published_label": "05/09"
+      }
+    ],
+    "Ferramentas": [
+      {
+        "title": "How Coinbase used Code Connect to guide agents and shrink token costs",
+        "url": "https://www.figma.com/blog/how-coinbase-used-code-connect-to-shrink-token-costs/",
+        "meta_line": "`Figma Blog` · 02/09",
+        "source_name": "Figma Blog",
+        "source_category": "Ferramentas",
+        "summary": "The Coinbase Design System team put Code Connect to the test against coding agents—and found that it boosted design system adherence while cutting token costs by an average of 22.5%",
+        "author": "",
+        "score": 3.785,
+        "published": "2026-09-02T20:28:00+00:00",
+        "published_label": "02/09"
+      },
+      {
+        "title": "Behind the build: Generative plugins and shaders at Figma",
+        "url": "https://www.figma.com/blog/how-we-built-generative-plugins-and-shaders/",
+        "meta_line": "`Figma Blog` · 01/09",
+        "source_name": "Figma Blog",
+        "source_category": "Ferramentas",
+        "summary": "Starting today, you’ll have more creative control over generative plugins and shaders, and a way to share what you’ve made with the community. Product Designer Rogie King tells the story of how we got here",
+        "author": "",
+        "score": 2.474,
+        "published": "2026-09-01T14:39:43+00:00",
+        "published_label": "01/09"
+      }
+    ],
+    "Teoria & Crítica": [
+      {
+        "title": "Brands cannot afford to speak in the same voice as countless others right now. Typeface designers can help.",
+        "url": "https://designobserver.com/brands-cannot-afford-to-speak-in-the-same-voice-as-countless-others-right-now-typeface-designers-can-help/",
+        "meta_line": "`Design Observer` · 03/09 · Rachel Paese",
+        "source_name": "Design Observer",
+        "source_category": "Teoria & Crítica",
+        "summary": "It has never made sense to me, why a brand wouldn’t opt for custom type. Working in branding agencies all over London for a lot of my career, I used to sit on the London Tube browsing the series of ads above commuters’ heads. All ads had the same formula: tiny logo in the corner, … Continued",
+        "author": "Rachel Paese",
+        "score": 2.596,
+        "published": "2026-09-03T16:49:58+00:00",
+        "published_label": "03/09"
+      },
+      {
+        "title": "IDEA Gold",
+        "url": "https://ia.net/topics/idea-gold",
+        "meta_line": "`iA — Topics` · 07/09 · iA Inc",
+        "source_name": "iA — Topics",
+        "source_category": "Teoria & Crítica",
+        "summary": "After RedDot Best of Best and iF Gold, the IDSA gives iA Notebook its third top international design award",
+        "author": "iA Inc",
+        "score": 2.308,
+        "published": "2026-09-07T09:45:00+00:00",
+        "published_label": "07/09"
+      }
+    ]
+  }
+}
