@@ -350,3 +350,78 @@ def test_edicao_vazia_nao_tem_itens_nem_chips(cfg):
     write_multi(cfg, "2026-08-23", {})
     issue = load_issues(cfg)[0]
     assert issue.items == [] and issue.filters == []
+
+
+# ------------------------------------------------------- fase 2: grade da home
+
+
+def test_home_renderiza_um_tile_por_item(cfg):
+    write_multi(cfg, "2026-08-23", {"UX & Pesquisa": 5, "Visual & Branding": 3, "Ferramentas": 1})
+    index = (build_site(cfg, now=NOW) / "index.html").read_text(encoding="utf-8")
+
+    assert index.count('class="tile"') == 9
+    assert '<div class="gallery">' in index
+    # inclusive o item da categoria que nao ganhou chip
+    assert "Ferramentas 0" in index
+
+
+def test_tile_carrega_categoria_titulo_e_fonte_sem_resumo(cfg):
+    write_multi(cfg, "2026-08-23", {"Web & Front-end": 1})
+    index = (build_site(cfg, now=NOW) / "index.html").read_text(encoding="utf-8")
+
+    assert 'data-category="web-front-end"' in index
+    assert "Web &amp; Front-end 0" in index
+    assert 'class="tile__source"' in index
+    # o resumo fica de fora do tile: em tres colunas vira paragrafo apertado
+    assert 'class="tile__summary"' not in index
+    assert "Resumo." not in index
+
+
+def test_so_a_home_sai_da_coluna_de_leitura(cfg):
+    write_multi(cfg, "2026-08-23", {"UX & Pesquisa": 2})
+    out = build_site(cfg, now=NOW)
+
+    assert '<main class="wrap wrap--full">' in (out / "index.html").read_text(encoding="utf-8")
+    for nome in ("arquivo.html", "fontes.html", "404.html", "edicoes/2026-08-23.html"):
+        assert '<main class="wrap">' in (out / nome).read_text(encoding="utf-8"), nome
+
+
+def test_home_mantem_edicoes_anteriores_na_coluna_estreita(cfg):
+    write_multi(cfg, "2026-08-16", {"UX & Pesquisa": 2})
+    write_multi(cfg, "2026-08-23", {"UX & Pesquisa": 2})
+    index = (build_site(cfg, now=NOW) / "index.html").read_text(encoding="utf-8")
+
+    assert "Edições anteriores" in index
+    assert 'class="entry"' in index
+    # a grade vem antes do arquivo
+    assert index.index('class="gallery"') < index.index('class="entry"')
+
+
+def test_pagina_da_edicao_continua_em_lista_agrupada(cfg):
+    """A galeria e da home; a pagina da edicao mantem secoes e resumos."""
+    write_multi(cfg, "2026-08-23", {"UX & Pesquisa": 2})
+    edicao = (build_site(cfg, now=NOW) / "edicoes" / "2026-08-23.html").read_text(encoding="utf-8")
+
+    assert 'class="tile"' not in edicao
+    assert 'class="item"' in edicao and 'class="item__summary"' in edicao
+
+
+def test_css_da_galeria_tem_os_tres_pontos_de_quebra(cfg):
+    write_multi(cfg, "2026-08-23", {"UX & Pesquisa": 2})
+    css = (build_site(cfg, now=NOW) / "style.css").read_text(encoding="utf-8")
+
+    assert ".gallery" in css and ".tile" in css
+    assert "repeat(3, minmax(0, 1fr))" in css
+    assert "repeat(2, minmax(0, 1fr))" in css
+
+
+def test_laranja_de_texto_tem_token_proprio(cfg):
+    """O laranja da marca reprova no AA sobre fundo claro; texto usa o escurecido."""
+    write_multi(cfg, "2026-08-23", {"UX & Pesquisa": 2})
+    css = (build_site(cfg, now=NOW) / "style.css").read_text(encoding="utf-8")
+
+    assert "--accent-text: #c2410c" in css
+    # nenhum uso de laranja como primeiro plano escapou para o token decorativo
+    for regra in (".tile__source", ".item__source"):
+        bloco = css[css.index(regra) : css.index(regra) + 120]
+        assert "var(--accent-text)" in bloco, regra

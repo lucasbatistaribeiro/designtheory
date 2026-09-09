@@ -60,7 +60,8 @@
 </header>
 {% endblock %}
 
-<main class="wrap">
+{# a home sai da coluna de leitura para abrir a galeria; as outras páginas não #}
+<main class="{% block main_class %}wrap{% endblock %}">
 {% block content %}{% endblock %}
 </main>
 

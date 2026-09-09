@@ -25,6 +25,27 @@
 {% endmacro %}
 
 
+{# Tile tipográfico: sem imagem, o título é que carrega o peso visual.
+   data-category alimenta o filtro da fase 4 — inerte por enquanto. #}
+{% macro tile(a) %}
+<a class="tile" href="{{ a.url }}" rel="noopener" data-category="{{ a.category_slug }}">
+  <span class="tile__cat">{{ a.category }}</span>
+  <h3 class="tile__title">{{ a.title }}</h3>
+  <span class="tile__meta">
+    <span class="tile__source">{{ a.source_name }}</span>
+    {% if a.published_label %}<span>{{ a.published_label }}</span>{% endif %}
+  </span>
+</a>
+{% endmacro %}
+
+
+{% macro gallery(issue) %}
+<div class="gallery">
+  {% for a in issue.items %}{{ tile(a) }}{% endfor %}
+</div>
+{% endmacro %}
+
+
 {% macro entry(issue, prefix='') %}
 <a class="entry" href="{{ prefix }}{{ issue.path }}">
   <span class="entry__date">{{ issue.date_label }}</span>

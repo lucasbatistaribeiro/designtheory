@@ -129,7 +129,7 @@ newsletter site` lê os `issues/*.json` e gera:
 
 ```
 site/
-├── index.html              última edição inteira + 3 anteriores
+├── index.html              galeria da última edição + 3 anteriores
 ├── arquivo.html            todas as edições
 ├── fontes.html             as 16 publicações acompanhadas e como a curadoria funciona
 ├── edicoes/2026-08-23.html uma página por edição, com navegação anterior/seguinte
@@ -144,6 +144,24 @@ O `build` já regera o site junto (use `--no-site` para pular). Para ver localme
 ```bash
 python -m newsletter site && python -m http.server 8765 --directory site
 ```
+
+### A home é uma galeria
+
+A home mostra a última edição como uma **grade de tiles filtráveis** (3 / 2 / 1
+colunas), no lugar da lista agrupada por categoria. O tile é **tipográfico** —
+sem imagem, o título serifado é que carrega o peso visual — com a categoria em
+cima e fonte + data no rodapé. O resumo fica de fora: em três colunas vira
+parágrafo apertado; ele continua na página da edição, que segue em lista.
+
+Só a home sai da coluna de leitura de 44rem (`main.wrap--full`, teto de 96rem);
+arquivo, fontes e as páginas de edição mantêm a medida estreita.
+
+Categoria com menos de `MIN_CHIP_ITEMS` (2) itens não vira chip de filtro — um
+filtro que resulta em um único tile numa grade de três colunas parece defeito.
+Os itens continuam na grade, só não ganham atalho.
+
+> Os chips e o filtro em si ainda não existem: `data-category` já vai no HTML,
+> inerte, esperando a fase seguinte.
 
 ### Tema claro e escuro
 
@@ -160,6 +178,12 @@ senão a página pisca no tema errado. Sem JavaScript, o site continua funcionan
 só segue o sistema.
 
 Os contrastes de texto atendem WCAG AA (mínimo 4.5:1) nos dois temas.
+
+O laranja da marca (`--accent`, `#ff6719`) dá só 2.8:1 sobre fundo claro, então
+**não serve como texto**. Existe um `--accent-text` — o mesmo laranja escurecido
+até passar no AA — usado em tudo que é primeiro plano: fonte do tile, fonte do
+item, kicker, links de prosa e o fundo do botão primário. O `--accent` fica para
+o que é decorativo, como o sublinhado da nav.
 
 ### Sem cadastro de e-mail
 

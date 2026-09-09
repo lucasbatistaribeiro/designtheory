@@ -13,10 +13,14 @@
   --bg-raised: #ffffff;
   --text: #1a1a1a;
   --text-secondary: #5f5f5f;
-  --text-tertiary: #767676;
+  --text-tertiary: #6f6f6f;
   --border: #e2e2e2;
   --border-strong: #d0d0d0;
   --accent: #ff6719;
+  /* O laranja da marca da 2.8:1 sobre fundo claro: nao serve para texto
+     nem para superficie que carrega texto. Este e o mesmo laranja
+     escurecido ate passar no AA. No escuro o proprio --accent ja passa. */
+  --accent-text: #c2410c;
   --accent-hover: #e55510;
   --accent-contrast: #ffffff;
   --accent-wash: #fff4ee;
@@ -43,6 +47,7 @@
     --border: #343434;
     --border-strong: #454545;
     --accent: #ff7a35;
+    --accent-text: #ff7a35;
     --accent-hover: #ff8f52;
     --accent-contrast: #1c1c1c;
     --accent-wash: #2e211a;
@@ -61,6 +66,7 @@
   --border: #343434;
   --border-strong: #454545;
   --accent: #ff7a35;
+  --accent-text: #ff7a35;
   --accent-hover: #ff8f52;
   --accent-contrast: #1c1c1c;
   --accent-wash: #2e211a;
@@ -247,7 +253,7 @@ a {
 }
 
 .btn--primary {
-  background: var(--accent);
+  background: var(--accent-text);
   color: var(--accent-contrast);
 }
 
@@ -342,7 +348,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .issue-head__title {
@@ -448,12 +454,101 @@ a {
 
 .item__source {
   font-weight: 600;
-  color: var(--accent);
+  color: var(--accent-text);
   text-decoration: none;
 }
 
 .item__dot::before {
   content: "·";
+}
+
+/* ---------- galeria da home ---------- */
+
+/* A home sai da coluna de leitura: a grade ocupa a largura util, com o
+   mesmo gutter das demais paginas. O teto evita 3 tiles gigantes em
+   monitores muito largos. */
+.wrap--full {
+  max-width: 96rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2.5rem 0 3.5rem;
+}
+
+@media (max-width: 64rem) {
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 40rem) {
+  .gallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  min-height: clamp(11rem, 18vw, 15rem);
+  padding: clamp(1.125rem, 1.8vw, 1.5rem);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.tile:hover {
+  background: var(--bg-raised);
+  border-color: var(--border-strong);
+}
+
+.tile:hover .tile__title {
+  color: var(--accent);
+}
+
+.tile__cat {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-tertiary);
+}
+
+.tile__title {
+  font-family: var(--serif);
+  font-size: clamp(1.125rem, 1.5vw, 1.4375rem);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.017em;
+  color: var(--text);
+  margin: 0.75rem 0 0;
+  /* rede de seguranca: titulo muito longo nao empurra a altura da linha
+     inteira da grade */
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.tile__meta {
+  margin-top: auto;
+  padding-top: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  color: var(--text-tertiary);
+}
+
+.tile__source {
+  font-weight: 600;
+  color: var(--accent-text);
 }
 
 /* ---------- lista de edições (arquivo) ---------- */
@@ -545,7 +640,7 @@ a {
 }
 
 .prose a {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 /* ---------- navegação entre edições ---------- */
