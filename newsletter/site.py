@@ -4,7 +4,9 @@ from __future__ import annotations
 
 import json
 import logging
+import re
 import shutil
+import unicodedata
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from email.utils import format_datetime
@@ -16,6 +18,17 @@ from newsletter.render import _date_label, build_env
 log = logging.getLogger(__name__)
 
 EXCERPT_CHARS = 180
+
+# Categoria com menos itens que isso não ganha chip de filtro próprio: um
+# filtro que resulta em um único tile numa grade de três colunas parece
+# defeito. Os itens continuam na grade, só não têm atalho.
+MIN_CHIP_ITEMS = 2
+
+
+def slugify(value: str) -> str:
+    """"UX & Pesquisa" -> "ux-pesquisa". Usado em data-category e no hash da URL."""
+    plain = unicodedata.normalize("NFKD", value).encode("ascii", "ignore").decode("ascii")
+    return re.sub(r"[^a-z0-9]+", "-", plain.lower()).strip("-")
 
 
 @dataclass
@@ -61,6 +74,28 @@ class IssuePage:
         if len(summary) > EXCERPT_CHARS:
             summary = summary[:EXCERPT_CHARS].rsplit(" ", 1)[0] + "…"
         return summary
+
+    @property
+    def items(self) -> list[dict]:
+        """A edição achatada numa lista só, com a categoria carimbada em cada item.
+
+        A ordem dos grupos é preservada, então o topo da lista continua sendo o
+        que a curadoria pontuou melhor. É o que a galeria da home consome.
+        """
+        flat: list[dict] = []
+        for category, entries in self.groups.items():
+            for entry in entries:
+                flat.append({**entry, "category": category, "category_slug": slugify(category)})
+        return flat
+
+    @property
+    def filters(self) -> list[dict]:
+        """Categorias que valem um chip, na ordem em que aparecem na edição."""
+        return [
+            {"label": category, "slug": slugify(category), "count": len(entries)}
+            for category, entries in self.groups.items()
+            if len(entries) >= MIN_CHIP_ITEMS
+        ]
 
 
 def load_issues(cfg: Config) -> list[IssuePage]:

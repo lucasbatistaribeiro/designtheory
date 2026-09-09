@@ -9,7 +9,7 @@ import pytest
 
 from newsletter.config import load_config
 from newsletter.fetch import strip_boilerplate
-from newsletter.site import build_site, load_issues
+from newsletter.site import MIN_CHIP_ITEMS, build_site, load_issues, slugify
 
 NOW = datetime(2026, 8, 23, 12, 0, tzinfo=timezone.utc)
 
@@ -258,3 +258,95 @@ def test_headline_com_um_item_nao_diz_e_mais(cfg):
 )
 def test_strip_boilerplate(entrada, esperado):
     assert strip_boilerplate(entrada) == esperado
+
+
+# ---------------------------------------------------------------- fase 1: dados
+
+
+def write_multi(cfg, slug: str, spec: dict) -> None:
+    """Escreve uma edição com várias categorias: {categoria: quantidade}."""
+    cfg.output_dir.mkdir(parents=True, exist_ok=True)
+    groups = {
+        cat: [
+            {
+                "title": f"{cat} {i}",
+                "url": f"https://exemplo.com/{i}",
+                "source_name": "Fonte",
+                "source_category": cat,
+                "summary": "Resumo.",
+                "author": "Autor",
+                "score": 1.0,
+                "published": f"{slug}T10:00:00+00:00",
+                "published_label": "21/08",
+            }
+            for i in range(n)
+        ]
+        for cat, n in spec.items()
+    }
+    payload = {"date": slug, "subject": "", "total": sum(spec.values()), "groups": groups}
+    (cfg.output_dir / f"{slug}.json").write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+
+
+@pytest.mark.parametrize(
+    "entrada,esperado",
+    [
+        ("UX & Pesquisa", "ux-pesquisa"),
+        ("Web & Front-end", "web-front-end"),
+        ("Arquitetura & Ambiente", "arquitetura-ambiente"),
+        ("Teoria & Crítica", "teoria-critica"),
+        ("Design de Produto", "design-de-produto"),
+    ],
+)
+def test_slugify(entrada, esperado):
+    assert slugify(entrada) == esperado
+
+
+def test_items_achata_a_edicao_preservando_a_ordem(cfg):
+    write_multi(cfg, "2026-08-23", {"UX & Pesquisa": 2, "Visual & Branding": 3})
+    issue = load_issues(cfg)[0]
+
+    assert len(issue.items) == 5
+    assert [i["title"] for i in issue.items[:2]] == ["UX & Pesquisa 0", "UX & Pesquisa 1"]
+    # a ordem dos grupos sobrevive: o mais bem pontuado continua no topo
+    assert issue.items[0]["category"] == "UX & Pesquisa"
+    assert issue.items[-1]["category"] == "Visual & Branding"
+
+
+def test_items_carimba_categoria_e_slug_sem_perder_campos(cfg):
+    write_multi(cfg, "2026-08-23", {"Web & Front-end": 1})
+    item = load_issues(cfg)[0].items[0]
+
+    assert item["category"] == "Web & Front-end"
+    assert item["category_slug"] == "web-front-end"
+    # os campos originais continuam lá
+    for campo in ("title", "url", "source_name", "summary", "author", "published_label"):
+        assert campo in item
+
+
+def test_filters_ignora_categoria_pequena_demais(cfg):
+    """Um chip que filtra para um tile só numa grade de 3 colunas parece defeito."""
+    write_multi(cfg, "2026-08-23", {"UX & Pesquisa": 5, "Curadoria": 2, "Ferramentas": 1})
+    issue = load_issues(cfg)[0]
+
+    rotulos = [f["label"] for f in issue.filters]
+    assert rotulos == ["UX & Pesquisa", "Curadoria"]
+    assert "Ferramentas" not in rotulos
+    # mas o item sem chip continua na grade
+    assert any(i["category"] == "Ferramentas" for i in issue.items)
+
+
+def test_filters_conta_e_slug(cfg):
+    write_multi(cfg, "2026-08-23", {"UX & Pesquisa": 4})
+    assert load_issues(cfg)[0].filters == [{"label": "UX & Pesquisa", "slug": "ux-pesquisa", "count": 4}]
+
+
+def test_min_chip_items_e_o_limite_documentado(cfg):
+    write_multi(cfg, "2026-08-23", {"Exata": MIN_CHIP_ITEMS, "Abaixo": MIN_CHIP_ITEMS - 1})
+    rotulos = [f["label"] for f in load_issues(cfg)[0].filters]
+    assert rotulos == ["Exata"]
+
+
+def test_edicao_vazia_nao_tem_itens_nem_chips(cfg):
+    write_multi(cfg, "2026-08-23", {})
+    issue = load_issues(cfg)[0]
+    assert issue.items == [] and issue.filters == []
