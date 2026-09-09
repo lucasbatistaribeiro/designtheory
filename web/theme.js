@@ -58,6 +58,11 @@
   // 1. antes da pintura: aplica o que já estava escolhido
   apply(read());
 
+  // Marca que há JavaScript. O CSS usa isso para revelar controles que só
+  // funcionam com script — hoje, os chips de filtro da galeria. Fica aqui
+  // porque este arquivo já roda no <head> sem defer, então não pisca.
+  root.classList.add("js");
+
   // 2. com o DOM pronto: liga o botão
   function wire() {
     var buttons = document.querySelectorAll("[data-theme-toggle]");

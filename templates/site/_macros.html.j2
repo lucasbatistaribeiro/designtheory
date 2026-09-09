@@ -39,8 +39,27 @@
 {% endmacro %}
 
 
+{# Os chips só existem com JavaScript: sem ele o CSS os esconde e a grade
+   aparece inteira, em vez de oferecer um controle que não funciona. #}
+{% macro filters(issue) %}
+{% if issue.filters %}
+<div class="filters" data-filters>
+  <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">
+    Todos <span class="filter__count">{{ issue.total }}</span>
+  </button>
+  {% for f in issue.filters %}
+  <button class="filter" type="button" data-filter="{{ f.slug }}" aria-pressed="false">
+    {{ f.label }} <span class="filter__count">{{ f.count }}</span>
+  </button>
+  {% endfor %}
+</div>
+<p class="visually-hidden" role="status" aria-live="polite" data-filter-status></p>
+{% endif %}
+{% endmacro %}
+
+
 {% macro gallery(issue) %}
-<div class="gallery">
+<div class="gallery" data-gallery>
   {% for a in issue.items %}{{ tile(a) }}{% endfor %}
 </div>
 {% endmacro %}

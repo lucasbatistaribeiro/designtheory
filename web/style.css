@@ -551,6 +551,80 @@ a {
   color: var(--accent-text);
 }
 
+/* ---------- filtro da galeria ---------- */
+
+/* Sem JavaScript os chips nao aparecem: a grade vem inteira em vez de
+   mostrar um controle que nao responde. O theme.js poe .js no <html>
+   antes da primeira pintura, entao nao ha piscada. */
+.filters {
+  display: none;
+}
+
+.js .filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  margin-top: 2.5rem;
+  padding-bottom: 0.25rem;
+}
+
+.filter {
+  appearance: none;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  padding: 0.5rem 0;
+  font-family: var(--sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--text-tertiary);
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.filter:hover {
+  color: var(--text);
+}
+
+/* O estado ativo nao pode ser so cor (WCAG 1.4.1): vem com sublinhado
+   e peso maior junto. */
+.filter.is-active {
+  color: var(--text);
+  font-weight: 700;
+  border-bottom-color: var(--accent);
+}
+
+.filter__count {
+  font-variant-numeric: tabular-nums;
+  color: var(--text-tertiary);
+  font-weight: 400;
+}
+
+.filter.is-active .filter__count {
+  color: var(--text-secondary);
+}
+
+/* CRITICO: .tile define display:flex, que vence o [hidden]{display:none}
+   do navegador. Sem esta regra o filtro "esconde" os tiles e eles
+   continuam na tela. */
+.gallery .tile[hidden] {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* ---------- lista de edições (arquivo) ---------- */
 
 .entry {

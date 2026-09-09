@@ -231,7 +231,7 @@ def build_site(cfg: Config, now: datetime | None = None) -> Path:
     )
 
     # estáticos + desliga o Jekyll do Pages
-    for asset in ("style.css", "theme.js"):
+    for asset in ("style.css", "theme.js", "filter.js"):
         shutil.copyfile(cfg.root / "web" / asset, out / asset)
     (out / ".nojekyll").write_text("", encoding="utf-8")
 

@@ -136,7 +136,8 @@ site/
 ├── feed.xml                RSS das edições
 ├── 404.html
 ├── style.css
-└── theme.js
+├── theme.js
+└── filter.js
 ```
 
 O `build` já regera o site junto (use `--no-site` para pular). Para ver localmente:
@@ -160,8 +161,23 @@ Categoria com menos de `MIN_CHIP_ITEMS` (2) itens não vira chip de filtro — u
 filtro que resulta em um único tile numa grade de três colunas parece defeito.
 Os itens continuam na grade, só não ganham atalho.
 
-> Os chips e o filtro em si ainda não existem: `data-category` já vai no HTML,
-> inerte, esperando a fase seguinte.
+**O filtro por categoria** fica numa barra de chips alinhada à esquerda da grade.
+Clicar troca o que aparece sem recarregar, e a categoria vira o hash da URL — dá
+para compartilhar `…/#ux-pesquisa` e cair na home já filtrada. Hash desconhecido
+volta para "Todos".
+
+Os chips são **progressive enhancement**: o CSS os esconde por padrão e só o
+`.js` que o `theme.js` põe no `<html>` (no `<head>`, sem `defer`, antes da
+primeira pintura) os revela. Sem JavaScript não há chip nenhum e a grade vem
+inteira — nada de oferecer um controle que não responde.
+
+O chip ativo se distingue por **peso e sublinhado**, não só por cor (WCAG 1.4.1),
+e a contagem de itens visíveis é anunciada num `role="status"` para leitor de
+tela.
+
+> Pegadinha registrada em teste: `.tile` é `display:flex`, que vence o
+> `[hidden]{display:none}` do navegador. Sem a regra `.gallery .tile[hidden]` o
+> filtro "esconde" os tiles e eles continuam na tela.
 
 ### Tema claro e escuro
 

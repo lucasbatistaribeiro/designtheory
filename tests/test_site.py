@@ -360,7 +360,7 @@ def test_home_renderiza_um_tile_por_item(cfg):
     index = (build_site(cfg, now=NOW) / "index.html").read_text(encoding="utf-8")
 
     assert index.count('class="tile"') == 9
-    assert '<div class="gallery">' in index
+    assert 'class="gallery"' in index
     # inclusive o item da categoria que nao ganhou chip
     assert "Ferramentas 0" in index
 
@@ -425,3 +425,95 @@ def test_laranja_de_texto_tem_token_proprio(cfg):
     for regra in (".tile__source", ".item__source"):
         bloco = css[css.index(regra) : css.index(regra) + 120]
         assert "var(--accent-text)" in bloco, regra
+
+
+# ------------------------------------------------------- fase 4: chips e filtro
+
+
+def test_chips_saem_do_filters_mais_o_todos(cfg):
+    write_multi(cfg, "2026-08-23", {"UX & Pesquisa": 5, "Curadoria": 2, "Ferramentas": 1})
+    index = (build_site(cfg, now=NOW) / "index.html").read_text(encoding="utf-8")
+
+    assert 'data-filter="all"' in index
+    assert 'data-filter="ux-pesquisa"' in index
+    assert 'data-filter="curadoria"' in index
+    # categoria pequena demais nao vira chip, mas o tile continua na grade
+    assert 'data-filter="ferramentas"' not in index
+    assert 'data-category="ferramentas"' in index
+
+
+def test_chip_todos_conta_a_edicao_inteira(cfg):
+    write_multi(cfg, "2026-08-23", {"UX & Pesquisa": 5, "Ferramentas": 1})
+    index = (build_site(cfg, now=NOW) / "index.html").read_text(encoding="utf-8")
+    # 6 itens no total, ainda que so 5 tenham chip proprio
+    bloco = index[index.index('data-filter="all"') : index.index('data-filter="all"') + 120]
+    assert 'aria-pressed="true"' in bloco
+    assert "Todos" in bloco
+    assert '<span class="filter__count">6</span>' in bloco
+
+
+def test_so_um_chip_comeca_pressionado(cfg):
+    write_multi(cfg, "2026-08-23", {"UX & Pesquisa": 3, "Curadoria": 2})
+    index = (build_site(cfg, now=NOW) / "index.html").read_text(encoding="utf-8")
+    # só a barra de filtros: o botão de tema também usa aria-pressed
+    barra = index[index.index("data-filters") : index.index("data-filter-status")]
+    assert barra.count('aria-pressed="true"') == 1
+    assert barra.count('aria-pressed="false"') == 2
+
+
+def test_edicao_sem_chip_nenhum_nao_renderiza_a_barra(cfg):
+    write_multi(cfg, "2026-08-23", {"Ferramentas": 1})
+    index = (build_site(cfg, now=NOW) / "index.html").read_text(encoding="utf-8")
+    assert "data-filters" not in index
+    assert 'data-category="ferramentas"' in index
+
+
+def test_filtro_e_progressive_enhancement(cfg):
+    """Sem JS os chips somem e a grade vem inteira, em vez de um controle morto."""
+    write_multi(cfg, "2026-08-23", {"UX & Pesquisa": 3})
+    out = build_site(cfg, now=NOW)
+    css = (out / "style.css").read_text(encoding="utf-8")
+
+    bloco = css[css.index(".filters {") : css.index(".filters {") + 40]
+    assert "display: none" in bloco
+    assert ".js .filters {" in css
+    # o theme.js roda no <head> sem defer e marca <html class="js"> antes de pintar
+    assert 'root.classList.add("js")' in (out / "theme.js").read_text(encoding="utf-8")
+
+
+def test_guarda_do_hidden_no_tile(cfg):
+    """.tile e display:flex, que vence o [hidden] do navegador: sem esta regra
+    o filtro esconde os tiles e eles continuam na tela."""
+    write_multi(cfg, "2026-08-23", {"UX & Pesquisa": 3})
+    css = (build_site(cfg, now=NOW) / "style.css").read_text(encoding="utf-8")
+    bloco = css[css.index(".gallery .tile[hidden] {") :][:60]
+    assert "display: none" in bloco
+
+
+def test_filter_js_so_na_home_e_com_defer(cfg):
+    write_multi(cfg, "2026-08-23", {"UX & Pesquisa": 3})
+    out = build_site(cfg, now=NOW)
+
+    assert (out / "filter.js").exists()
+    assert '<script src="filter.js" defer></script>' in (out / "index.html").read_text(encoding="utf-8")
+    for nome in ("arquivo.html", "fontes.html", "404.html", "edicoes/2026-08-23.html"):
+        assert "filter.js" not in (out / nome).read_text(encoding="utf-8"), nome
+
+
+def test_barra_tem_regiao_de_status_para_leitor_de_tela(cfg):
+    write_multi(cfg, "2026-08-23", {"UX & Pesquisa": 3})
+    out = build_site(cfg, now=NOW)
+    index = (out / "index.html").read_text(encoding="utf-8")
+
+    assert 'role="status"' in index and 'aria-live="polite"' in index
+    assert 'data-filter-status' in index
+    assert ".visually-hidden {" in (out / "style.css").read_text(encoding="utf-8")
+
+
+def test_estado_ativo_nao_depende_so_de_cor(cfg):
+    """WCAG 1.4.1: o chip ativo tem peso e sublinhado, nao apenas cor."""
+    write_multi(cfg, "2026-08-23", {"UX & Pesquisa": 3})
+    css = (build_site(cfg, now=NOW) / "style.css").read_text(encoding="utf-8")
+    bloco = css[css.index(".filter.is-active {") : css.index(".filter.is-active {") + 200]
+    assert "font-weight: 700" in bloco
+    assert "border-bottom-color" in bloco

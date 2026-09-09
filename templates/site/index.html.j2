@@ -3,6 +3,7 @@
 
 {% block title %}{{ newsletter.name }} — {{ newsletter.tagline }}{% endblock %}
 {% block main_class %}wrap wrap--full{% endblock %}
+{% block scripts %}<script src="filter.js" defer></script>{% endblock %}
 
 {% block content %}
 
@@ -18,6 +19,7 @@
   </div>
 </div>
 
+{{ m.filters(latest) }}
 {{ m.gallery(latest) }}
 
 {% if recent %}
