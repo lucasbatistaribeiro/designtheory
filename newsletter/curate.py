@@ -43,10 +43,10 @@ def dedupe(articles: list[Article], state: State | None = None) -> list[Article]
     return kept
 
 
-def score(articles: list[Article], cfg: Config) -> list[Article]:
+def score(articles: list[Article], cfg: Config, now: datetime | None = None) -> list[Article]:
     keywords = {k.lower(): float(v) for k, v in (cfg.ranking.get("keywords") or {}).items()}
     weights = {s.name: s.weight for s in cfg.sources}
-    now = datetime.now(timezone.utc)
+    now = now or datetime.now(timezone.utc)
 
     for article in articles:
         haystack = f"{article.title} {article.summary}".lower()
@@ -75,12 +75,23 @@ def cap_per_source(articles: list[Article], max_per_source: int) -> list[Article
     return kept
 
 
-def curate(articles: list[Article], cfg: Config, state: State | None = None) -> list[Article]:
-    """Pipeline completo de curadoria: janela -> blocklist -> dedup -> score -> limites."""
-    items = within_window(articles, int(cfg.collect.get("window_days", 7)))
+def curate(
+    articles: list[Article],
+    cfg: Config,
+    state: State | None = None,
+    now: datetime | None = None,
+) -> list[Article]:
+    """Pipeline completo de curadoria: janela -> blocklist -> dedup -> score -> limites.
+
+    `now` existe para os testes conseguirem congelar o relógio: sem isso a janela
+    de coleta é medida contra a hora real e qualquer fixture com data fixa passa
+    a falhar assim que o calendário anda.
+    """
+    now = now or datetime.now(timezone.utc)
+    items = within_window(articles, int(cfg.collect.get("window_days", 7)), now)
     items = drop_blocked(items, cfg.ranking.get("blocklist") or [])
     items = dedupe(items, state)
-    items = score(items, cfg)
+    items = score(items, cfg, now)
     items.sort(key=lambda a: (-a.score, -(a.published.timestamp() if a.published else 0.0)))
     items = cap_per_source(items, int(cfg.collect.get("max_per_source", 3)))
     return items[: int(cfg.collect.get("max_items", 24))]

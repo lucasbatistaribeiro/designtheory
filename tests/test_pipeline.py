@@ -98,7 +98,7 @@ def test_curate_respeita_max_per_source(cfg):
     cfg.collect["max_per_source"] = 2
     cfg.collect["max_items"] = 50
     items = [make_article(f"Post {i}", f"https://e.com/{i}") for i in range(6)]
-    kept = curate(items, cfg)
+    kept = curate(items, cfg, now=NOW)
     assert len(kept) == 2
 
 
@@ -106,14 +106,14 @@ def test_curate_respeita_max_items(cfg):
     cfg.collect["max_per_source"] = 10
     cfg.collect["max_items"] = 3
     items = [make_article(f"Post {i}", f"https://e.com/{i}", source=f"Fonte {i}") for i in range(8)]
-    assert len(curate(items, cfg)) == 3
+    assert len(curate(items, cfg, now=NOW)) == 3
 
 
 def test_score_prioriza_palavras_chave(cfg):
     cfg.collect["max_per_source"] = 10
     generico = make_article("Uma nota qualquer", "https://e.com/1")
     relevante = make_article("Acessibilidade em design systems", "https://e.com/2")
-    kept = curate([generico, relevante], cfg)
+    kept = curate([generico, relevante], cfg, now=NOW)
     assert kept[0].title == "Acessibilidade em design systems"
     assert kept[0].score > kept[1].score
 
