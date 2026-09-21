@@ -1,0 +1,307 @@
+{
+  "date": "2026-09-21",
+  "subject": "Design Theory — edição de 21 de setembro de 2026",
+  "total": 24,
+  "groups": {
+    "UX & Pesquisa": [
+      {
+        "title": "For the Designless, The death of the deliverable, iPhone Duo’s UX",
+        "url": "https://uxdesign.cc/for-the-designless-the-death-of-the-deliverable-iphone-duos-ux-d8ce63862469",
+        "meta_line": "`UX Collective` · 21/09 · Fabricio Teixeira",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "Weekly curated resources for designers — thinkers and makers. “A designer is not an artist. A designer is a commercial problem-solver, hired to take a client’s half-formed intent — a vibe, a feeling, a vague sense of “make it look professional” — and give it form. That is the job whether the tool is a pencil,…",
+        "author": "Fabricio Teixeira",
+        "score": 1.936,
+        "published": "2026-09-21T11:36:07+00:00",
+        "published_label": "21/09"
+      },
+      {
+        "title": "Designing AI Products and Features: Study Guide",
+        "url": "https://www.nngroup.com/articles/designing-ai-study-guide/",
+        "meta_line": "`Nielsen Norman Group` · 18/09 · Tanner Kohler",
+        "source_name": "Nielsen Norman Group",
+        "source_category": "UX & Pesquisa",
+        "summary": "Unsure where to start? Use this collection of links to our articles and videos to learn about recommendations for designing AI products and features",
+        "author": "Tanner Kohler",
+        "score": 1.739,
+        "published": "2026-09-18T17:00:00+00:00",
+        "published_label": "18/09"
+      },
+      {
+        "title": "The 3 Roles of Context for AI Agents",
+        "url": "https://www.nngroup.com/articles/3-agent-context-roles/",
+        "meta_line": "`Nielsen Norman Group` · 18/09 · Tanner Kohler",
+        "source_name": "Nielsen Norman Group",
+        "source_category": "UX & Pesquisa",
+        "summary": "AI-agent power users curate 3 kinds of context: global (across tasks), local (task-specific), and ambient (raw streams like email)",
+        "author": "Tanner Kohler",
+        "score": 1.739,
+        "published": "2026-09-18T17:00:00+00:00",
+        "published_label": "18/09"
+      },
+      {
+        "title": "AI nutrition facts",
+        "url": "https://uxdesign.cc/ai-nutrition-facts-cbfa8f9874e8",
+        "meta_line": "`UX Collective` · 20/09 · Hiroshi Sato",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "Designing an interface between writers, readers, and AI",
+        "author": "Hiroshi Sato",
+        "score": 1.696,
+        "published": "2026-09-20T12:36:44+00:00",
+        "published_label": "20/09"
+      },
+      {
+        "title": "AR Heuristics to Avoid Common UX Pitfalls",
+        "url": "https://ixdf.org/literature/article/ar-heuristics-to-avoid-common-ux-pitfalls",
+        "meta_line": "`Interaction Design Foundation` · 20/09",
+        "source_name": "Interaction Design Foundation",
+        "source_category": "UX & Pesquisa",
+        "summary": "User testing may be the final word in usability, but usability guidelines, or \"heuristics,\" are rubrics designers use to evaluate their designs. These guidelines are the product of decades of research and experience. They have traditionally been applied to mobile or desktop interfaces but were updated to allow AR…",
+        "author": "",
+        "score": 1.596,
+        "published": "2026-09-20T20:00:00+00:00",
+        "published_label": "20/09"
+      },
+      {
+        "title": "Whatever happened to “Download on the App Store” buttons?",
+        "url": "https://uxdesign.cc/whatever-happened-to-download-on-the-app-store-buttons-e39edb72df79",
+        "meta_line": "`UX Collective` · 18/09 · Adir SL",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "They used to be all over the web; now they’re almost extinct. What ever happened to “Download on the App Store” buttons? What buttons? Not too long ago, every website that tried to get its users to download an app to their phone had these buttons: “Download on the App Store” for Apple iPhones and “Get it on Google…",
+        "author": "Adir SL",
+        "score": 1.287,
+        "published": "2026-09-18T21:20:51+00:00",
+        "published_label": "18/09"
+      }
+    ],
+    "Visual & Branding": [
+      {
+        "title": "The Daily Heller: Unearthing 66-Year-Old NASA Artifacts",
+        "url": "https://www.printmag.com/daily-heller/the-daily-heller-unearthing-66-year-old-nasa-artifacts/",
+        "meta_line": "`PRINT Magazine` · 21/09 · Steven Heller",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "The fanboy collected NASA's artifacts since 1959, when Mercury Seven was introduced. Now he is passing them on",
+        "author": "Steven Heller",
+        "score": 1.93,
+        "published": "2026-09-21T11:00:00+00:00",
+        "published_label": "21/09"
+      },
+      {
+        "title": "Is this the worst typography cockup of 2026?",
+        "url": "https://www.creativebloq.com/design/fonts-typography/is-this-the-worst-typography-cockup-of-2026",
+        "meta_line": "`Creative Bloq` · 19/09 · Tom May",
+        "source_name": "Creative Bloq",
+        "source_category": "Visual & Branding",
+        "summary": "A horror game's key art was undone by some careless lettering",
+        "author": "Tom May",
+        "score": 1.718,
+        "published": "2026-09-19T11:30:56+00:00",
+        "published_label": "19/09"
+      },
+      {
+        "title": "Greta Gerwig’s Narnia logo oozes magical energy",
+        "url": "https://www.creativebloq.com/design/logos-icons/looks-woke-greta-gerwigs-narnia-logo-divides-fans",
+        "meta_line": "`Creative Bloq` · 19/09 · Natalie Fear",
+        "source_name": "Creative Bloq",
+        "source_category": "Visual & Branding",
+        "summary": "I love the whimsical typography",
+        "author": "Natalie Fear",
+        "score": 1.704,
+        "published": "2026-09-19T09:00:00+00:00",
+        "published_label": "19/09"
+      },
+      {
+        "title": "Art students: save up to 53% on supplies before term starts",
+        "url": "https://www.creativebloq.com/art/art-supplies/art-students-grab-your-last-minute-supplies-with-up-to-53-percent-off",
+        "meta_line": "`Creative Bloq` · 21/09 · Natalie Fear",
+        "source_name": "Creative Bloq",
+        "source_category": "Visual & Branding",
+        "summary": "Save on top brands like Prismacolor and Posca",
+        "author": "Natalie Fear",
+        "score": 1.493,
+        "published": "2026-09-21T16:19:37+00:00",
+        "published_label": "21/09"
+      },
+      {
+        "title": "Palm Trees, Sunshine, and a Fresh Look for Tropical Smoothie Cafe",
+        "url": "https://www.printmag.com/branding-identity-design/palm-trees-sunshine-and-a-fresh-look-for-tropical-smoothie-cafe/",
+        "meta_line": "`PRINT Magazine` · 18/09 · Jessica Deseo",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "We might all be settling into a fall state of mind, but one last splash of summer has arrived. Tropical Smoothie Cafe has unveiled a fresh new identity by global design agency JKR, bringing a little Florida sunshine into the season",
+        "author": "Jessica Deseo",
+        "score": 1.249,
+        "published": "2026-09-18T17:37:59+00:00",
+        "published_label": "18/09"
+      },
+      {
+        "title": "The Daily Heller: Knowing Which Way the Wind Blows",
+        "url": "https://www.printmag.com/daily-heller/the-daily-heller-which-way-the-wind-blows/",
+        "meta_line": "`PRINT Magazine` · 18/09 · Steven Heller",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "'The Weatherman' is a full-bore sci-fi saga set on a fully inhabited Musk-less Mars",
+        "author": "Steven Heller",
+        "score": 1.18,
+        "published": "2026-09-18T11:00:00+00:00",
+        "published_label": "18/09"
+      }
+    ],
+    "Arquitetura & Ambiente": [
+      {
+        "title": "Dancers pull clothes from Tate Modern's floor for Homme Plissé Issey Miyake show",
+        "url": "https://www.dezeen.com/2026/09/21/tate-modern-issey-miyake-performance/",
+        "meta_line": "`Dezeen` · 21/09 · Cajsa Carlson",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "Fashion brand Homme Plissé Issey Miyake has created a capsule collection for London's Tate Modern art gallery, which was informed by Henri Matisse's artwork The Snail and revealed as part of a dance performance. The Japanese brand showed the collection in one of its Open Studio events, a global initiative by Issey…",
+        "author": "Cajsa Carlson",
+        "score": 2.917,
+        "published": "2026-09-21T09:45:07+00:00",
+        "published_label": "21/09"
+      },
+      {
+        "title": "Geocode collection by VitrA Tiles",
+        "url": "https://www.dezeen.com/2026/09/21/goecode-collection-vitra-tiles-dezeen-showroom/",
+        "meta_line": "`Dezeen` · 21/09 · Dezeen staff",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "Dezeen Showroom: surfaces brand VitrA Tiles celebrates the beauty of several of the world's natural stones with its Geocode collection of wall and floor tiles. The Geocode collection combines the calming beauty of natural colours and textures with the performance qualities suited to everyday living. Its surfaces…",
+        "author": "Dezeen staff",
+        "score": 2.914,
+        "published": "2026-09-21T09:30:36+00:00",
+        "published_label": "21/09"
+      },
+      {
+        "title": "Bugatti unveils Miami skyscraper as first US branded residence",
+        "url": "https://www.dezeen.com/2026/09/20/bugatti-skyscraper-miami-brandon-haw-yabu-pushelberg/",
+        "meta_line": "`Dezeen` · 20/09 · Tom Ravenscroft",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "Car brand Bugatti has revealed plans for a 60-storey skyscraper on the Miami River, which will be designed by US architecture studio Brandon Haw Architecture with interiors by Yabu Pushelberg. Named Bugatti Residences Miami, the development will be the car brand's first branded residence in the US. It follows plans…",
+        "author": "Tom Ravenscroft",
+        "score": 2.742,
+        "published": "2026-09-20T17:00:55+00:00",
+        "published_label": "20/09"
+      }
+    ],
+    "Curadoria": [
+      {
+        "title": "Designing with AI",
+        "url": "https://buzzusborne.com/work/designing-with-ai/",
+        "meta_line": "`Sidebar` · 18/09",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "How a career of building creative teams and design systems led to AI tools that increase speed without lowering the quality bar",
+        "author": "",
+        "score": 5.717,
+        "published": "2026-09-18T07:48:17+00:00",
+        "published_label": "18/09"
+      },
+      {
+        "title": "WCAG Accessibility Guidelines Explorer",
+        "url": "https://emesstyle.com/a11y-design/",
+        "meta_line": "`Sidebar` · 17/09",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "Learn and understand web accessibility standards with interactive demos showing violations vs. solutions",
+        "author": "",
+        "score": 3.091,
+        "published": "2026-09-17T04:39:39+00:00",
+        "published_label": "17/09"
+      },
+      {
+        "title": "The AI notepad for back-to-back meetings",
+        "url": "https://bit.ly/side-gra5",
+        "meta_line": "`Sidebar` · 21/09",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "Notes, actions and memory. Without a meeting bot",
+        "author": "",
+        "score": 1.519,
+        "published": "2026-09-21T08:00:00+00:00",
+        "published_label": "21/09"
+      }
+    ],
+    "Design de Produto": [
+      {
+        "title": "Industrial Designer Alberto Essesi's Pen for Precision Sketching",
+        "url": "https://www.core77.com/posts/145419/Industrial-Designer-Alberto-Essesis-Pen-for-Precision-Sketching",
+        "meta_line": "`Core77` · 21/09 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "This beautiful Exclamation Pen is by industrial designer Alberto Essesi . Both the pen and the rest are made of aluminum with a satin finish. With the pieces paired, it's easy to see where the name came from. The point is severely tapered, with sketching in mind; Essesi seeks to provide a clear view of the tip,…",
+        "author": "Rain Noe",
+        "score": 1.971,
+        "published": "2026-09-21T15:00:00+00:00",
+        "published_label": "21/09"
+      },
+      {
+        "title": "Pedestal's Power Strip Accessories",
+        "url": "https://www.core77.com/posts/145394/Pedestals-Power-Strip-Accessories",
+        "meta_line": "`Core77` · 17/09 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "Over the course of the past few decades, we've come to interact with power strips more and more. Despite that the object itself hasn't evolved much, because it doesn't need to, right? Danish tech accessory brand Pedestal begs to differ, with their collection of Power products . They tapped Swiss industrial design firm…",
+        "author": "Rain Noe",
+        "score": 1.971,
+        "published": "2026-09-17T15:00:00+00:00",
+        "published_label": "17/09"
+      },
+      {
+        "title": "The Celluveyor: A Next-Generation Omnidirectional Modular Conveyor Belt",
+        "url": "https://www.core77.com/posts/145417/The-Celluveyor-A-Next-Generation-Omnidirectional-Modular-Conveyor-Belt",
+        "meta_line": "`Core77` · 21/09 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "Factories, warehouses and distribution centers all use conveyor belts. These are great for moving objects along a single route. However, should you need to turn, sort, descramble, separate or space the objects, additional machinery is required: Diverters, rotators, alignment stations and the like. All of these bring…",
+        "author": "Rain Noe",
+        "score": 1.961,
+        "published": "2026-09-21T14:00:00+00:00",
+        "published_label": "21/09"
+      }
+    ],
+    "Teoria & Crítica": [
+      {
+        "title": "A Google UX researcher responded to digital fatigue by founding a newspaper",
+        "url": "https://designobserver.com/a-google-ux-researcher-responded-to-digital-fatigue-by-founding-a-newspaper/",
+        "meta_line": "`Design Observer` · 14/09 · Rachel Paese",
+        "source_name": "Design Observer",
+        "source_category": "Teoria & Crítica",
+        "summary": "Amid the decline of the local news, the Sunday edition finds a second life",
+        "author": "Rachel Paese",
+        "score": 2.988,
+        "published": "2026-09-14T22:25:05+00:00",
+        "published_label": "14/09"
+      },
+      {
+        "title": "S13E2 DB|BD at Aspen: Judy Samuelson is Still Thinking About the Purpose of a Corporation",
+        "url": "https://designobserver.com/s13e2-dbbd-at-aspen-judy-samuelson-is-still-thinking-about-the-purpose-of-a-corporation/",
+        "meta_line": "`Design Observer` · 17/09 · Ellen McGirt",
+        "source_name": "Design Observer",
+        "source_category": "Teoria & Crítica",
+        "summary": "If you’re in the business world, you’ve heard of Judy Samuelson. Even if you’re not in the business world, you may have heard of Judy Samuelson. That’s because Judy is one of the most influential voices thinking about and wrestling with the purpose of business in the modern world and how capitalism can be a … Continued",
+        "author": "Ellen McGirt",
+        "score": 1.297,
+        "published": "2026-09-17T17:33:10+00:00",
+        "published_label": "17/09"
+      },
+      {
+        "title": "S13E1 DB|BD at Aspen: Todd Breyfogle on the Aspen Institute’s Humanistic History",
+        "url": "https://designobserver.com/dbbd-at-aspen-todd-breyfogle-on-the-aspen-institutes-humanistic-history/",
+        "meta_line": "`Design Observer` · 17/09 · Ellen McGirt",
+        "source_name": "Design Observer",
+        "source_category": "Teoria & Crítica",
+        "summary": "In 1949, Walter and Elizabeth Paepkes invited 2,000 artists, thinkers and business leaders to the abandoned mining town of Aspen, Colorado, for the first iteration of an Aspen Institute gathering. Eight decades later, artists, thinkers and business leaders still convene in Aspen every summer to discuss the challenges…",
+        "author": "Ellen McGirt",
+        "score": 1.286,
+        "published": "2026-09-17T16:42:48+00:00",
+        "published_label": "17/09"
+      }
+    ]
+  }
+}
