@@ -1,0 +1,309 @@
+{
+  "date": "2026-09-28",
+  "subject": "Design Theory — edição de 28 de setembro de 2026",
+  "total": 24,
+  "groups": {
+    "Visual & Branding": [
+      {
+        "title": "PRINT Book Club Recap: James Martin",
+        "url": "https://www.printmag.com/book-club/print-book-club-recap-james-martin/",
+        "meta_line": "`PRINT Magazine` · 28/09 · PRINT Editorial Team",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "James Martin joins PRINT Book Club to cut through branding’s biggest myths, arguing that strong brands are built on great ideas, clear thinking, and real evidence—not just great logos",
+        "author": "PRINT Editorial Team",
+        "score": 2.834,
+        "published": "2026-09-28T03:11:46+00:00",
+        "published_label": "28/09"
+      },
+      {
+        "title": "The Daily Heller: Letters to the Aspiring Editor",
+        "url": "https://www.printmag.com/daily-heller/the-daily-heller-letters-to-the-aspiring-editor/",
+        "meta_line": "`PRINT Magazine` · 28/09 · Steven Heller",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "Among the more difficult things to detach from are letters from friends and acquaintances",
+        "author": "Steven Heller",
+        "score": 1.915,
+        "published": "2026-09-28T11:00:00+00:00",
+        "published_label": "28/09"
+      },
+      {
+        "title": "Why are so many brands making disgusting food collabs?",
+        "url": "https://www.creativebloq.com/design/branding/why-are-so-many-brands-making-disgusting-food-collabs",
+        "meta_line": "`Creative Bloq` · 28/09 · Natalie Fear",
+        "source_name": "Creative Bloq",
+        "source_category": "Visual & Branding",
+        "summary": "And why is it working so well?",
+        "author": "Natalie Fear",
+        "score": 1.484,
+        "published": "2026-09-28T16:00:00+00:00",
+        "published_label": "28/09"
+      },
+      {
+        "title": "2026 is the year of the cancelled ad",
+        "url": "https://www.creativebloq.com/design/advertising/2026-is-the-year-of-the-cancelled-ad",
+        "meta_line": "`Creative Bloq` · 28/09 · Tom May",
+        "source_name": "Creative Bloq",
+        "source_category": "Visual & Branding",
+        "summary": "Are audiences too soft, are brands getting sloppy… or is it something else entirely?",
+        "author": "Tom May",
+        "score": 1.442,
+        "published": "2026-09-28T08:05:27+00:00",
+        "published_label": "28/09"
+      },
+      {
+        "title": "\"We have the kind of stuff AI wishes it could make\": Why trust is more important than ever for the NASA brand",
+        "url": "https://www.creativebloq.com/design/we-have-the-kind-of-stuff-ai-wishes-it-could-make-why-trust-is-more-important-than-ever-for-the-nasa-brand",
+        "meta_line": "`Creative Bloq` · 27/09 · Daniel John",
+        "source_name": "Creative Bloq",
+        "source_category": "Visual & Branding",
+        "summary": "We talk to NASA creative director David Rager about the space agency's branding",
+        "author": "Daniel John",
+        "score": 1.322,
+        "published": "2026-09-27T09:00:00+00:00",
+        "published_label": "27/09"
+      },
+      {
+        "title": "NYTA Looks Back at 175 Years of Advertising",
+        "url": "https://www.printmag.com/advertising/nyta-looks-back-at-175-years-of-advertising/",
+        "meta_line": "`PRINT Magazine` · 25/09 · Jessica Deseo",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "For 175 years, The New York Times has documented a changing world—and advertising has been part of that story",
+        "author": "Jessica Deseo",
+        "score": 1.225,
+        "published": "2026-09-25T16:46:42+00:00",
+        "published_label": "25/09"
+      }
+    ],
+    "UX & Pesquisa": [
+      {
+        "title": "Regulating AI, Quantifying stress, The variance problem",
+        "url": "https://uxdesign.cc/regulating-ai-quantifying-stress-the-variance-problem-1ce71d56a34a",
+        "meta_line": "`UX Collective` · 28/09 · Fabricio Teixeira",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "Weekly curated resources for designers — thinkers and makers. “Congress is still writing in waterfall, stuck in a world that is quickly passing them by. It wants one comprehensive (dare I say beautiful) AI bill, fully specified, passed once, ideally after everyone agrees, which is to say never. The internet’s builders…",
+        "author": "Fabricio Teixeira",
+        "score": 1.918,
+        "published": "2026-09-28T11:14:59+00:00",
+        "published_label": "28/09"
+      },
+      {
+        "title": "How we save entry-level UX work that teaches craft in the time of AI. Our field depends on this.",
+        "url": "https://uxdesign.cc/how-we-save-entry-level-ux-work-that-teaches-craft-in-the-time-of-ai-our-field-depends-on-this-e1684a0d67eb",
+        "meta_line": "`UX Collective` · 27/09 · Patrick Neeman",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "The craft was learned at this table, one marked-up screen at a time. AI assisted, Automation is taking tasks juniors learned on. Here are seven tasks that put the practice back so we keep human element of user experience and build the bench for 2030. Many teams I know have stopped assigning transcript tagging because…",
+        "author": "Patrick Neeman",
+        "score": 1.755,
+        "published": "2026-09-27T19:38:02+00:00",
+        "published_label": "27/09"
+      },
+      {
+        "title": "How AI Works and How Users Think About It: Study Guide",
+        "url": "https://www.nngroup.com/articles/ai-functionality-study-guide/",
+        "meta_line": "`Nielsen Norman Group` · 25/09 · Tanner Kohler",
+        "source_name": "Nielsen Norman Group",
+        "source_category": "UX & Pesquisa",
+        "summary": "Unsure where to start? Use this collection of links to our articles and videos to learn about how artificial intelligence works, and how users think about it",
+        "author": "Tanner Kohler",
+        "score": 1.718,
+        "published": "2026-09-25T17:00:00+00:00",
+        "published_label": "25/09"
+      },
+      {
+        "title": "When Should You Disclose AI Use? The PACED Framework",
+        "url": "https://www.nngroup.com/articles/disclose-ai-paced/",
+        "meta_line": "`Nielsen Norman Group` · 25/09 · Taylor Dykes",
+        "source_name": "Nielsen Norman Group",
+        "source_category": "UX & Pesquisa",
+        "summary": "How people react to being told that AI helped create a piece of content varies with audience, context, the nature and degree of AI use",
+        "author": "Taylor Dykes",
+        "score": 1.718,
+        "published": "2026-09-25T17:00:00+00:00",
+        "published_label": "25/09"
+      },
+      {
+        "title": "Is this the line for burgers?",
+        "url": "https://uxdesign.cc/is-this-the-line-for-burgers-9730dd45999d",
+        "meta_line": "`UX Collective` · 25/09 · Hiroshi Sato",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "On something already in the scene solving a problem outside its brief",
+        "author": "Hiroshi Sato",
+        "score": 1.278,
+        "published": "2026-09-25T21:51:14+00:00",
+        "published_label": "25/09"
+      }
+    ],
+    "Arquitetura & Ambiente": [
+      {
+        "title": "Silora task chair by ITO Design for Narbutas",
+        "url": "https://www.dezeen.com/2026/09/28/silora-task-chair-ito-design-narbutas-dezeen-showroom/",
+        "meta_line": "`Dezeen` · 28/09 · Dezeen staff",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "Dezeen Showroom: ITO Design let function drive form when creating this task chair, which features a distinctive sculptural back, for office brand Narbutas. The Silora chair features a striking backrest, with two petals that wrap around from the front, continuing the organic curve of the seating design's adaptive dual…",
+        "author": "Dezeen staff",
+        "score": 2.936,
+        "published": "2026-09-28T13:00:17+00:00",
+        "published_label": "28/09"
+      },
+      {
+        "title": "V-Flex by VitrA Tiles",
+        "url": "https://www.dezeen.com/2026/09/28/v-flex-vitra-tiles-dezeen-showroom/",
+        "meta_line": "`Dezeen` · 28/09 · Dezeen staff",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "Dezeen Showroom: surfaces brand VitrA Tiles has developed V-Flex, a method of installation that aims to meet evolving architectural expectations by being simple and adhesive-free. The company's V-Flex system provides a quick and simple installation option for projects that seek efficiency, the flexibility to make…",
+        "author": "Dezeen staff",
+        "score": 2.899,
+        "published": "2026-09-28T09:30:22+00:00",
+        "published_label": "28/09"
+      },
+      {
+        "title": "Zeph Neil wraps French Riviera villa in Carminati's motorised Skyline Minimal Frames timber windows",
+        "url": "https://www.dezeen.com/2026/09/28/caramanti-skyline-minimal-frames-drive-villa-ramatuelle/",
+        "meta_line": "`Dezeen` · 28/09 · Dezeen staff",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "Promotion: Zeph Neil, founder of design studio Level Design, has wrapped a French Riviera villa in a wall of motorised lift-and-slide timber windows by Italian window brand Carminati, which open to the pool and outdoor terrace. The expansive Skyline Drive timber windows are part of the wider Carminati Skyline Minimal…",
+        "author": "Dezeen staff",
+        "score": 2.842,
+        "published": "2026-09-28T04:00:00+00:00",
+        "published_label": "28/09"
+      }
+    ],
+    "Curadoria": [
+      {
+        "title": "Productivity for people with back to back meetings",
+        "url": "https://bit.ly/side-gra6",
+        "meta_line": "`Sidebar` · 28/09",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "You know that feeling when you leave a meeting and immediately forget half of what you agreed to?",
+        "author": "",
+        "score": 1.5,
+        "published": "2026-09-28T07:09:00+00:00",
+        "published_label": "28/09"
+      },
+      {
+        "title": "12 CSS features you can use today with no build step",
+        "url": "https://flaviocopes.com/modern-css-features/",
+        "meta_line": "`Sidebar` · 28/09",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "Modern CSS features that replace Sass, PostCSS plugins and JavaScript hacks",
+        "author": "",
+        "score": 1.5,
+        "published": "2026-09-28T07:07:38+00:00",
+        "published_label": "28/09"
+      },
+      {
+        "title": "The four tiers of tab importance",
+        "url": "https://chriscoyier.net/2026/09/15/the-four-tiers-of-tab-importance/",
+        "meta_line": "`Sidebar` · 28/09",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "Arc is the greatest web browser ever, and has been tragically moved-on-from by The Browser Company of New York-come-Atlassian",
+        "author": "",
+        "score": 1.5,
+        "published": "2026-09-28T07:07:07+00:00",
+        "published_label": "28/09"
+      }
+    ],
+    "Design de Produto": [
+      {
+        "title": "A Utility Trailer that Folds Up for Storage",
+        "url": "https://www.core77.com/posts/145502/A-Utility-Trailer-that-Folds-Up-for-Storage",
+        "meta_line": "`Core77` · 28/09 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "You might see this as a lame Autobot, but it's the only Transformer I'd have any actual use for: Adapt-X is the name of a utility trailer, that transforms into…a compact box. This allows you to store it in a space much smaller than its in-use footprint. The trailers are made primarily from aluminum, with stainless…",
+        "author": "Rain Noe",
+        "score": 1.957,
+        "published": "2026-09-28T15:00:00+00:00",
+        "published_label": "28/09"
+      },
+      {
+        "title": "Saudi Arabia is Making…EVs?!?",
+        "url": "https://www.core77.com/posts/145501/Saudi-Arabia-is-Making%E2%80%A6EVs",
+        "meta_line": "`Core77` · 28/09 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "For a while now, Saudi Arabia has been seeking to pivot away from fossil fuels as their main source of revenue. Even so, I did not see this coming. Ceer is a new Saudi Arabian auto manufacturer, the country's first. And they're going to produce vehicles that don't even run on the petroleum the company is known for…",
+        "author": "Rain Noe",
+        "score": 1.946,
+        "published": "2026-09-28T14:00:00+00:00",
+        "published_label": "28/09"
+      },
+      {
+        "title": "London Design Fair 2026: The Victoria & Albert Museum",
+        "url": "https://www.core77.com/posts/145370/London-Design-Fair-2026-The-Victoria-n-Albert-Museum",
+        "meta_line": "`Core77` · 28/09 · Anki Delfmann",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "The best place to start at LDF , and arguably the heart of the festival, is the Victoria & Albert Museum in South Kensington. It's home to the Global Design Forum , the Digital Design Weekend , and ten curated LDF installations hidden in endless corniced mazes of silverware, sculptures and sketch classes. V&A X LDF…",
+        "author": "Anki Delfmann",
+        "score": 1.946,
+        "published": "2026-09-28T14:00:00+00:00",
+        "published_label": "28/09"
+      }
+    ],
+    "Ferramentas": [
+      {
+        "title": "The power of product-based learning",
+        "url": "https://www.figma.com/blog/the-power-of-product-based-learning/",
+        "meta_line": "`Figma Blog` · 23/09",
+        "source_name": "Figma Blog",
+        "source_category": "Ferramentas",
+        "summary": "There’s a big difference between having an idea and making it real, and in that space is where learning happens. Here’s how teachers are using Figma to give their students hands-on design experiences",
+        "author": "",
+        "score": 2.716,
+        "published": "2026-09-23T15:56:00+00:00",
+        "published_label": "23/09"
+      },
+      {
+        "title": "What it takes to build great products now",
+        "url": "https://www.figma.com/blog/what-it-takes-to-build-great-products-now/",
+        "meta_line": "`Figma Blog` · 24/09",
+        "source_name": "Figma Blog",
+        "source_category": "Ferramentas",
+        "summary": "Getting to a prototype is easier than ever. The harder work is sustaining speed all the way to launch, choosing the right direction, and creating products that stand out. Here’s what that takes",
+        "author": "",
+        "score": 1.016,
+        "published": "2026-09-24T20:44:00+00:00",
+        "published_label": "24/09"
+      }
+    ],
+    "Teoria & Crítica": [
+      {
+        "title": "If Emmett Till Lived",
+        "url": "https://designobserver.com/if-emmett-till-lived/",
+        "meta_line": "`Design Observer` · 23/09 · Rachel Paese",
+        "source_name": "Design Observer",
+        "source_category": "Teoria & Crítica",
+        "summary": "A new exhibition at the Museum of Contemporary Photography in Chicago",
+        "author": "Rachel Paese",
+        "score": 0.96,
+        "published": "2026-09-23T18:04:56+00:00",
+        "published_label": "23/09"
+      },
+      {
+        "title": "The Kardashians will make you cringe, but first they’ll sell you shapewear",
+        "url": "https://designobserver.com/the-kardashians-will-make-you-cringe-but-first-theyll-sell-you-shapewear/",
+        "meta_line": "`Design Observer` · 23/09 · Rachel Paese",
+        "source_name": "Design Observer",
+        "source_category": "Teoria & Crítica",
+        "summary": "Writer and Media Theorist MJ Corey, aka Kardashian Kolloquium, on making a career out of taking the Kardashian’s influence seriously",
+        "author": "Rachel Paese",
+        "score": 0.955,
+        "published": "2026-09-23T17:39:18+00:00",
+        "published_label": "23/09"
+      }
+    ]
+  }
+}
