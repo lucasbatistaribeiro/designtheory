@@ -1,0 +1,311 @@
+{
+  "date": "2026-10-05",
+  "subject": "Design Theory — edição de 5 de outubro de 2026",
+  "total": 24,
+  "groups": {
+    "UX & Pesquisa": [
+      {
+        "title": "Prompt as self-portrait, De-slopifying your designs, The strategic designer",
+        "url": "https://uxdesign.cc/prompt-as-self-portrait-de-slopifying-your-designs-the-strategic-designer-cf8162f43284",
+        "meta_line": "`UX Collective` · 05/10 · Fabricio Teixeira",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "Weekly curated resources for designers — thinkers and makers. “Every prompt is a confession. Before the model returns a word, the box has read me back: the clarity of my thinking, the range of my references, the questions I didn’t think to ask. I think I am describing a task, while in reality I am describing myself,…",
+        "author": "Fabricio Teixeira",
+        "score": 1.905,
+        "published": "2026-10-05T11:01:01+00:00",
+        "published_label": "05/10"
+      },
+      {
+        "title": "The New Big Ball of Mud: Why Agentic AI Systems Turn Fragile",
+        "url": "https://www.nngroup.com/articles/big-ball-of-mud-ai/",
+        "meta_line": "`Nielsen Norman Group` · 02/10 · Tanner Kohler",
+        "source_name": "Nielsen Norman Group",
+        "source_category": "UX & Pesquisa",
+        "summary": "AI makes building nearly free, so users grow agentic systems piecemeal into fragile messes they no longer understand",
+        "author": "Tanner Kohler",
+        "score": 1.704,
+        "published": "2026-10-02T17:00:00+00:00",
+        "published_label": "02/10"
+      },
+      {
+        "title": "Empathy Mapping: The First Step in Design Thinking",
+        "url": "https://www.nngroup.com/articles/empathy-mapping/",
+        "meta_line": "`Nielsen Norman Group` · 02/10 · Rachel Krause, Sarah Gibbons",
+        "source_name": "Nielsen Norman Group",
+        "source_category": "UX & Pesquisa",
+        "summary": "Empathy maps help UX teams visualize user attitudes and behaviors, building a shared understanding of end users while highlighting gaps in existing user data",
+        "author": "Rachel Krause, Sarah Gibbons",
+        "score": 1.704,
+        "published": "2026-10-02T17:00:00+00:00",
+        "published_label": "02/10"
+      },
+      {
+        "title": "The building was there first",
+        "url": "https://uxdesign.cc/the-building-was-there-first-26c6c4e49ba8",
+        "meta_line": "`UX Collective` · 04/10 · Takuma Kakehi",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "A style’s real output isn’t what it makes. It’s the category it installs in whoever looks",
+        "author": "Takuma Kakehi",
+        "score": 1.692,
+        "published": "2026-10-04T14:34:28+00:00",
+        "published_label": "04/10"
+      },
+      {
+        "title": "The feed I produce myself",
+        "url": "https://uxdesign.cc/the-feed-i-produce-myself-11e4192f394c",
+        "meta_line": "`UX Collective` · 03/10 · Pedro A. Brêtas",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "On working with agents, producing more than ever, and losing the ability to see anything whole. Maestro, we have six more deliveries ready — Created by the author with AI I'm writing this on a Sunday morning. While I write, several agents are working in other tabs on my computer, on projects that have nothing to do…",
+        "author": "Pedro A. Brêtas",
+        "score": 1.407,
+        "published": "2026-10-03T11:12:42+00:00",
+        "published_label": "03/10"
+      },
+      {
+        "title": "Don Norman: How You Can Rapidly Move Up by Thinking in Systems (Not Features)",
+        "url": "https://ixdf.org/literature/article/don-norman-on-how-to-move-up-in-a-company-think-big",
+        "meta_line": "`Interaction Design Foundation` · 01/10",
+        "source_name": "Interaction Design Foundation",
+        "source_category": "UX & Pesquisa",
+        "summary": "How can you move up in a company? Learn the fundamentals of business such as statistics, finance, accounting, marketing, supply chain and administration. How do you do that? One way to do this is to get a Master of Business Administration (MBA) degree. But Don says you can also learn them without going to school. When…",
+        "author": "",
+        "score": 0.842,
+        "published": "2026-10-01T14:00:00+00:00",
+        "published_label": "01/10"
+      },
+      {
+        "title": "How to Find Your Voice: Speak with Confidence and Clarity",
+        "url": "https://ixdf.org/literature/article/how-to-find-your-voice-speak-with-confidence-and-clarity",
+        "meta_line": "`Interaction Design Foundation` · 30/09",
+        "source_name": "Interaction Design Foundation",
+        "source_category": "UX & Pesquisa",
+        "summary": "You’ve heard it before “It’s not what you said—it’s how you said it.” Your voice can change how people feel—even if your message doesn’t. If you vary your tone and pacing, you can make your ideas sound more trustworthy, exciting, or urgent. Harness this neuroscience-backed communication power and you’ll take your…",
+        "author": "",
+        "score": 0.617,
+        "published": "2026-09-30T14:00:00+00:00",
+        "published_label": "30/09"
+      },
+      {
+        "title": "Avoid Death by PowerPoint: Structure Your Slides for Maximum Impact",
+        "url": "https://ixdf.org/literature/article/avoid-death-by-powerpoint-structure-your-slides-for-maximum-impact",
+        "meta_line": "`Interaction Design Foundation` · 30/09",
+        "source_name": "Interaction Design Foundation",
+        "source_category": "UX & Pesquisa",
+        "summary": "Your message is ready, your delivery honed. Now, how do you put that brilliance on slides? Discover how to structure your slide deck strategically so that it supports your message, whether you present live or share it for independent review.Whether you're pitching to stakeholders, leading a team meeting, or sending…",
+        "author": "",
+        "score": 0.599,
+        "published": "2026-09-30T12:00:00+00:00",
+        "published_label": "30/09"
+      }
+    ],
+    "Arquitetura & Ambiente": [
+      {
+        "title": "Knekt floor lamp by Hegren among seven new products on Dezeen Showroom",
+        "url": "https://www.dezeen.com/2026/10/05/knekt-floor-lamp-hegren-lighting-furniture-products-dezeen-showroom/",
+        "meta_line": "`Dezeen` · 05/10 · Alice Laycock",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "Dezeen Showroom: an aluminium floor standing lamp with a wedge-shaped head is among seven new products featured on Dezeen Showroom. Knekt floor lamp by Hegren Norwegian brand Hegren has released a standing lamp that can be adjusted to change its height and the direction of the light it casts. The Knekt floor lamp is…",
+        "author": "Alice Laycock",
+        "score": 2.978,
+        "published": "2026-10-05T18:00:16+00:00",
+        "published_label": "05/10"
+      },
+      {
+        "title": "Spacon fills Edition Denmark in Seoul with vintage Danish furniture and found objects",
+        "url": "https://www.dezeen.com/2026/10/05/edition-denmark-seoul-spacon-cafe-showroom/",
+        "meta_line": "`Dezeen` · 05/10 · Cajsa Carlson",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "Copenhagen studio Spacon brought touches of its home country to Seoul with a showroom and cafe for the Edition Denmark brand that evokes the \"layered feeling of a home\". The 50-square-metre space was designed for a South Korean brand that sells Danish products. In a nod to the hospitality culture found in both…",
+        "author": "Cajsa Carlson",
+        "score": 2.842,
+        "published": "2026-10-05T05:00:47+00:00",
+        "published_label": "05/10"
+      },
+      {
+        "title": "Ceramiche Keope unveils trio of stone-effect surfaces for \"varied and cohesive\" interiors",
+        "url": "https://www.dezeen.com/2026/10/05/grace-atelier-tiles-ceramiche-keope/",
+        "meta_line": "`Dezeen` · 05/10 · Dezeen staff",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "Promotion: Italian brand Ceramiche Keope has launched a porcelain tile collection called Grace Atelier, featuring stone-like surface designs available as monolithic slabs and geometric mosaics. Ceramiche Keope's Grace Atelier collection includes three surfaces that aim to recall geological sites in Europe: Grace,…",
+        "author": "Dezeen staff",
+        "score": 2.832,
+        "published": "2026-10-05T04:00:44+00:00",
+        "published_label": "05/10"
+      }
+    ],
+    "Curadoria": [
+      {
+        "title": "Save time with Wispr Flow (4x faster than typing)",
+        "url": "https://bit.ly/side-wis1",
+        "meta_line": "`Sidebar` · 05/10",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "The voice-to-text AI that turns speech into clear, polished writing in every app",
+        "author": "",
+        "score": 1.466,
+        "published": "2026-10-05T04:05:00+00:00",
+        "published_label": "05/10"
+      },
+      {
+        "title": "How to de-slopify your designs",
+        "url": "https://uxdesign.cc/how-to-de-slopify-your-designs-4c40c57c1dc9",
+        "meta_line": "`Sidebar` · 05/10",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "Tips for anyone who vibecodes",
+        "author": "",
+        "score": 1.466,
+        "published": "2026-10-05T04:04:00+00:00",
+        "published_label": "05/10"
+      },
+      {
+        "title": "Amazing glass",
+        "url": "https://tomacco.github.io/amazing-glass/",
+        "meta_line": "`Sidebar` · 05/10",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "Glass that bends the page behind it. Liquid glass web components for HTML, React and Vue, tuned pixel by pixel against Apple’s own renderer",
+        "author": "",
+        "score": 1.466,
+        "published": "2026-10-05T04:03:00+00:00",
+        "published_label": "05/10"
+      }
+    ],
+    "Design de Produto": [
+      {
+        "title": "Industrial Designer Eduardo Blanco's Cartesian Pencil Holders",
+        "url": "https://www.core77.com/posts/145571/Industrial-Designer-Eduardo-Blancos-Cartesian-Pencil-Holders",
+        "meta_line": "`Core77` · 05/10 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "There's something pleasingly M.C.-Escher-esque about this Ciclo desk organizer. Spanish industrial designer Eduardo Blanco explains its origin: I needed a pencil holder and I wanted it to have a sculptural look. Something that is always visible on a desk cannot be banal. I also wanted it to give me more options for…",
+        "author": "Rain Noe",
+        "score": 1.946,
+        "published": "2026-10-05T15:00:00+00:00",
+        "published_label": "05/10"
+      },
+      {
+        "title": "A Super-Easy-to-Install Add-On Clip for Swiss Army Knives",
+        "url": "https://www.core77.com/posts/145566/A-Super-Easy-to-Install-Add-On-Clip-for-Swiss-Army-Knives",
+        "meta_line": "`Core77` · 05/10 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "When you think of the classic Swiss Army Knife, you likely envision the common 91mm version. That's the size that became the standard in the 1950s. As ubiquitous as this line is, the strange thing is that Victorinox never updated them with clips, which became popular with other folding knives starting in the 1980s. So…",
+        "author": "Rain Noe",
+        "score": 1.936,
+        "published": "2026-10-05T14:00:00+00:00",
+        "published_label": "05/10"
+      },
+      {
+        "title": "The Tuff Jug Ripper Cap Solves a Tricky Fueling Situation",
+        "url": "https://www.core77.com/posts/145562/The-Tuff-Jug-Ripper-Cap-Solves-a-Tricky-Fueling-Situation",
+        "meta_line": "`Core77` · 05/10 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "Putting gasoline into most vehicles is easy—at the pump. The nozzle goes into the filler neck, you pull the trigger. Take away the pump, and it gets considerably trickier. Dirt bikes, tractors and construction equipment must be filled with gasoline or diesel in the field, from portable containers, and the filler necks…",
+        "author": "Rain Noe",
+        "score": 1.926,
+        "published": "2026-10-05T13:00:00+00:00",
+        "published_label": "05/10"
+      }
+    ],
+    "Visual & Branding": [
+      {
+        "title": "Brands are performing nostalgia to hook you: here's why",
+        "url": "https://www.creativebloq.com/design/branding/brands-are-performing-nostalgia-to-hook-you-heres-why",
+        "meta_line": "`Creative Bloq` · 05/10 · Christina Miller",
+        "source_name": "Creative Bloq",
+        "source_category": "Visual & Branding",
+        "summary": "Not every brand has heritage to lean into, but they're doing it anyway",
+        "author": "Christina Miller",
+        "score": 1.452,
+        "published": "2026-10-05T10:50:17+00:00",
+        "published_label": "05/10"
+      },
+      {
+        "title": "Warner Bros and Paramount's Skydance rebrand isn't going down well",
+        "url": "https://www.creativebloq.com/entertainment/warner-bros-and-paramounts-skydance-rebrand-isnt-going-down-well",
+        "meta_line": "`Creative Bloq` · 03/10 · Joe Foley",
+        "source_name": "Creative Bloq",
+        "source_category": "Visual & Branding",
+        "summary": "It's reminding people why the merger is so controversial",
+        "author": "Joe Foley",
+        "score": 1.182,
+        "published": "2026-10-03T07:00:00+00:00",
+        "published_label": "03/10"
+      },
+      {
+        "title": "LIVE: October Prime Day 2026 3D printing deals - save up to 50%",
+        "url": "https://www.creativebloq.com/live/news/october-prime-day-2026-3d-printing-deals",
+        "meta_line": "`Creative Bloq` · 05/10 · Beth Nicholls",
+        "source_name": "Creative Bloq",
+        "source_category": "Visual & Branding",
+        "summary": "We're seeing Amazon Prime Day offers on Anycubic, Creality, Elegoo, and Bambu Lab machines",
+        "author": "Beth Nicholls",
+        "score": 0.978,
+        "published": "2026-10-05T15:53:39+00:00",
+        "published_label": "05/10"
+      }
+    ],
+    "Ferramentas": [
+      {
+        "title": "Workflow lab: From design system to campaign in Figma Weave",
+        "url": "https://www.figma.com/blog/workflow-lab-from-design-system-to-campaign-in-figma-weave/",
+        "meta_line": "`Figma Blog` · 01/10",
+        "source_name": "Figma Blog",
+        "source_category": "Ferramentas",
+        "summary": "Design systems can power more than just designs. This workflow shows you how to turn raw materials into brand campaign collateral using the Gen Effect and Figma nodes",
+        "author": "",
+        "score": 9.965,
+        "published": "2026-10-01T16:48:00+00:00",
+        "published_label": "01/10"
+      },
+      {
+        "title": "Figma invests in the UK with expanded London office",
+        "url": "https://www.figma.com/blog/london-office-expansion/",
+        "meta_line": "`Figma Blog` · 29/09",
+        "source_name": "Figma Blog",
+        "source_category": "Ferramentas",
+        "summary": "With our new London office, we’re getting closer to our customers and community",
+        "author": "",
+        "score": 2.465,
+        "published": "2026-09-29T16:47:00+00:00",
+        "published_label": "29/09"
+      }
+    ],
+    "Teoria & Crítica": [
+      {
+        "title": "‘What if care were foundational to systems design?’ asks Rachael Dietkus",
+        "url": "https://designobserver.com/what-if-care-were-foundational-to-systems-design-asks-rachael-dietkus/",
+        "meta_line": "`Design Observer` · 29/09 · Rachel Paese",
+        "source_name": "Design Observer",
+        "source_category": "Teoria & Crítica",
+        "summary": "The founder of Social Workers Who Design asks what it means to care for the public, and argues that care-centered design is what makes systems last",
+        "author": "Rachel Paese",
+        "score": 0.639,
+        "published": "2026-09-29T19:18:44+00:00",
+        "published_label": "29/09"
+      }
+    ],
+    "Web & Front-end": [
+      {
+        "title": "Under Autumn’s Spell (October 2026 Wallpapers Edition)",
+        "url": "https://smashingmagazine.com/2026/09/desktop-wallpaper-calendars-october-2026/",
+        "meta_line": "`Smashing Magazine` · 30/09 · hello@smashingmagazine.com (Cosima Mielke)",
+        "source_name": "Smashing Magazine",
+        "source_category": "Web & Front-end",
+        "summary": "October is just around the corner, which means it’s time for some new desktop wallpapers! Designed by the community for the community, they’re here to brighten your screens, and maybe spark some creativity along the way",
+        "author": "hello@smashingmagazine.com (Cosima Mielke)",
+        "score": 0.817,
+        "published": "2026-09-30T13:30:00+00:00",
+        "published_label": "30/09"
+      }
+    ]
+  }
+}
