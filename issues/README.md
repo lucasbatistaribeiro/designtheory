@@ -1,5 +1,6 @@
 # Edições
 
+- [12 de outubro de 2026](2026-10-12.md) — 24 itens
 - [5 de outubro de 2026](2026-10-05.md) — 24 itens
 - [28 de setembro de 2026](2026-09-28.md) — 24 itens
 - [21 de setembro de 2026](2026-09-21.md) — 24 itens
