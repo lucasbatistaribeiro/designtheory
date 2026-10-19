@@ -1,0 +1,309 @@
+{
+  "date": "2026-10-19",
+  "subject": "Design Theory — edição de 19 de outubro de 2026",
+  "total": 24,
+  "groups": {
+    "UX & Pesquisa": [
+      {
+        "title": "How to build a brand foundation with AI without losing your craft",
+        "url": "https://uxdesign.cc/how-to-build-a-brand-foundation-with-ai-without-losing-your-craft-d616b05cb838",
+        "meta_line": "`UX Collective` · 18/10 · Zeeshan Khalid",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "Here is how to use Claude and a handful of guardrails to build a design system that developers respect and clients can actually ship",
+        "author": "Zeeshan Khalid",
+        "score": 5.759,
+        "published": "2026-10-18T19:06:49+00:00",
+        "published_label": "18/10"
+      },
+      {
+        "title": "Beyond the Canvas",
+        "url": "https://uxdesign.cc/beyond-the-canvas-03fce0bcbf7b",
+        "meta_line": "`UX Collective` · 19/10 · Nil Thyrion",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "What Config India 2026 revealed about the expanding possibilities of design. Something is changing in the world of design, and Bengaluru offered a fascinating glimpse of where it’s heading. Thousands of designers, exciting new capabilities, and conversations that went far beyond the latest Figma features. One message…",
+        "author": "Nil Thyrion",
+        "score": 3.909,
+        "published": "2026-10-19T09:29:20+00:00",
+        "published_label": "19/10"
+      },
+      {
+        "title": "Design Accessible Navigation for Keyboards and Screen Readers",
+        "url": "https://ixdf.org/literature/article/design-accessible-navigation-for-keyboards-and-screen-readers",
+        "meta_line": "`Interaction Design Foundation` · 16/10",
+        "source_name": "Interaction Design Foundation",
+        "source_category": "UX & Pesquisa",
+        "summary": "Accessibility is often treated as a finishing touch, but for navigation, it belongs at the foundation. Menus are how users reach everything else on a site, so a menu that works only with a mouse quietly shuts out anyone who depends on a keyboard, a screen reader, or another form of assistive technology.In this clip,…",
+        "author": "",
+        "score": 3.743,
+        "published": "2026-10-16T09:31:24+00:00",
+        "published_label": "16/10"
+      },
+      {
+        "title": "Why design (still) matters, Taste is not a methodology, Borrowed slopes",
+        "url": "https://uxdesign.cc/why-design-still-matters-taste-is-not-a-methodology-borrowed-slopes-62701d4c33dc",
+        "meta_line": "`UX Collective` · 19/10 · Fabricio Teixeira",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "Weekly curated resources for designers — thinkers and makers. AI companies have spent the past year hiring forward-deployed engineers: engineers who sit inside a customer’s team, hear the problem firsthand, and ship against it. One count of 1,000 listings found the role grew 1,165% in a single year. This year I did a…",
+        "author": "Fabricio Teixeira",
+        "score": 1.933,
+        "published": "2026-10-19T11:50:05+00:00",
+        "published_label": "19/10"
+      },
+      {
+        "title": "UX Maps: Glossary",
+        "url": "https://www.nngroup.com/articles/ux-maps-glossary/",
+        "meta_line": "`Nielsen Norman Group` · 16/10 · Huei-Hsin Wang, Hayat Sheikh",
+        "source_name": "Nielsen Norman Group",
+        "source_category": "UX & Pesquisa",
+        "summary": "Use this glossary to quickly clarify key terms and concepts related to UX maps",
+        "author": "Huei-Hsin Wang, Hayat Sheikh",
+        "score": 1.732,
+        "published": "2026-10-16T17:00:00+00:00",
+        "published_label": "16/10"
+      },
+      {
+        "title": "Synthetic Users vs. Human Respondents: Same Conclusion, Less Variation",
+        "url": "https://www.nngroup.com/articles/synthetic-users-vs-human-respondents/",
+        "meta_line": "`Nielsen Norman Group` · 16/10 · Rachel Banawa",
+        "source_name": "Nielsen Norman Group",
+        "source_category": "UX & Pesquisa",
+        "summary": "Data from AI-generated respondents pointed to the same conclusion as a survey of 604 humans but contained far fewer distinct answers",
+        "author": "Rachel Banawa",
+        "score": 1.732,
+        "published": "2026-10-16T17:00:00+00:00",
+        "published_label": "16/10"
+      },
+      {
+        "title": "Structure First: The Inverted Pyramid and Visual Organization",
+        "url": "https://ixdf.org/literature/article/structure-first-the-inverted-pyramid-and-visual-organization",
+        "meta_line": "`Interaction Design Foundation` · 19/10",
+        "source_name": "Interaction Design Foundation",
+        "source_category": "UX & Pesquisa",
+        "summary": "This clip examines two principles that work hand in hand to make web content readable: the inverted pyramid approach to information order and the use of visual structure to help users scan efficiently. William Hudson, UX Strategist and Founder of Syntagm Ltd, describes the theoretical basis and practical examples of…",
+        "author": "",
+        "score": 1.693,
+        "published": "2026-10-19T06:52:18+00:00",
+        "published_label": "19/10"
+      }
+    ],
+    "Visual & Branding": [
+      {
+        "title": "What Matters to Dustin Black",
+        "url": "https://www.printmag.com/what-matters/what-matters-to-dustin-black/",
+        "meta_line": "`PRINT Magazine` · 19/10 · Debbie Millman",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "Dustin Black, Chief Creative Officer and Partner at Meerkat, reflects on how curiosity, creative problem-solving and a willingness to embrace the unknown have shaped his career and personal life. He explores the importance of trusting yourself, learning from risks and setbacks, and finding lasting fulfillment in…",
+        "author": "Debbie Millman",
+        "score": 1.977,
+        "published": "2026-10-19T16:05:14+00:00",
+        "published_label": "19/10"
+      },
+      {
+        "title": "Introducing the PRINT Awards 2026 Top Winners",
+        "url": "https://www.printmag.com/awards/introducing-the-print-awards-2026-top-winners/",
+        "meta_line": "`PRINT Magazine` · 19/10 · PRINT Editorial Team",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "Meet the 2026 PRINT Awards Top Winners! Celebrating exceptional creativity, innovation, and design excellence, discover the projects and studios that earned this year’s highest honors: Best in Show, Editor’s Choice, and Studio of the Year",
+        "author": "PRINT Editorial Team",
+        "score": 1.951,
+        "published": "2026-10-19T13:31:06+00:00",
+        "published_label": "19/10"
+      },
+      {
+        "title": "The Middle-of-the-Night Heller: An Insomniac’s Wake-Up Call",
+        "url": "https://www.printmag.com/daily-heller/the-middle-of-the-night-heller-insomnia-wake-up-call/",
+        "meta_line": "`PRINT Magazine` · 19/10 · Steven Heller",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "It never to late to get a good night's sleep",
+        "author": "Steven Heller",
+        "score": 1.924,
+        "published": "2026-10-19T11:00:00+00:00",
+        "published_label": "19/10"
+      },
+      {
+        "title": "The Kiwibank sheep went viral for all the wrong reasons, and there's something every brand can learn from it",
+        "url": "https://www.creativebloq.com/news/the-kiwibank-sheep-controversy-suggests-brands-should-give-up-trying-to-control-ai-mascots",
+        "meta_line": "`Creative Bloq` · 19/10 · Joe Foley",
+        "source_name": "Creative Bloq",
+        "source_category": "Visual & Branding",
+        "summary": "The controversy shows brands need to be prepared to give up some control",
+        "author": "Joe Foley",
+        "score": 1.441,
+        "published": "2026-10-19T07:00:00+00:00",
+        "published_label": "19/10"
+      }
+    ],
+    "Arquitetura & Ambiente": [
+      {
+        "title": "Seven striking buildings that make a statement with red",
+        "url": "https://www.dezeen.com/2026/10/18/seven-red-buildings-roundup/",
+        "meta_line": "`Dezeen` · 18/10 · Starr Charles",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "A timber-clad fire station and an arena with a zigzagging facade are among the projects that feature in this roundup of red buildings. Liden's Brandstation, Sweden, by Kod Arkitekter Stockholm studio Kod Arkitekter used bright red-stained cladding to distinguish this fire station in Liden, Sweden, as a local landmark.…",
+        "author": "Starr Charles",
+        "score": 2.654,
+        "published": "2026-10-18T09:00:10+00:00",
+        "published_label": "18/10"
+      },
+      {
+        "title": "Karimoku New Standard and ASICS create furniture made from crushed trainers",
+        "url": "https://www.dezeen.com/2026/10/18/karimoku-new-standard-asics-furniture-crushed-trainers/",
+        "meta_line": "`Dezeen` · 18/10 · Cajsa Carlson",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "Furniture brand Karimoku New Standard has announced the global release of its KNS x ASICS Collaboration, which repurposes upcycled foam from unused ASICS trainers as cushioning for two seating designs. The KNS x ASICS Collaboration uses deadstock and sample footwear from ASICS that would have otherwise been discarded.…",
+        "author": "Cajsa Carlson",
+        "score": 2.612,
+        "published": "2026-10-18T05:00:58+00:00",
+        "published_label": "18/10"
+      },
+      {
+        "title": "Golf clubhouse by Graham Baba nods to farm structures in rural Washington",
+        "url": "https://www.dezeen.com/2026/10/19/golf-clubhouse-graham-baba-washington-architects/",
+        "meta_line": "`Dezeen` · 19/10 · Jenna McKnight",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "US studio Graham Baba Architects used timber and board-formed concrete to create \"warmth and depth\" at the Westwood Golf clubhouse and driving range in an agricultural region. The project completed a refresh of the nine-hole golf course in the central Washington town of Yakima. The semi-arid region is known for its…",
+        "author": "Jenna McKnight",
+        "score": 1.987,
+        "published": "2026-10-19T17:00:18+00:00",
+        "published_label": "19/10"
+      }
+    ],
+    "Curadoria": [
+      {
+        "title": "Beautiful icons that make products feel premium",
+        "url": "https://bit.ly/side-hug1",
+        "meta_line": "`Sidebar` · 19/10",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "Hugeicons offers 60,000+ icons across 10 styles for Figma, React, Font, and more. Fully customizable, beautifully crafted",
+        "author": "",
+        "score": 3.091,
+        "published": "2026-10-19T05:11:00+00:00",
+        "published_label": "19/10"
+      },
+      {
+        "title": "We read 102 EU shop accessibility statements",
+        "url": "https://scandiary.com/accessibility-statements",
+        "meta_line": "`Sidebar` · 15/10",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "What EU online shops actually write in their accessibility statements, counted",
+        "author": "",
+        "score": 3.073,
+        "published": "2026-10-15T03:02:00+00:00",
+        "published_label": "15/10"
+      },
+      {
+        "title": "Someone behind the software",
+        "url": "https://karrisaarinen.com/posts/someone-behind-the-software/",
+        "meta_line": "`Sidebar` · 19/10",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "I think good products carry something of the people who make them. Their experience, what they care about, and how they think things should work",
+        "author": "",
+        "score": 1.491,
+        "published": "2026-10-19T05:10:00+00:00",
+        "published_label": "19/10"
+      }
+    ],
+    "Design de Produto": [
+      {
+        "title": "CMF's Milk-Carton-Inspired Affordable Portable Speaker",
+        "url": "https://www.core77.com/posts/145672/CMFs-Milk-Carton-Inspired-Affordable-Portable-Speaker",
+        "meta_line": "`Core77` · 19/10 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "This eye-catching Speaker S is by CMF, a spin-off brand from UK electronics company Nothing. The portable Bluetooth speaker's from was \"Inspired by the sharp geometry of a milk carton,\" CMF writes, without explaining why. The controls are minimal but thankfully, tactile. The one on the left is the power button, which…",
+        "author": "Rain Noe",
+        "score": 2.956,
+        "published": "2026-10-19T14:00:00+00:00",
+        "published_label": "19/10"
+      },
+      {
+        "title": "Combining 3D Printing with Weaving",
+        "url": "https://www.core77.com/posts/145676/Combining-3D-Printing-with-Weaving",
+        "meta_line": "`Core77` · 19/10 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "Amsterdam-based Joram de Haas calls himself an industrial and computational designer. His FilaLoom project, done as his Master's thesis in Integrated Product Design at TU Delft, combines 3D printing with textile weaving. He's rigged up a 3D printer that can do both FDM and lay yarn between the printed elements.…",
+        "author": "Rain Noe",
+        "score": 1.966,
+        "published": "2026-10-19T15:00:00+00:00",
+        "published_label": "19/10"
+      },
+      {
+        "title": "Maya Barkai's \"Walking Men\" Public Art Installations",
+        "url": "https://www.core77.com/posts/145662/Maya-Barkais-Walking-Men-Public-Art-Installations",
+        "meta_line": "`Core77` · 19/10 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "Since 2009, NYC-based photographer Maya Barkai has been exhibiting Walking Men , a traveling public art project. Barkai gathered images of the striding figure on Walk/Don't Walk signs from cities around the world, and presents them in life-sized displays. The project has popped up in New York, Sydney, Taipei and Perm,…",
+        "author": "Rain Noe",
+        "score": 1.945,
+        "published": "2026-10-19T13:00:00+00:00",
+        "published_label": "19/10"
+      }
+    ],
+    "Ferramentas": [
+      {
+        "title": "Figma deepens investment in India with largest international Config yet",
+        "url": "https://www.figma.com/blog/figma-deepens-investment-in-india/",
+        "meta_line": "`Figma Blog` · 15/10",
+        "source_name": "Figma Blog",
+        "source_category": "Ferramentas",
+        "summary": "Building off the Config momentum in India, Figma is launching an education program, new research, and an MCP partnership with Sarvam",
+        "author": "",
+        "score": 2.861,
+        "published": "2026-10-15T04:55:00+00:00",
+        "published_label": "15/10"
+      },
+      {
+        "title": "Build by design: New workflows for new ways of building",
+        "url": "https://www.figma.com/blog/build-by-design/",
+        "meta_line": "`Figma Blog` · 15/10",
+        "source_name": "Figma Blog",
+        "source_category": "Ferramentas",
+        "summary": "Here’s a look at everything we launched today to bring teams and agents, and the design, code, and context they work with, into Figma’s full-stack creative canvas",
+        "author": "",
+        "score": 2.861,
+        "published": "2026-10-15T04:53:00+00:00",
+        "published_label": "15/10"
+      },
+      {
+        "title": "Introducing Specs: Markdown as a medium",
+        "url": "https://www.figma.com/blog/introducing-figma-specs/",
+        "meta_line": "`Figma Blog` · 15/10",
+        "source_name": "Figma Blog",
+        "source_category": "Ferramentas",
+        "summary": "We’re launching Specs, a container for your context that lives on the Figma canvas",
+        "author": "",
+        "score": 2.86,
+        "published": "2026-10-15T04:51:00+00:00",
+        "published_label": "15/10"
+      }
+    ],
+    "Web & Front-end": [
+      {
+        "title": "Is Your Organization Messing Up AI Adoption?",
+        "url": "https://smashingmagazine.com/2026/10/is-your-organization-messing-up-ai-adoption/",
+        "meta_line": "`Smashing Magazine` · 16/10 · hello@smashingmagazine.com (Paul Boag)",
+        "source_name": "Smashing Magazine",
+        "source_category": "Web & Front-end",
+        "summary": "What can digital transformation teach us about AI adoption? Paul Boag revisits his book Digital Adaptation to show how lessons from the past can help organizations navigate the challenges of AI today",
+        "author": "hello@smashingmagazine.com (Paul Boag)",
+        "score": 1.397,
+        "published": "2026-10-16T10:00:00+00:00",
+        "published_label": "16/10"
+      }
+    ]
+  }
+}
