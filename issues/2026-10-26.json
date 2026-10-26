@@ -1,0 +1,311 @@
+{
+  "date": "2026-10-26",
+  "subject": "Design Theory — edição de 26 de outubro de 2026",
+  "total": 24,
+  "groups": {
+    "UX & Pesquisa": [
+      {
+        "title": "Entering Atomic Design from the screen",
+        "url": "https://uxdesign.cc/entering-atomic-design-from-the-screen-bae744ecc288",
+        "meta_line": "`UX Collective` · 23/10 · Sepeda Rafael",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "You don’t always have to build from atoms. Sometimes, you need to discover them. Atomic Design is one of the core mental models of modern design systems. It gives us a common language for describing the interface as a hierarchy: atoms, molecules, organisms, templates, and pages. Brad Frost said from the very beginning…",
+        "author": "Sepeda Rafael",
+        "score": 7.178,
+        "published": "2026-10-23T11:16:30+00:00",
+        "published_label": "23/10"
+      },
+      {
+        "title": "UX Disciplines: Glossary",
+        "url": "https://www.nngroup.com/articles/ux-disciplines-glossary/",
+        "meta_line": "`Nielsen Norman Group` · 23/10 · Raluca Budiu",
+        "source_name": "Nielsen Norman Group",
+        "source_category": "UX & Pesquisa",
+        "summary": "Definitions of fields related to user experience, including UX design, UI design, visual design, interaction design, service design, UX research, and DesignOps",
+        "author": "Raluca Budiu",
+        "score": 4.533,
+        "published": "2026-10-23T17:00:00+00:00",
+        "published_label": "23/10"
+      },
+      {
+        "title": "Who gets to name the future?",
+        "url": "https://uxdesign.cc/who-gets-to-name-the-future-436d069f16af",
+        "meta_line": "`UX Collective` · 26/10 · Nicole Alexandra Michaelis",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "Cracked, maxxed, and forward deployed: a field guide to AI’s boys’ club. My 4-year-old’s Halloween cat and the general vibe of this article In a single meeting recently, I heard that someone had one-shotted a prototype, that we should spin up a tiger team , and that what the customer really needed was a…",
+        "author": "Nicole Alexandra Michaelis",
+        "score": 1.93,
+        "published": "2026-10-26T11:26:31+00:00",
+        "published_label": "26/10"
+      },
+      {
+        "title": "The tap that pours hot water, not cold",
+        "url": "https://uxdesign.cc/the-tap-that-pours-hot-water-not-cold-8983ac0b614c",
+        "meta_line": "`UX Collective` · 26/10 · Hiroshi Sato / 佐藤 仁",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "On where a sushi self-service system quietly puts its risk",
+        "author": "Hiroshi Sato / 佐藤 仁",
+        "score": 1.93,
+        "published": "2026-10-26T11:26:19+00:00",
+        "published_label": "26/10"
+      },
+      {
+        "title": "AI in UX: Work Is Faster, But Practitioners Have Mixed Feelings",
+        "url": "https://www.nngroup.com/articles/ai-in-ux-survey-26/",
+        "meta_line": "`Nielsen Norman Group` · 23/10 · Maria Rosala, Rachel Banawa",
+        "source_name": "Nielsen Norman Group",
+        "source_category": "UX & Pesquisa",
+        "summary": "AI saves UX practitioners time on nearly every task, yet most feel lukewarm about it: mandates, unreliable output, and inflated expectations eat the gains",
+        "author": "Maria Rosala, Rachel Banawa",
+        "score": 1.733,
+        "published": "2026-10-23T17:00:00+00:00",
+        "published_label": "23/10"
+      },
+      {
+        "title": "Turn Your Non-Design Experience into Design Portfolio Gold",
+        "url": "https://ixdf.org/literature/article/turn-your-non-design-experience-into-design-portfolio-gold",
+        "meta_line": "`Interaction Design Foundation` · 24/10",
+        "source_name": "Interaction Design Foundation",
+        "source_category": "UX & Pesquisa",
+        "summary": "Have you ever wondered how to transition into UX and product design from a different career background without feeling insecure? Let's uncover strategies to confidently bridge the gap and showcase your skills to prospective employers with confidence and clarity.In this video, Morgane Peng, Design Director at Societe…",
+        "author": "",
+        "score": 1.264,
+        "published": "2026-10-24T09:00:00+00:00",
+        "published_label": "24/10"
+      }
+    ],
+    "Arquitetura & Ambiente": [
+      {
+        "title": "Apple Music unveils logo that was physically \"made by sound\"",
+        "url": "https://www.dezeen.com/2026/10/26/apple-music-logo-physically-made-by-sound/",
+        "meta_line": "`Dezeen` · 26/10 · Tom Ravenscroft",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "Technology brand Apple has revealed the first rebrand for its Apple Music service, which was made in collaboration with musician Fred Again by passing sound waves through a pool of oil. Created as part of the service's first rebrand since Apple Music launched in 2015, the logo has a wave-like aesthetic that was…",
+        "author": "Tom Ravenscroft",
+        "score": 2.905,
+        "published": "2026-10-26T09:00:00+00:00",
+        "published_label": "26/10"
+      },
+      {
+        "title": "Roca releases innovative all-in-one Avant toilet",
+        "url": "https://www.dezeen.com/2026/10/26/roca-innovative-avant-toilet/",
+        "meta_line": "`Dezeen` · 26/10 · Dezeen staff",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "Spanish bathroom brand Roca has rethought conventional toilet design with Avant, integrating the cistern within the toilet itself. For the Avant toilet, Roca designed the cistern to sit within the bowl, removing the external cistern on its floor-standing model and the concealed cistern and flush plate on its wall-hung…",
+        "author": "Dezeen staff",
+        "score": 2.863,
+        "published": "2026-10-26T05:00:00+00:00",
+        "published_label": "26/10"
+      },
+      {
+        "title": "Ste Marie imbues Monos Vancouver office with \"residential quality\"",
+        "url": "https://www.dezeen.com/2026/10/24/monos-headquarters-vancouver-ste-marie/",
+        "meta_line": "`Dezeen` · 24/10 · Dan Howarth",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "Canadian interiors studio Ste Marie has designed the Vancouver headquarters of luggage brand Monos to emphasise simplicity and shift mood throughout the day. Located in the city's Mount Pleasant neighbourhood, the Monos office was created to reflect the brand's development to date and provide space for continued…",
+        "author": "Dan Howarth",
+        "score": 2.488,
+        "published": "2026-10-24T17:00:00+00:00",
+        "published_label": "24/10"
+      }
+    ],
+    "Curadoria": [
+      {
+        "title": "Intent Design System",
+        "url": "https://intentapp.dev/design-system?dark-mode=",
+        "meta_line": "`Sidebar` · 26/10",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "Intent logos, colors, typography, iconography, foundations, and components",
+        "author": "",
+        "score": 5.517,
+        "published": "2026-10-26T08:10:20+00:00",
+        "published_label": "26/10"
+      },
+      {
+        "title": "Craftwork: UI made by real designers",
+        "url": "https://craftwork.design/",
+        "meta_line": "`Sidebar` · 26/10",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "Figma UI kits, Framer templates, fonts, React components, icons, 3D and mockups made by real designers. Use them in Figma or through your AI agent",
+        "author": "",
+        "score": 3.118,
+        "published": "2026-10-26T08:15:00+00:00",
+        "published_label": "26/10"
+      },
+      {
+        "title": "Interfere Design System",
+        "url": "https://design.interfere.com/",
+        "meta_line": "`Sidebar` · 22/10",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "Components, styles and guidelines for building Interfere products",
+        "author": "",
+        "score": 3.083,
+        "published": "2026-10-22T04:04:00+00:00",
+        "published_label": "22/10"
+      }
+    ],
+    "Design de Produto": [
+      {
+        "title": "A Clever Design for Waste-Reducing Bottles",
+        "url": "https://www.core77.com/posts/145716/A-Clever-Design-for-Waste-Reducing-Bottles",
+        "meta_line": "`Core77` · 23/10 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "These bottles are by Taiwanese industrial designer Rock Wang and design firm Agoood . They were designed for Hosay , a Taiwanese brand of sustainable cleaning and bodycare products. Embodying their mission, Wang and Agoood's clever design incorporates a funnel, easing refilling: Upon embarking on the project, these…",
+        "author": "Rain Noe",
+        "score": 2.207,
+        "published": "2026-10-23T14:01:00+00:00",
+        "published_label": "23/10"
+      },
+      {
+        "title": "A Good Idea for a Lamp for Ferrari Fanatics",
+        "url": "https://www.core77.com/posts/145730/A-Good-Idea-for-a-Lamp-for-Ferrari-Fanatics",
+        "meta_line": "`Core77` · 26/10 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "This vintage desk lamp is by VEB Zweckleuchtenbau, a state-owned East German lamp manufacturer of the 1970s. It's a pretty basic Communist-era design, with no mistaking where the switch is. You can adjust the lamp's tilt by moving the stalk in the little channel in the base. Which makes me think: If you took a vintage…",
+        "author": "Rain Noe",
+        "score": 1.967,
+        "published": "2026-10-26T15:00:00+00:00",
+        "published_label": "26/10"
+      },
+      {
+        "title": "Drawing with Absurdly Long Pencils",
+        "url": "https://www.core77.com/posts/145727/Drawing-with-Absurdly-Long-Pencils",
+        "meta_line": "`Core77` · 26/10 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "Scenic artist Nikolay Laukhin creates large-scale backdrops for the Mariinsky Theater in St. Petersburg. And I mean seriously large-scale: You might wonder how many levels of scaffolds he has to erect in order to paint one of those pieces. The answer is, none. Here's how he and his team do the work: I remember a…",
+        "author": "Rain Noe",
+        "score": 1.957,
+        "published": "2026-10-26T14:00:00+00:00",
+        "published_label": "26/10"
+      }
+    ],
+    "Ferramentas": [
+      {
+        "title": "How to put your design system to work with the Figma agent",
+        "url": "https://www.figma.com/blog/how-to-put-your-design-system-to-work-with-the-figma-agent/",
+        "meta_line": "`Figma Blog` · 22/10",
+        "source_name": "Figma Blog",
+        "source_category": "Ferramentas",
+        "summary": "Your design system can help the Figma agent understand the principles and guidelines that define your product. Here’s how to make that context useful to the agent",
+        "author": "",
+        "score": 6.087,
+        "published": "2026-10-23T02:27:00+00:00",
+        "published_label": "22/10"
+      },
+      {
+        "title": "How Lufthansa Systems prototypes realistic maps for the cockpit with Figma Make",
+        "url": "https://www.figma.com/blog/lufthansa-figma-make/",
+        "meta_line": "`Figma Blog` · 22/10",
+        "source_name": "Figma Blog",
+        "source_category": "Ferramentas",
+        "summary": "Pilots depend on in-flight software to navigate routes, see air traffic, avoid turbulence, and more. To bring more dynamic prototypes to user testing, Lufthansa Systems turned to Figma Make",
+        "author": "",
+        "score": 2.966,
+        "published": "2026-10-22T14:50:00+00:00",
+        "published_label": "22/10"
+      },
+      {
+        "title": "Source material: Designer Ben Ganz on pushing the limits of what we can do",
+        "url": "https://www.figma.com/blog/source-material-ben-ganz/",
+        "meta_line": "`Figma Blog` · 20/10",
+        "source_name": "Figma Blog",
+        "source_category": "Ferramentas",
+        "summary": "From experimental typography and print artifacts to architecture, furniture, and fashion, PIN-UP Magazine’s creative director explores how materials, systems, and unexpected connections can shape new visual worlds",
+        "author": "",
+        "score": 2.512,
+        "published": "2026-10-20T19:18:00+00:00",
+        "published_label": "20/10"
+      }
+    ],
+    "Web & Front-end": [
+      {
+        "title": "Embracing Playful Imperfection With The CSS `random()` Function",
+        "url": "https://smashingmagazine.com/2026/10/embracing-playful-imperfection-css-random-function/",
+        "meta_line": "`Smashing Magazine` · 20/10 · hello@smashingmagazine.com (Brecht De Ruyte)",
+        "source_name": "Smashing Magazine",
+        "source_category": "Web & Front-end",
+        "summary": "Design systems thrive on consistency, so where does randomness fit in? Through playful demos of organic typography, bouncing letters, and splayed cards, Brecht De Ruyte shows how the new CSS `random()` function brings a little imperfection to the web without JavaScript libraries or preprocessor loops that generate…",
+        "author": "hello@smashingmagazine.com (Brecht De Ruyte)",
+        "score": 10.098,
+        "published": "2026-10-20T10:00:00+00:00",
+        "published_label": "20/10"
+      },
+      {
+        "title": "CSS-Tricks has a new owner!",
+        "url": "https://css-tricks.com/css-tricks-has-a-new-owner/",
+        "meta_line": "`CSS-Tricks` · 26/10 · Geoff Graham",
+        "source_name": "CSS-Tricks",
+        "source_category": "Web & Front-end",
+        "summary": "Yes, I've got the keys to the castle, so to speak. And, even after 12 years of working on the site, I'll admit I'm a little overwhelmed and nervous about that. CSS-Tricks has a new owner! originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well",
+        "author": "Geoff Graham",
+        "score": 1.972,
+        "published": "2026-10-26T15:29:36+00:00",
+        "published_label": "26/10"
+      },
+      {
+        "title": "Accordion Icons: Which Work Best?",
+        "url": "https://smashingmagazine.com/2026/10/accordion-icons-which-work-best/",
+        "meta_line": "`Smashing Magazine` · 23/10 · hello@smashingmagazine.com (Vitaly Friedman)",
+        "source_name": "Smashing Magazine",
+        "source_category": "Web & Front-end",
+        "summary": "A closer look at accordion icons, why split menus are harmful, and why it’s better not to have icons and text labels link to different actions. Plus, why the caret is the safest icon choice. You’ll find more [useful guides](https://www.smashingmagazine.com/category/guides/) and [online…",
+        "author": "hello@smashingmagazine.com (Vitaly Friedman)",
+        "score": 1.436,
+        "published": "2026-10-23T13:00:00+00:00",
+        "published_label": "23/10"
+      }
+    ],
+    "Visual & Branding": [
+      {
+        "title": "The Daily Heller: Start This Week With a Little Joy",
+        "url": "https://www.printmag.com/daily-heller/the-daily-heller-starting-this-week-with-a-little-joy/",
+        "meta_line": "`PRINT Magazine` · 26/10 · Steven Heller",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "If any artist could capture joy in a bottle, it would be Maira Kalman",
+        "author": "Steven Heller",
+        "score": 1.926,
+        "published": "2026-10-26T11:00:00+00:00",
+        "published_label": "26/10"
+      },
+      {
+        "title": "Why do AI platforms want humans to design their branding?",
+        "url": "https://www.creativebloq.com/news/why-do-ai-platforms-want-humans-to-design-their-branding",
+        "meta_line": "`Creative Bloq` · 25/10 · Tom May",
+        "source_name": "Creative Bloq",
+        "source_category": "Visual & Branding",
+        "summary": "AI firms keep hiring human designers. Ironic much?",
+        "author": "Tom May",
+        "score": 1.322,
+        "published": "2026-10-25T08:01:03+00:00",
+        "published_label": "25/10"
+      }
+    ],
+    "Teoria & Crítica": [
+      {
+        "title": "Typography is an accessibility, usability, and customer care issue, says Charles Nix",
+        "url": "https://designobserver.com/typography-is-an-accessibility-usability-and-customer-care-issue-says-charles-nix/",
+        "meta_line": "`Design Observer` · 19/10 · Rachel Paese",
+        "source_name": "Design Observer",
+        "source_category": "Teoria & Crítica",
+        "summary": "For pharmaceutical and wellness brands, partnering with the right designers is the first step to building trust",
+        "author": "Rachel Paese",
+        "score": 8.16,
+        "published": "2026-10-19T20:42:20+00:00",
+        "published_label": "19/10"
+      }
+    ]
+  }
+}
