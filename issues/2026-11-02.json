@@ -1,0 +1,311 @@
+{
+  "date": "2026-11-02",
+  "subject": "Design Theory — edição de 2 de novembro de 2026",
+  "total": 24,
+  "groups": {
+    "UX & Pesquisa": [
+      {
+        "title": "Your design system was never about components",
+        "url": "https://uxdesign.cc/your-design-system-was-never-the-components-9605130c3038",
+        "meta_line": "`UX Collective` · 01/11 · Takuma Kakehi",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "Google, Atlassian and Figma now ship a file for the reasons behind a design. Nothing makes the machine follow it",
+        "author": "Takuma Kakehi",
+        "score": 6.679,
+        "published": "2026-11-01T14:32:36+00:00",
+        "published_label": "01/11"
+      },
+      {
+        "title": "State of a system",
+        "url": "https://uxdesign.cc/state-of-a-system-5c8473db1e9",
+        "meta_line": "`UX Collective` · 02/11 · Pekka Oskari Puhakka",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "Almost eight years ago, I started working on a design system that I got the opportunity to revisit just a few years later. The second round became as big a push with far fewer people. Now, three years after ending the work I’m finally ready to share that experience. My thesis: A rigid design kit is a cache of design…",
+        "author": "Pekka Oskari Puhakka",
+        "score": 4.965,
+        "published": "2026-11-02T17:56:46+00:00",
+        "published_label": "02/11"
+      },
+      {
+        "title": "When colors pass but palettes fail",
+        "url": "https://uxdesign.cc/when-colors-pass-but-palettes-fail-55b7210f8e4d",
+        "meta_line": "`UX Collective` · 01/11 · Theresa-Marie Rhyne",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "The accessibility challenge of generative AI diverging color palettes",
+        "author": "Theresa-Marie Rhyne",
+        "score": 4.68,
+        "published": "2026-11-01T14:34:07+00:00",
+        "published_label": "01/11"
+      },
+      {
+        "title": "The Role of UX in Agentic Software Factories",
+        "url": "https://www.nngroup.com/articles/ux-agentic-software-factories/",
+        "meta_line": "`Nielsen Norman Group` · 30/10 · Tanner Kohler",
+        "source_name": "Nielsen Norman Group",
+        "source_category": "UX & Pesquisa",
+        "summary": "AI-native software development lifecycles reduce UX to AI context. UX must discover user needs, shape what’s built, and evaluate it before and after launch",
+        "author": "Tanner Kohler",
+        "score": 1.687,
+        "published": "2026-10-30T17:00:00+00:00",
+        "published_label": "30/10"
+      },
+      {
+        "title": "Experience Design: Dropping the “User” from “User Experience”",
+        "url": "https://www.nngroup.com/articles/ux-vs-experience-design/",
+        "meta_line": "`Nielsen Norman Group` · 30/10 · Raluca Budiu",
+        "source_name": "Nielsen Norman Group",
+        "source_category": "UX & Pesquisa",
+        "summary": "AI is expanding UX beyond human users to agents acting on their behalf. Experience design names this broader field, which still centers on people’s goals",
+        "author": "Raluca Budiu",
+        "score": 1.687,
+        "published": "2026-10-30T17:00:00+00:00",
+        "published_label": "30/10"
+      },
+      {
+        "title": "The Relationship Between Visual Design and User Experience Design",
+        "url": "https://ixdf.org/literature/article/the-relationship-between-visual-design-and-user-experience-design",
+        "meta_line": "`Interaction Design Foundation` · 01/11",
+        "source_name": "Interaction Design Foundation",
+        "source_category": "UX & Pesquisa",
+        "summary": "A common perception about UX designers is that we are artists who can create beautiful interfaces from a blank canvas. While the aesthetics of products are important, visual design is only one aspect of the design process – in which team members with different skillsets and expertise collaborate with each other.…",
+        "author": "",
+        "score": 1.525,
+        "published": "2026-11-01T16:00:00+00:00",
+        "published_label": "01/11"
+      }
+    ],
+    "Arquitetura & Ambiente": [
+      {
+        "title": "Jaguar designs Knightsbridge flagship to be \"physical expression\" of Type 01 electric car",
+        "url": "https://www.dezeen.com/2026/11/02/jaguar-flagship-store-knightsbridge-london-type-01/",
+        "meta_line": "`Dezeen` · 02/11 · Tom Ravenscroft",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "British car brand Jaguar has redesigned its flagship store in Knightsbridge, London, which is the only place in the world where the public can see the recently unveiled Type 01 electric car",
+        "author": "Tom Ravenscroft",
+        "score": 2.895,
+        "published": "2026-11-02T11:15:00+00:00",
+        "published_label": "02/11"
+      },
+      {
+        "title": "Ten products that upgrade office interiors",
+        "url": "https://www.dezeen.com/2026/10/30/nine-products-task-chairs-desks-tables-furniture-office-interiors-workplaces/",
+        "meta_line": "`Dezeen` · 30/10 · Alice Laycock",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "The following products for offices published on our Showroom section allow for streamlined workplaces that don't compromise on aesthetics. These include desks, sit-stand tables as well as those with integrated outlets, modular seating systems and ergonomic task chairs. Global designers and brands aimed to boost…",
+        "author": "Alice Laycock",
+        "score": 2.226,
+        "published": "2026-10-30T19:00:00+00:00",
+        "published_label": "30/10"
+      },
+      {
+        "title": "Apple takes \"monumental step forward\" with first touchscreen MacBook",
+        "url": "https://www.dezeen.com/2026/10/30/macbook-pro-touchscreen-apple/",
+        "meta_line": "`Dezeen` · 30/10 · Amy Peacock",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "Apple has revealed its latest MacBook Pro model, which features the technology brand's first laptop touchscreen and what it claims is \"the world’s best laptop display\"",
+        "author": "Amy Peacock",
+        "score": 2.141,
+        "published": "2026-10-30T10:50:00+00:00",
+        "published_label": "30/10"
+      }
+    ],
+    "Curadoria": [
+      {
+        "title": "Design systems should be fast by default",
+        "url": "https://denodell.com/blog/design-systems-should-be-fast-by-default",
+        "meta_line": "`Sidebar` · 28/10",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "If a design system’s components are slow to interact with, so are any apps built with it",
+        "author": "",
+        "score": 5.256,
+        "published": "2026-10-28T04:01:00+00:00",
+        "published_label": "28/10"
+      },
+      {
+        "title": "The AI Notepad for back-to-back meetings",
+        "url": "https://bit.ly/side-gra8",
+        "meta_line": "`Sidebar` · 02/11",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "Notes, actions and memory. Without a meeting bot. Give it a try during your next meeting",
+        "author": "",
+        "score": 1.47,
+        "published": "2026-11-02T05:44:00+00:00",
+        "published_label": "02/11"
+      },
+      {
+        "title": "Who owns the doubt?",
+        "url": "https://www.doc.cc/humankind/doubt",
+        "meta_line": "`Sidebar` · 02/11",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "Nobody arrives at their first design job doubting their first idea; they defend it, usually too loudly",
+        "author": "",
+        "score": 1.47,
+        "published": "2026-11-02T05:43:44+00:00",
+        "published_label": "02/11"
+      }
+    ],
+    "Design de Produto": [
+      {
+        "title": "PureSelfMade's Build-Your-Own Wind Turbine Workshops",
+        "url": "https://www.core77.com/posts/145808/PureSelfMades-Build-Your-Own-Wind-Turbine-Workshops",
+        "meta_line": "`Core77` · 02/11 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "Since the 1970s, self-taught engineer Hugh Piggott has been building wind turbines from scratch in his native Scotland. In the 2000s, he started holding workshops showing participants how to build their own. Jonathan Schreiber, an Austrian renewable-energy practitioner, took Piggott's course in 2012. Piggott no longer…",
+        "author": "Rain Noe",
+        "score": 1.944,
+        "published": "2026-11-02T16:00:00+00:00",
+        "published_label": "02/11"
+      },
+      {
+        "title": "The Unique Fairings on Bandit9's RED 800 Motorcycle",
+        "url": "https://www.core77.com/posts/145802/The-Unique-Fairings-on-Bandit9s-RED-800-Motorcycle",
+        "meta_line": "`Core77` · 02/11 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "You probably know of RED , Bono's organization that raises fund to fight preventable diseases, through their many collaborations with Apple and Jony Ive; there were special RED iPod Nanos, iPhones and even a Mac Pro. Now RED's moved into the motorsports space, partnering with motorcycle designer Daryl Villanueva.…",
+        "author": "Rain Noe",
+        "score": 1.934,
+        "published": "2026-11-02T15:00:00+00:00",
+        "published_label": "02/11"
+      },
+      {
+        "title": "Automatic Drop Down Seals for Doors",
+        "url": "https://www.core77.com/posts/145799/Automatic-Drop-Down-Seals-for-Doors",
+        "meta_line": "`Core77` · 02/11 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "The automatic door bottom is a clever bit of engineering that prevents under-door drafts, without installing a skirt that drags across your floor. Also called an automatic drop seal, it consists of an aluminum extrusion mounted in a dado cut into the bottom of the door. A little brass plunger protrudes from one end on…",
+        "author": "Rain Noe",
+        "score": 1.924,
+        "published": "2026-11-02T14:00:00+00:00",
+        "published_label": "02/11"
+      }
+    ],
+    "Ferramentas": [
+      {
+        "title": "How we brought Hello Kitty® and Friends to Figma",
+        "url": "https://www.figma.com/blog/hello-kitty-and-friends-in-figma/",
+        "meta_line": "`Figma Blog` · 02/11",
+        "source_name": "Figma Blog",
+        "source_category": "Ferramentas",
+        "summary": "Since Hello Kitty® first stepped onto the world stage in 1974, she and her friends have connected generations of fans through the spirit of togetherness and thoughtful design. Here’s how our shared love of craft and community shaped our collaboration with Sanrio®, in FigJam and around the world",
+        "author": "",
+        "score": 3.934,
+        "published": "2026-11-02T14:58:00+00:00",
+        "published_label": "02/11"
+      },
+      {
+        "title": "Figma and Sanrio® celebrate Hello Kitty® and the joy of making things with friends",
+        "url": "https://www.figma.com/blog/figma-and-sanrio-celebrate-hello-kitty-and-friends/",
+        "meta_line": "`Figma Blog` · 02/11",
+        "source_name": "Figma Blog",
+        "source_category": "Ferramentas",
+        "summary": "In honor of Hello Kitty®’s birthday, Hello Kitty® and Friends are moving into FigJam, and throwing a party in NYC",
+        "author": "",
+        "score": 3.924,
+        "published": "2026-11-02T14:00:00+00:00",
+        "published_label": "02/11"
+      },
+      {
+        "title": "The TL;DR on Figma Weave: Make your creative process repeatable",
+        "url": "https://www.figma.com/blog/the-tldr-on-figma-weave/",
+        "meta_line": "`Figma Blog` · 30/10",
+        "source_name": "Figma Blog",
+        "source_category": "Ferramentas",
+        "summary": "Figma Weave brings AI generation and editing tools together into connected, reusable workflows, giving you a process your team can shape, refine, and repeat. Here’s what it unlocks for creative teams and how to get the most out of it",
+        "author": "",
+        "score": 3.288,
+        "published": "2026-10-31T00:58:00+00:00",
+        "published_label": "30/10"
+      }
+    ],
+    "Visual & Branding": [
+      {
+        "title": "Join Françoise Mouly at The PRINT Book Club",
+        "url": "https://www.printmag.com/uncategorized/join-francoise-mouly-at-the-print-book-club/",
+        "meta_line": "`PRINT Magazine` · 02/11 · Laura Des Enfants",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "Join Debbie Millman, Steven Heller and Françoise Mouly for an exclusive PRINT Book Club event, November 12th at 4pm ET…",
+        "author": "Laura Des Enfants",
+        "score": 1.976,
+        "published": "2026-11-02T19:00:00+00:00",
+        "published_label": "02/11"
+      },
+      {
+        "title": "The Daily Heller: Underwater Underground From World War II",
+        "url": "https://www.printmag.com/daily-heller/the-daily-heller-underwater-in-world-war-ii/",
+        "meta_line": "`PRINT Magazine` · 02/11 · Steven Heller",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "\"The Underwater Cabaret\" was a one-of-a-kind handmade arts and satire journal that could only be read by one person at a time",
+        "author": "Steven Heller",
+        "score": 1.903,
+        "published": "2026-11-02T12:00:00+00:00",
+        "published_label": "02/11"
+      },
+      {
+        "title": "From Pepsi Man to WendyQuest, why are brands making video games again?",
+        "url": "https://www.creativebloq.com/news/from-pepsi-man-to-wendyquest-why-are-brands-making-video-games-again",
+        "meta_line": "`Creative Bloq` · 01/11 · Tom May",
+        "source_name": "Creative Bloq",
+        "source_category": "Visual & Branding",
+        "summary": "A burger chain's pixel-art RPG has gamers excited",
+        "author": "Tom May",
+        "score": 1.337,
+        "published": "2026-11-01T14:00:00+00:00",
+        "published_label": "01/11"
+      }
+    ],
+    "Web & Front-end": [
+      {
+        "title": "What’s !important #20: GTA 6 Scroll Effects, Scrollspies, random()",
+        "url": "https://css-tricks.com/whats-important-20/",
+        "meta_line": "`CSS-Tricks` · 02/11 · Daniel Schwarz",
+        "source_name": "CSS-Tricks",
+        "source_category": "Web & Front-end",
+        "summary": "This is the final issue of What’s !important on CSS-Tricks.com. The good news is that it’s coming back in an expanded form as the CSS-Tricks newsletter. I had ya there for a second, didn’t I? Sorry, I couldn’t decide whether to trick or treat, so I went for both. Happy Halloween What’s !important #20: GTA 6 Scroll…",
+        "author": "Daniel Schwarz",
+        "score": 1.935,
+        "published": "2026-11-02T15:06:07+00:00",
+        "published_label": "02/11"
+      },
+      {
+        "title": "A Spark Of Color In November’s Gray (2026 Wallpapers Edition)",
+        "url": "https://smashingmagazine.com/2026/10/desktop-wallpaper-calendars-november-2026/",
+        "meta_line": "`Smashing Magazine` · 31/10 · hello@smashingmagazine.com (Cosima Mielke)",
+        "source_name": "Smashing Magazine",
+        "source_category": "Web & Front-end",
+        "summary": "Let’s kick of November with a new collection of desktop wallpapers! Designed by creatives from across the globe, the wallpapers come in a variety of screen resolutions and can be downloaded for free. Enjoy!",
+        "author": "hello@smashingmagazine.com (Cosima Mielke)",
+        "score": 1.633,
+        "published": "2026-10-31T08:00:00+00:00",
+        "published_label": "31/10"
+      }
+    ],
+    "Teoria & Crítica": [
+      {
+        "title": "Episode 2: The Redemption Project",
+        "url": "https://designobserver.com/episode-2-the-redemption-project/",
+        "meta_line": "`Design Observer` · 02/11 · Ellen McGirt",
+        "source_name": "Design Observer",
+        "source_category": "Teoria & Crítica",
+        "summary": "In the spring of 2026, the Supreme Court’s ruling in Louisiana v. Callais gutted the Voting Rights Act, and majority-Black districts across the South started to disappear. To understand how we got here, we must go back to the moment Black Louisianans first won the vote. In episode two of Draw the Line, host Ellen ……",
+        "author": "Ellen McGirt",
+        "score": 2.56,
+        "published": "2026-11-02T18:21:23+00:00",
+        "published_label": "02/11"
+      }
+    ]
+  }
+}
