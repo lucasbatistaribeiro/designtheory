@@ -1,0 +1,311 @@
+{
+  "date": "2026-11-16",
+  "subject": "Design Theory — edição de 16 de novembro de 2026",
+  "total": 24,
+  "groups": {
+    "UX & Pesquisa": [
+      {
+        "title": "UI edge cases: A reference guide",
+        "url": "https://uxdesign.cc/ui-edge-cases-a-reference-guide-e778061588ef",
+        "meta_line": "`UX Collective` · 16/11 · Adir SL",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "A practical reference guide for catching UI edge cases before they ship — organized by category, with how to test, how to detect them in the wild, and how to design a fix. With examples. UI edge cases: A reference guide, a banner image. Introduction One day my colleague and I were at a workshop in a client’s office…",
+        "author": "Adir SL",
+        "score": 1.998,
+        "published": "2026-11-16T21:20:24+00:00",
+        "published_label": "16/11"
+      },
+      {
+        "title": "Before you ship your Wrapped, Schrödinger’s Nvidia, Infinite tokens",
+        "url": "https://uxdesign.cc/before-you-ship-your-wrapped-schr%C3%B6dingers-nvidia-infinite-tokens-64a9160bd2eb",
+        "meta_line": "`UX Collective` · 16/11 · Fabricio Teixeira",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "Weekly curated resources for designers — thinkers and makers. “When Ted Chiang wrote in The New Yorker that AI isn’t going to make art, I felt vindicated. I forwarded it. To people who had not asked (sorry). His point was that art is the sum of thousands of small choices, and a machine that makes most of them for you…",
+        "author": "Fabricio Teixeira",
+        "score": 1.903,
+        "published": "2026-11-16T12:17:08+00:00",
+        "published_label": "16/11"
+      },
+      {
+        "title": "The trash robot that doesn’t pick up, but hands out",
+        "url": "https://uxdesign.cc/the-trash-robot-that-doesnt-pick-up-but-hands-out-9f599d49f8d0",
+        "meta_line": "`UX Collective` · 16/11 · Hiroshi Sato / 佐藤 仁",
+        "source_name": "UX Collective",
+        "source_category": "UX & Pesquisa",
+        "summary": "On kawaii, embarrassment, and designing to invite",
+        "author": "Hiroshi Sato / 佐藤 仁",
+        "score": 1.903,
+        "published": "2026-11-16T12:16:15+00:00",
+        "published_label": "16/11"
+      },
+      {
+        "title": "Journey Mapping 101",
+        "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+        "meta_line": "`Nielsen Norman Group` · 13/11 · Huei-Hsin Wang, Sarah Gibbons",
+        "source_name": "Nielsen Norman Group",
+        "source_category": "UX & Pesquisa",
+        "summary": "A journey map is a visualization of the process that a person goes through in order to accomplish a goal",
+        "author": "Huei-Hsin Wang, Sarah Gibbons",
+        "score": 1.698,
+        "published": "2026-11-13T18:00:00+00:00",
+        "published_label": "13/11"
+      },
+      {
+        "title": "Research-In-The-Loop: How UXR Adapts to Development at AI Speed",
+        "url": "https://www.nngroup.com/articles/research-in-the-loop/",
+        "meta_line": "`Nielsen Norman Group` · 13/11 · Tony Alicea",
+        "source_name": "Nielsen Norman Group",
+        "source_category": "UX & Pesquisa",
+        "summary": "As AI speeds up development, it can be a challenge for research to adapt. Research can define what each release must measure and what it can help teams discover",
+        "author": "Tony Alicea",
+        "score": 1.698,
+        "published": "2026-11-13T18:00:00+00:00",
+        "published_label": "13/11"
+      }
+    ],
+    "Visual & Branding": [
+      {
+        "title": "The Daily Heller: Everyday Design From Everywhere in Forest Hills and Beyond",
+        "url": "https://www.printmag.com/daily-heller/the-daily-heller-6/",
+        "meta_line": "`PRINT Magazine` · 10/11 · Steven Heller",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "John Kudos has begun cataloguing a rich vein of typography from his travels and neighborhood",
+        "author": "Steven Heller",
+        "score": 2.406,
+        "published": "2026-11-10T12:30:00+00:00",
+        "published_label": "10/11"
+      },
+      {
+        "title": "PRINT Book Club Recap: Françoise Mouly",
+        "url": "https://www.printmag.com/book-club/print-book-club-recap-francoise-mouly/",
+        "meta_line": "`PRINT Magazine` · 16/11 · debaldrichprintmagcom",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "In our latest PRINT Book Club, Françoise Mouly takes us behind the covers of The New Yorker, exploring a century of visual storytelling, the art of creative collaboration, and the enduring power of print to capture the cultural zeitgeist",
+        "author": "debaldrichprintmagcom",
+        "score": 1.993,
+        "published": "2026-11-16T20:54:45+00:00",
+        "published_label": "16/11"
+      },
+      {
+        "title": "The Daily Heller: What is Portraiture in Digital Space?",
+        "url": "https://www.printmag.com/daily-heller/the-daily-heller-what-is-portraiture-digital/",
+        "meta_line": "`PRINT Magazine` · 16/11 · Steven Heller",
+        "source_name": "PRINT Magazine",
+        "source_category": "Visual & Branding",
+        "summary": "Enter The Machine 3.0 is the first internet-native portrait studio for \"digital entities.\"",
+        "author": "Steven Heller",
+        "score": 1.9,
+        "published": "2026-11-16T12:00:00+00:00",
+        "published_label": "16/11"
+      },
+      {
+        "title": "Motion North 2027 reveals speakers for two days of talks, workshops and more",
+        "url": "https://www.creativebloq.com/news/motion-north-2027-reveals-speakers-for-two-days-of-talks-workshops-and-more",
+        "meta_line": "`Creative Bloq` · 16/11 · Georgia Coggan",
+        "source_name": "Creative Bloq",
+        "source_category": "Visual & Branding",
+        "summary": "Get inspired by creative professionals from the worlds of motion design, animation, branding and design",
+        "author": "Georgia Coggan",
+        "score": 1.466,
+        "published": "2026-11-16T14:59:22+00:00",
+        "published_label": "16/11"
+      }
+    ],
+    "Arquitetura & Ambiente": [
+      {
+        "title": "Finnegan Shannon installs conveyor belt for displaying art accessibly in Brooklyn",
+        "url": "https://www.dezeen.com/2026/11/12/finnegan-shannon-conveyor-accessibility-pioneer-works-brooklyn/",
+        "meta_line": "`Dezeen` · 12/11 · Adrian Madlener",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "New York City-based artist Finnegan Shannon has installed a conveyor belt to display art at cultural centre Pioneer Works in Brooklyn, USA, as a commentary on accessibility in art. According to Pioneer Works, the There's No Me Without You installation fulfils Shannon’s “longtime fantasy of an exhibition space that…",
+        "author": "Adrian Madlener",
+        "score": 3.987,
+        "published": "2026-11-12T20:18:29+00:00",
+        "published_label": "12/11"
+      },
+      {
+        "title": "Foster + Partners creates Area worktable for today's office",
+        "url": "https://www.dezeen.com/2026/11/16/foster-partners-area-worktable-todays-office/",
+        "meta_line": "`Dezeen` · 16/11 · Rima Sabina Aouf",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "Foster + Partners Industrial Design aimed to bring expressive and functional workplace design together in its modular Area table system, created with Spanish furniture brand Kettal",
+        "author": "Rima Sabina Aouf",
+        "score": 2.838,
+        "published": "2026-11-16T06:00:00+00:00",
+        "published_label": "16/11"
+      },
+      {
+        "title": "Kohler's gut-health tracker clips onto the toilet bowl",
+        "url": "https://www.dezeen.com/2026/11/15/kohler-gut-health-tracker-dekoda/",
+        "meta_line": "`Dezeen` · 15/11 · Rima Sabina Aouf",
+        "source_name": "Dezeen",
+        "source_category": "Arquitetura & Ambiente",
+        "summary": "American bathroom brand Kohler has created Dekoda, a health tracker specifically for the toilet, through its spin-off venture, Kohler Health",
+        "author": "Rima Sabina Aouf",
+        "score": 2.588,
+        "published": "2026-11-15T06:00:00+00:00",
+        "published_label": "15/11"
+      }
+    ],
+    "Curadoria": [
+      {
+        "title": "There’s no better name for design systems",
+        "url": "https://karolinaszczur.com/journal/translation-not-rebranding/",
+        "meta_line": "`Sidebar` · 11/11",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "How to talk about design systems across functions",
+        "author": "",
+        "score": 5.275,
+        "published": "2026-11-11T06:31:39+00:00",
+        "published_label": "11/11"
+      },
+      {
+        "title": "Send and sign agreements from Claude with Lumin",
+        "url": "https://bit.ly/side-lum1",
+        "meta_line": "`Sidebar` · 16/11",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "Need to send an agreement? Draft it in Claude and send it for eSignature with the free Lumin connector, all without leaving the chat",
+        "author": "",
+        "score": 1.463,
+        "published": "2026-11-16T05:05:00+00:00",
+        "published_label": "16/11"
+      },
+      {
+        "title": "Slop is moving up the stack",
+        "url": "https://gabeorlanski.github.io/posts/slop-moves-up/",
+        "meta_line": "`Sidebar` · 16/11",
+        "source_name": "Sidebar",
+        "source_category": "Curadoria",
+        "summary": "Agents write cleaner lines of code than a year ago. The slop moved into design... What's next?",
+        "author": "",
+        "score": 1.462,
+        "published": "2026-11-16T05:04:00+00:00",
+        "published_label": "16/11"
+      }
+    ],
+    "Design de Produto": [
+      {
+        "title": "Using Laser Tube Cutting to Turn Pipe Stock Into Useful Objects",
+        "url": "https://www.core77.com/posts/145910/Using-Laser-Tube-Cutting-to-Turn-Pipe-Stock-Into-Useful-Objects",
+        "meta_line": "`Core77` · 16/11 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "Let's say you're an independent industrial designer, who'd like to design and sell their own objects. One challenge is that \"creating a new form often comes with real-world constraints—especially when custom tooling requires a heavy upfront investment,\" writes Taiwanese industrial designer Hsinhung Chou . For his…",
+        "author": "Rain Noe",
+        "score": 1.942,
+        "published": "2026-11-16T16:00:00+00:00",
+        "published_label": "16/11"
+      },
+      {
+        "title": "A Progress-Bar-Style Linear Clock",
+        "url": "https://www.core77.com/posts/145904/A-Progress-Bar-Style-Linear-Clock",
+        "meta_line": "`Core77` · 16/11 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "For those earning their living on a computer, the crash-predating spinning wheel icon is an unwelcome sight. Being circular, it's ambiguous and can spin infinitely, providing no sense of when it might stop. The progress bar is a bit more pleasing even if, annoyingly, it never seems to fill at a linear pace. But it at…",
+        "author": "Rain Noe",
+        "score": 1.932,
+        "published": "2026-11-16T15:00:00+00:00",
+        "published_label": "16/11"
+      },
+      {
+        "title": "SpaceX Succeeds in Recapturing Not Just the Booster, but the Ship Itself",
+        "url": "https://www.core77.com/posts/145913/SpaceX-Succeeds-in-Recapturing-Not-Just-the-Booster-but-the-Ship-Itself",
+        "meta_line": "`Core77` · 16/11 · Rain Noe",
+        "source_name": "Core77",
+        "source_category": "Design de Produto",
+        "summary": "Roughly two years ago, SpaceX gained the insane ability to recapture their returning Super Heavy booster rockets, which make up one half of Starship. What they have not been able to do is recapture a Starship upper stage, the actual ship. It's a lot more difficult to recapture than the booster, because the upper stage…",
+        "author": "Rain Noe",
+        "score": 1.921,
+        "published": "2026-11-16T14:00:00+00:00",
+        "published_label": "16/11"
+      }
+    ],
+    "Ferramentas": [
+      {
+        "title": "How 1Password uses Figma Make to design for trust and certainty",
+        "url": "https://www.figma.com/blog/1password-figma-make/",
+        "meta_line": "`Figma Blog` · 16/11",
+        "source_name": "Figma Blog",
+        "source_category": "Ferramentas",
+        "summary": "From autofill to AI agent approvals, every 1Password interaction counts. Here's how the design team uses Figma Make to design moments users trust",
+        "author": "",
+        "score": 3.963,
+        "published": "2026-11-16T18:03:00+00:00",
+        "published_label": "16/11"
+      },
+      {
+        "title": "How 3D transforms and Figma’s agent brought a launch video to life",
+        "url": "https://www.figma.com/blog/how-3d-transforms-and-figmas-agent-brought-a-launch-video-to-life/",
+        "meta_line": "`Figma Blog` · 12/11",
+        "source_name": "Figma Blog",
+        "source_category": "Ferramentas",
+        "summary": "See how Figma’s Brand Studio team combined 3D design, agent-built plugins, shaders, and motion to create a video together on the canvas",
+        "author": "",
+        "score": 3.921,
+        "published": "2026-11-12T14:00:00+00:00",
+        "published_label": "12/11"
+      },
+      {
+        "title": "6 easy ways to use the Figma agent right now",
+        "url": "https://www.figma.com/blog/6-easy-ways-to-use-the-figma-agent-right-now/",
+        "meta_line": "`Figma Blog` · 09/11",
+        "source_name": "Figma Blog",
+        "source_category": "Ferramentas",
+        "summary": "From making designs more expressive and automating busywork, to exploring more possibilities on the canvas, here are six ways to push designers further with the Figma agent",
+        "author": "",
+        "score": 2.252,
+        "published": "2026-11-09T21:46:00+00:00",
+        "published_label": "09/11"
+      }
+    ],
+    "Teoria & Crítica": [
+      {
+        "title": "Civic design has a responsibility",
+        "url": "https://designobserver.com/civic-design-has-a-responsibility/",
+        "meta_line": "`Design Observer` · 12/11 · Rachel Paese",
+        "source_name": "Design Observer",
+        "source_category": "Teoria & Crítica",
+        "summary": "After a near-record midterm turnout, we debriefed with three designers on Substack live. Here's what you missed:",
+        "author": "Rachel Paese",
+        "score": 1.244,
+        "published": "2026-11-12T17:24:38+00:00",
+        "published_label": "12/11"
+      },
+      {
+        "title": "Courthouses are designed to keep us apart",
+        "url": "https://designobserver.com/courthouses-are-designed-to-keep-us-apart/",
+        "meta_line": "`Design Observer` · 12/11 · Rachel Paese",
+        "source_name": "Design Observer",
+        "source_category": "Teoria & Crítica",
+        "summary": "And that can make us forget we’re actually neighbors",
+        "author": "Rachel Paese",
+        "score": 1.242,
+        "published": "2026-11-12T17:16:10+00:00",
+        "published_label": "12/11"
+      }
+    ],
+    "Web & Front-end": [
+      {
+        "title": "Staggering Scroll-Driven Animations with animation-range-start",
+        "url": "https://css-tricks.com/staggering-scroll-driven-animations-with-animation-range-start/",
+        "meta_line": "`CSS-Tricks` · 16/11 · Lee Meyer",
+        "source_name": "CSS-Tricks",
+        "source_category": "Web & Front-end",
+        "summary": "Imagine a CSS karaoke machine that displays a ball bouncing on text that incrementally highlights, based on progress through via speech recognition and running that kind of animation as a single predictable, holistic effect driven by one progress value. Staggering Scroll-Driven Animations with animation-range-start…",
+        "author": "Lee Meyer",
+        "score": 1.95,
+        "published": "2026-11-16T16:47:05+00:00",
+        "published_label": "16/11"
+      }
+    ]
+  }
+}
