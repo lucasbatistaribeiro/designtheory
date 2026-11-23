@@ -1,5 +1,6 @@
 # Edições
 
+- [23 de novembro de 2026](2026-11-23.md) — 24 itens
 - [16 de novembro de 2026](2026-11-16.md) — 24 itens
 - [9 de novembro de 2026](2026-11-09.md) — 24 itens
 - [2 de novembro de 2026](2026-11-02.md) — 24 itens
